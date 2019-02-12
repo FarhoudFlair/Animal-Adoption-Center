@@ -11,6 +11,7 @@ Simon Roy-Halverson - 100985755
 Purpose:
 
     This application serves to provide a platform where clients are able to be matched with an animal from an adoption centre.
+    Staff members are able to add and edit animal information, as well as run the matching algorithm to match animals with clients.
 
 
 Compilation command:
