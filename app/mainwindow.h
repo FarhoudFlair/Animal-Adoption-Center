@@ -29,6 +29,8 @@ private slots:
     void on_addAnimalButton_clicked();
     void on_animalFormCancelButton_clicked();
     void on_animalFormSaveButton_clicked();
+    void on_animalListView_doubleClicked(const QModelIndex &index);
+    void on_listView_doubleClicked(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;

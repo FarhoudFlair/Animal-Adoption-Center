@@ -1,5 +1,8 @@
 #ifndef SQLSERIALIZER_H
 #define SQLSERIALIZER_H
+/**
+ * A class used to store/load objects to/from the database
+ */
 
 #include <QList>
 

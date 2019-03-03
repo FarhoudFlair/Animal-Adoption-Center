@@ -32,10 +32,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // set combo box items for animal type
     this->ui->animalFormTypeInput->addItems(animal_type_variants_str());
+    this->ui->clientFormAnimalTypeInput->addItems(animal_type_variants_str());
 
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
+    this->ui->mainTabWidget->setCurrentWidget(this->ui->animalTab);
+    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
 }
 
 MainWindow::~MainWindow()
@@ -107,4 +110,14 @@ void MainWindow::on_animalFormSaveButton_clicked()
     this->resetAnimalForm();
 
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
+}
+
+void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
+{
+    qDebug() << "test" << endl;
+}
+
+void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
+{
+
 }

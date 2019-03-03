@@ -1,9 +1,14 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
+/**
+ * Types and operations specific to animals are stored here.
+ */
 
+#include <array>
 #include <QString>
 #include <QList>
 
+/// An enum representing the total number of available animal types
 enum AnimalType {
     Dog,
     Cat,
@@ -16,15 +21,22 @@ enum AnimalType {
 //    Reptile,
 };
 
+/// A function which returns a list of AnimalType variants
 QList<AnimalType> animal_type_variants();
+
+/// A function which returns a list of a string representations of AnimalType variants
 QList<QString> animal_type_variants_str();
 
+/// An enum representing the possible gender choices for an animal
 enum Gender {
     Male,
     Female,
 };
 
+/// A function which returns a list of Gender variants
 QList<Gender> gender_variants();
+
+/// A function which returns a list of a string representations of Gender variants
 QList<QString> gender_variants_str();
 
 //enum DogBreed {
@@ -37,6 +49,7 @@ QList<QString> gender_variants_str();
 //    Siamese,
 //};
 
+/// Animal entity object
 class Animal
 {
 public:
@@ -74,6 +87,7 @@ public:
 
 
 private:
+    // physical attributes
     QString name;
     AnimalType type;
     QString breed;
@@ -82,6 +96,11 @@ private:
     Gender gender;
     double weight;
     double height;
+
+    // non-physical attributes
+    // corresponds to the values of:
+    // Libido, Aggressiveness, Extroversion, Temper, Obedience, Endurance, Activity, Impulsivity, Distractibility, Adaptability, Regularity, Intelligence
+    std::array<double, 12> npa;
 };
 
 #endif // ANIMAL_H
