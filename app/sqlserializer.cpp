@@ -28,7 +28,7 @@ void SQLSerializer::addAnimal(Animal &animal)
     QSqlQuery query;
     query.prepare(R"(
         INSERT INTO animal
-            (name, type, breed, color, age, sex, weight, height, libido,
+            (name, type, breed, color, age, sex, weight, height, health, libido,
                   aggressiveness, extroversion, temper, obedience, endurance,
                   activeness, impulsivity, distractibility, adaptability, regularity,
                   intelligence, independence, training, cost)
@@ -46,6 +46,7 @@ void SQLSerializer::addAnimal(Animal &animal)
     query.bindValue(":sex", animal.getSexString());
     query.bindValue(":weight", animal.getWeight());
     query.bindValue(":height", animal.getHeight());
+    query.bindValue(":health", animal.getHealth());
 
     query.bindValue(":libido", animal.getNPA(0));
     query.bindValue(":aggressiveness", animal.getNPA(1));
@@ -72,7 +73,7 @@ QList<Animal> SQLSerializer::readAnimals()
     QSqlQuery query;
     query.prepare(R"(
         SELECT
-            name, type, breed, color, age, sex, weight, height, libido,
+            name, type, breed, color, age, sex, weight, height, health, libido,
             aggressiveness, extroversion, temper, obedience, endurance,
             activeness, impulsivity, distractibility, adaptability, regularity,
             intelligence, independence, training, cost
@@ -94,22 +95,23 @@ QList<Animal> SQLSerializer::readAnimals()
         animal.setSexString(query.value(5).toString());
         animal.setWeight(query.value(6).toDouble());
         animal.setHeight(query.value(7).toDouble());
+        animal.setHealth(query.value(8).toDouble());
 
-        animal.setNPA(0, query.value(8).toDouble());
-        animal.setNPA(1, query.value(9).toDouble());
-        animal.setNPA(2, query.value(10).toDouble());
-        animal.setNPA(3, query.value(11).toDouble());
-        animal.setNPA(4, query.value(12).toDouble());
-        animal.setNPA(5, query.value(13).toDouble());
-        animal.setNPA(6, query.value(14).toDouble());
-        animal.setNPA(7, query.value(15).toDouble());
-        animal.setNPA(8, query.value(16).toDouble());
-        animal.setNPA(9, query.value(17).toDouble());
-        animal.setNPA(10, query.value(18).toDouble());
-        animal.setNPA(11, query.value(19).toDouble());
-        animal.setNPA(12, query.value(20).toDouble());
-        animal.setNPA(13, query.value(21).toDouble());
-        animal.setNPA(14, query.value(22).toDouble());
+        animal.setNPA(0, query.value(9).toDouble());
+        animal.setNPA(1, query.value(10).toDouble());
+        animal.setNPA(2, query.value(11).toDouble());
+        animal.setNPA(3, query.value(12).toDouble());
+        animal.setNPA(4, query.value(13).toDouble());
+        animal.setNPA(5, query.value(14).toDouble());
+        animal.setNPA(6, query.value(15).toDouble());
+        animal.setNPA(7, query.value(16).toDouble());
+        animal.setNPA(8, query.value(17).toDouble());
+        animal.setNPA(9, query.value(18).toDouble());
+        animal.setNPA(10, query.value(19).toDouble());
+        animal.setNPA(11, query.value(20).toDouble());
+        animal.setNPA(12, query.value(21).toDouble());
+        animal.setNPA(13, query.value(22).toDouble());
+        animal.setNPA(14, query.value(23).toDouble());
 
         list.push_back(animal);
     }

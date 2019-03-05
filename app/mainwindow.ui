@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>648</width>
+    <width>673</width>
     <height>488</height>
    </rect>
   </property>
@@ -72,7 +72,7 @@
         <item>
          <widget class="QTabWidget" name="mainTabWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="animalTab">
            <attribute name="title">
@@ -82,7 +82,7 @@
             <item>
              <widget class="QStackedWidget" name="animalsStackedWidget">
               <property name="currentIndex">
-               <number>0</number>
+               <number>1</number>
               </property>
               <widget class="QWidget" name="animalViewPage">
                <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -128,8 +128,8 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>530</width>
-                     <height>1367</height>
+                     <width>567</width>
+                     <height>959</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -369,7 +369,7 @@
                        </layout>
                       </item>
                       <item row="8" column="1">
-                       <widget class="QSlider" name="horizontalSlider_25">
+                       <widget class="QSlider" name="animalFormHealthInput">
                         <property name="maximum">
                          <number>4</number>
                         </property>
@@ -917,7 +917,7 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>542</width>
+                     <width>591</width>
                      <height>1308</height>
                     </rect>
                    </property>

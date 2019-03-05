@@ -41,7 +41,7 @@ QList<QString> sex_variants_str();
 class Animal
 {
 public:
-    Animal() : id(0), name(""), type(Dog), breed(""), color(""), age(0), sex(Male), weight(0), height(0) {}
+    Animal() : id(0), name(""), type(Dog), breed(""), color(""), age(0), sex(Male), weight(0), height(0), health(0) {}
 
     int getId() const { return id; }
     void setId(int value) { id = value; }
@@ -77,6 +77,9 @@ public:
     double getHeight() const { return height; }
     void setHeight(double value) { height = value; }
 
+    double getHealth() const { return health; }
+    void setHealth(double value) { health = value; }
+
     double getNPA(int pos) const { return npa[pos]; }
     void setNPA(int pos, double value) { npa[pos] = value; }
 
@@ -92,6 +95,7 @@ private:
     Sex sex;
     double weight;
     double height;
+    double health;
 
     // npa is an array storing non-physical attributes in the following order:
     // 1. Libido

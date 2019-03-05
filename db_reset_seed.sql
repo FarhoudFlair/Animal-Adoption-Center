@@ -9,6 +9,7 @@ CREATE TABLE animal (
     sex TEXT,
     weight REAL, -- in kg
     height REAL, -- in cm
+    health REAL,
 
     libido REAL,
     aggressiveness REAL,
@@ -44,282 +45,282 @@ CREATE TABLE IF NOT EXISTS client (
 );
 
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (0, 'Fuse', 'Horse', 'Paso Fino', 'White', 1.3909446097411058, 'Male', 17.15058061503286, 129.76034183750198, 4, 2, 4, 0, 0, 4, 4, 2, 4, 0, 4, 1, 3, 1, 230341.32994713206);
+    (0, 'Samsung', 'Horse', 'Barb', 'Blue', 14.42170692753551, 'Male', 89.01818564282992, 65.10070096248779, 0, 2, 2, 0, 0, 1, 3, 2, 1, 2, 3, 1, 4, 0, 1, 68480.2818832563);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (1, 'Shadow', 'Hamster', 'Syrian', 'Yellow', 28.164193523482858, 'Female', 177.7632977163363, 79.66175329196562, 1, 4, 3, 2, 0, 2, 2, 4, 3, 1, 3, 4, 1, 1, 377914.2402515966);
+    (1, 'Jazzy', 'Cat', 'Siamese', 'Red', 11.711892652289484, 'Male', 52.066952824443185, 130.9012932491034, 0, 3, 1, 2, 1, 0, 4, 3, 0, 4, 3, 0, 3, 4, 2, 233743.70092518005);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (2, 'Fuse', 'Horse', 'Paso Fino', 'Green', 24.62810723433168, 'Male', 22.991870238795602, 104.27167920308212, 1, 1, 3, 0, 0, 1, 3, 2, 1, 3, 3, 4, 4, 2, 456988.9938202942);
+    (2, 'Gingi', 'Cat', 'Munchkin', 'Red', 13.268015847225495, 'Female', 156.0734743657783, 39.97493243020392, 1, 0, 0, 4, 2, 3, 1, 1, 1, 2, 4, 2, 1, 4, 1, 208805.3684660175);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (3, 'Jon Snow', 'Dog', 'Husky', 'Yellow', 20.26823485961591, 'Female', 107.96483673830227, 18.835191909623674, 4, 3, 0, 2, 4, 3, 2, 4, 3, 3, 2, 4, 0, 0, 173818.18226330064);
+    (3, 'Biscuit', 'Hamster', 'Winter White', 'Gray', 3.193346453747632, 'Male', 20.319695208192442, 174.45187759879968, 2, 0, 0, 4, 2, 4, 0, 1, 4, 4, 4, 0, 1, 1, 0, 311649.5750952711);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (4, 'Tallulah', 'Dog', 'Husky', 'Green', 9.330915845081837, 'Male', 43.56339137622222, 171.06331295615277, 3, 4, 2, 1, 4, 3, 1, 3, 4, 0, 3, 2, 2, 0, 188980.32654102208);
+    (4, 'Wolfie', 'Cat', 'Siamese', 'Yellow', 21.33756022435523, 'Male', 67.9045926002872, 155.43615832359836, 2, 3, 4, 3, 0, 1, 3, 3, 2, 2, 1, 2, 0, 3, 0, 115731.75207327878);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (5, 'Guinness', 'Rabbit', 'American Fuzzy Lop', 'Gray', 1.3796045896968185, 'Male', 144.77126185540098, 10.614866940430945, 4, 0, 4, 4, 4, 4, 2, 1, 2, 1, 0, 3, 4, 2, 253806.03605089692);
+    (5, 'Delilah', 'Bird', 'Cockatiels', 'White', 15.476171022400978, 'Male', 119.68694210043436, 172.72545307033874, 1, 2, 2, 1, 1, 0, 1, 1, 2, 3, 2, 4, 3, 2, 2, 65898.1784778438);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (6, 'Balou', 'Bird', 'African Grey Parrots', 'Gray', 10.740521989956633, 'Male', 41.36577343918084, 14.055073615656125, 0, 3, 2, 3, 0, 2, 2, 2, 1, 1, 4, 1, 0, 1, 150735.92274640166);
+    (6, 'Nugget', 'Horse', 'Paso Fino', 'Green', 18.157649199318826, 'Female', 12.939029855585702, 180.27351675578075, 3, 3, 3, 2, 1, 1, 3, 0, 0, 3, 4, 0, 0, 3, 2, 310974.045004854);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (7, 'Larissa', 'Rabbit', 'Florida White', 'Green', 12.754263585920853, 'Male', 171.6350468210247, 172.06938776870402, 3, 1, 0, 1, 1, 3, 2, 2, 4, 4, 4, 0, 0, 0, 93530.86430466395);
+    (7, 'Mercedes', 'Horse', 'Paso Fino', 'Red', 22.622589962572988, 'Male', 185.8548170495631, 111.70702074899106, 2, 0, 1, 3, 2, 2, 2, 0, 4, 3, 0, 1, 4, 4, 2, 434853.1368492038);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (8, 'Simone', 'Hamster', 'Robo', 'White', 24.900399701063655, 'Male', 128.6095854368464, 17.11510719830452, 0, 3, 1, 0, 3, 1, 3, 1, 0, 4, 1, 0, 1, 1, 300532.89593199675);
+    (8, 'Theo', 'Fish', 'Siamese Fighting Fish', 'White', 19.909772970392112, 'Female', 191.06343236137621, 131.16193745179123, 4, 2, 4, 1, 1, 0, 2, 3, 1, 0, 2, 0, 2, 0, 2, 455218.35785328335);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (9, 'Chandler', 'Bird', 'African Grey Parrots', 'Blue', 1.5556541260733416, 'Male', 33.53451187663706, 87.44956478875908, 3, 4, 3, 2, 1, 3, 0, 4, 0, 2, 1, 0, 1, 1, 473353.6833766809);
+    (9, 'Wednesday', 'Rabbit', 'Florida White', 'Blue', 7.999075008516144, 'Male', 123.51326516290594, 23.20419484595414, 4, 4, 3, 4, 1, 2, 4, 3, 4, 2, 2, 0, 3, 4, 1, 415764.90601787623);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (10, 'Bono', 'Hamster', 'Winter White', 'Black', 13.585348430679131, 'Female', 8.830612204117875, 114.12349253910145, 1, 4, 0, 4, 0, 2, 1, 2, 1, 2, 2, 1, 3, 0, 312414.7067226507);
+    (10, 'Ramona', 'Dog', 'Labrador', 'Gray', 19.63818117805797, 'Female', 105.76160456253697, 176.35933715019226, 3, 1, 3, 3, 3, 3, 1, 3, 3, 0, 4, 3, 1, 0, 2, 313327.1078275041);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (11, 'Tank', 'Horse', 'Paso Fino', 'White', 28.612355147447754, 'Male', 190.8435421376382, 171.96367829721217, 3, 1, 1, 0, 3, 4, 3, 1, 0, 2, 3, 0, 3, 0, 342139.8076237857);
+    (11, 'Molly', 'Cat', 'Siamese', 'Blue', 21.206406323614267, 'Male', 65.36449418599696, 24.02428479935457, 2, 0, 4, 4, 2, 2, 0, 3, 4, 0, 2, 3, 3, 3, 0, 144951.17788394305);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (12, 'Rocky', 'Horse', 'Thoroughbred', 'Green', 25.13962572762462, 'Female', 153.95512477723628, 163.8844181788226, 4, 2, 3, 4, 4, 4, 2, 4, 4, 4, 0, 4, 4, 1, 381922.9412329616);
+    (12, 'Marti', 'Rabbit', 'American Fuzzy Lop', 'White', 4.194936386193917, 'Male', 142.27511513131347, 76.00119342051629, 2, 3, 2, 0, 3, 3, 0, 2, 1, 1, 4, 1, 4, 1, 1, 261023.7517127991);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (13, 'HuckFinn', 'Dog', 'Husky', 'Brown', 2.876172615765886, 'Female', 29.432396161242536, 127.90739485051257, 3, 3, 1, 3, 1, 0, 0, 4, 1, 0, 2, 3, 0, 0, 374940.924432576);
+    (13, 'Foxy', 'Horse', 'Thoroughbred', 'Brown', 8.834448247231489, 'Male', 49.57691591541285, 13.71452454252339, 2, 0, 2, 2, 3, 2, 0, 2, 3, 3, 4, 1, 0, 2, 1, 435843.347595158);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (14, 'Keesha', 'Fish', 'Green Swordtail', 'Spotted', 9.426351590873331, 'Male', 111.54584640587856, 175.6398300280174, 1, 4, 1, 4, 1, 1, 1, 2, 1, 3, 2, 0, 3, 2, 90335.80258351512);
+    (14, 'Acorn', 'Cat', 'Persian', 'Green', 1.989664857078518, 'Female', 189.08582410721283, 118.91870681028858, 1, 1, 2, 0, 0, 3, 3, 0, 2, 0, 4, 0, 4, 0, 2, 310995.1301430597);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (15, 'Nanda', 'Fish', 'Green Swordtail', 'Green', 29.88916983455319, 'Male', 78.89637196354045, 161.66704415551496, 0, 1, 3, 4, 3, 4, 3, 4, 0, 2, 1, 2, 3, 1, 459780.54422633664);
+    (15, 'Bear', 'Fish', 'Siamese Fighting Fish', 'Blue', 23.647674624250563, 'Male', 121.91784099273389, 141.67666487527393, 3, 3, 4, 2, 3, 2, 0, 1, 4, 1, 4, 2, 4, 0, 2, 74133.38799956482);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (16, 'Lola', 'Cat', 'Scottish Fold', 'Spotted', 27.858210214727865, 'Male', 88.11074313146854, 78.43894750316504, 4, 2, 1, 3, 1, 2, 0, 1, 2, 4, 3, 3, 3, 1, 200586.28690624348);
+    (16, 'Mika', 'Horse', 'Paso Fino', 'White', 22.631740253801, 'Male', 153.20526790813642, 158.733596409946, 1, 1, 0, 2, 3, 0, 0, 3, 4, 1, 4, 4, 4, 2, 1, 130472.22032255938);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (17, 'RobinHood', 'Horse', 'Barb', 'Yellow', 29.37249243640406, 'Male', 64.51088926540567, 169.70880330496485, 4, 3, 4, 4, 3, 4, 1, 2, 2, 4, 1, 3, 0, 0, 227819.35537536498);
+    (17, 'Jasmine', 'Bird', 'Cockatoos', 'Blue', 18.902240381421887, 'Female', 39.567554551425886, 19.561473430691922, 2, 2, 1, 0, 1, 4, 0, 3, 0, 1, 0, 4, 1, 0, 2, 262070.9925794774);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (18, 'Margo', 'Fish', 'Goldfish', 'Gray', 2.1609074594835653, 'Female', 85.80891855698745, 72.72197160949554, 4, 3, 2, 2, 0, 3, 3, 4, 4, 1, 2, 4, 0, 2, 196597.09821475027);
+    (18, 'Bodie', 'Fish', 'Siamese Fighting Fish', 'Black', 8.051835088366406, 'Male', 29.180605613778173, 153.3678416048984, 0, 4, 1, 0, 1, 2, 1, 1, 3, 0, 2, 0, 3, 2, 2, 77422.51667039387);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (19, 'Timber', 'Hamster', 'Winter White', 'White', 11.105265483667402, 'Male', 182.2508118399453, 43.60787921860105, 3, 1, 2, 1, 2, 3, 4, 2, 3, 2, 1, 3, 0, 2, 497118.66399261315);
+    (19, 'Luke', 'Fish', 'Goldfish', 'Red', 18.2305149066941, 'Female', 8.13597653569186, 15.340310204702, 2, 2, 0, 2, 4, 2, 2, 1, 1, 3, 3, 2, 4, 0, 2, 129993.83365362679);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (20, 'Mika', 'Rabbit', 'Dwarf Hotot', 'White', 20.219003064395462, 'Female', 44.055432958625225, 88.28065648465177, 2, 2, 2, 4, 0, 1, 2, 2, 0, 0, 4, 0, 3, 1, 372886.21451781894);
+    (20, 'Mister Tiggywinkles', 'Bird', 'Cockatoos', 'Black', 3.9313656870141402, 'Female', 182.06884713290142, 97.58260413378696, 2, 0, 1, 4, 0, 3, 1, 3, 1, 2, 4, 2, 4, 2, 0, 169269.19347075658);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (21, 'Spark', 'Hamster', 'Chinese', 'White', 22.147154221224117, 'Female', 13.149179979546815, 75.2532262265358, 0, 2, 4, 0, 3, 1, 3, 3, 4, 3, 2, 3, 0, 2, 98768.70569563874);
+    (21, 'Arnold', 'Hamster', 'Winter White', 'Green', 4.947491465667406, 'Male', 133.9458252261743, 33.24779087242272, 0, 2, 3, 0, 0, 1, 1, 0, 2, 4, 3, 4, 1, 2, 2, 65612.8478915025);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (22, 'Greystoke', 'Bird', 'Cockatiels', 'Gray', 4.739209158066801, 'Male', 151.1779325990961, 196.10252449486185, 4, 2, 1, 3, 1, 3, 2, 0, 1, 4, 0, 3, 0, 0, 282315.6562022512);
+    (22, 'Balou', 'Dog', 'Husky', 'Black', 15.648670913872598, 'Female', 107.64882428054104, 160.82514199869718, 1, 4, 0, 3, 2, 0, 1, 3, 0, 2, 4, 2, 2, 2, 2, 423460.0657266407);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (23, 'Barney', 'Cat', 'Munchkin', 'Red', 6.435683417104408, 'Female', 24.146055836813236, 120.77682768440577, 3, 2, 4, 3, 1, 1, 2, 3, 4, 1, 3, 2, 1, 2, 133585.31464299426);
+    (23, 'Paddington', 'Fish', 'Green Swordtail', 'Red', 15.792932711413965, 'Male', 87.36877911325745, 65.08977517691544, 3, 0, 4, 1, 2, 1, 1, 2, 2, 4, 0, 4, 3, 2, 0, 133393.54525409883);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (24, 'Iris', 'Rabbit', 'Dwarf Hotot', 'White', 6.238890621055694, 'Female', 60.85274749145468, 75.37003767345075, 2, 1, 0, 2, 3, 2, 2, 0, 3, 3, 2, 1, 3, 1, 395653.2929982549);
+    (24, 'Shane', 'Cat', 'Ragdoll', 'Blue', 20.348957572846118, 'Male', 34.473855026742655, 198.2154826432811, 0, 1, 4, 1, 2, 0, 0, 0, 3, 0, 0, 3, 1, 1, 1, 85085.40551607241);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (25, 'Scotty', 'Fish', 'Goldfish', 'Red', 13.646997491094332, 'Female', 173.1447025485968, 89.52688235885807, 1, 0, 4, 1, 1, 3, 3, 0, 4, 3, 0, 3, 2, 2, 44705.348006451844);
+    (25, 'Nate', 'Hamster', 'Syrian', 'Brown', 1.3278005910941508, 'Female', 176.5149647011191, 26.068827693212526, 4, 0, 1, 3, 0, 3, 3, 2, 3, 0, 2, 4, 1, 0, 1, 94775.0675915845);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (26, 'Sugar', 'Fish', 'Siamese Fighting Fish', 'Gray', 17.04457134968617, 'Male', 87.03051342237265, 165.8257503357702, 2, 2, 3, 1, 3, 4, 4, 3, 1, 1, 3, 1, 1, 1, 397804.3495092518);
+    (26, 'Nico', 'Rabbit', 'American Fuzzy Lop', 'Red', 18.78446474340207, 'Female', 120.86313179803602, 76.74115132762049, 1, 0, 4, 3, 2, 2, 0, 4, 2, 2, 2, 2, 0, 4, 1, 148830.01290492158);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (27, 'Rico', 'Bird', 'Budgerigars', 'White', 22.134026498346422, 'Female', 160.52112858979618, 141.76601584346304, 4, 1, 3, 0, 2, 3, 3, 3, 2, 4, 0, 1, 0, 2, 263289.10323968675);
+    (27, 'HuckFinn', 'Horse', 'Thoroughbred', 'Black', 11.898861703411653, 'Female', 132.7474194671108, 23.046805123717697, 1, 1, 2, 3, 1, 0, 3, 0, 3, 0, 1, 3, 0, 0, 2, 236282.61346695916);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (28, 'Tibbs', 'Rabbit', 'Dutch', 'Brown', 10.904233889202162, 'Male', 180.11447288379074, 184.48148947867026, 3, 1, 3, 4, 4, 0, 4, 4, 2, 4, 1, 1, 2, 2, 15804.85655893423);
+    (28, 'Gibson', 'Hamster', 'Chinese', 'Red', 25.829747150320056, 'Female', 77.41721878929792, 20.367736620749962, 3, 1, 0, 1, 3, 0, 4, 2, 1, 1, 2, 0, 0, 4, 2, 417924.5821740582);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (29, 'Carter', 'Bird', 'Cockatoos', 'Brown', 2.745597272109598, 'Male', 149.5674429266988, 43.49547037054151, 1, 3, 1, 1, 0, 2, 3, 3, 1, 0, 0, 4, 0, 1, 376231.1394057925);
+    (29, 'Balou', 'Dog', 'Husky', 'Gray', 14.56034798528958, 'Female', 180.01513078087098, 141.55458803868575, 0, 3, 1, 0, 4, 3, 2, 0, 3, 0, 4, 2, 3, 1, 0, 57088.011643133206);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (30, 'China', 'Bird', 'Cockatiels', 'Brown', 12.216883246107638, 'Male', 136.56363409530752, 138.00499633349392, 4, 3, 1, 3, 4, 1, 3, 3, 3, 1, 1, 4, 3, 1, 390756.7392567592);
+    (30, 'Fritz', 'Bird', 'Cockatiels', 'White', 23.11963538633673, 'Female', 173.13542235336814, 49.4373060230285, 3, 3, 0, 3, 4, 2, 4, 3, 1, 1, 2, 0, 0, 0, 2, 271329.5406933599);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (31, 'Greystoke', 'Horse', 'Trakehner', 'Red', 24.087136876990115, 'Female', 129.82679639388238, 139.15618420833704, 0, 3, 2, 1, 2, 3, 0, 0, 4, 2, 3, 4, 2, 0, 298947.7301867329);
+    (31, 'Wilbur', 'Bird', 'Cockatiels', 'Black', 7.280728467822954, 'Female', 112.02732307882657, 143.79594875556273, 0, 3, 1, 3, 1, 0, 0, 3, 0, 3, 3, 2, 2, 2, 0, 38071.77485094869);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (32, 'Simon', 'Hamster', 'Syrian', 'Yellow', 6.314609017717328, 'Female', 196.8422205264851, 113.22564096306616, 4, 2, 3, 1, 4, 0, 0, 0, 2, 0, 1, 0, 0, 2, 435723.5753446158);
+    (32, 'Pixie', 'Hamster', 'Chinese', 'Spotted', 3.102095800452696, 'Female', 60.7748248783939, 70.2699846348647, 1, 3, 2, 1, 2, 1, 4, 3, 4, 2, 2, 3, 1, 1, 0, 120924.85368909752);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (33, 'Greystoke', 'Dog', 'German Shepard', 'Black', 21.77481441252118, 'Female', 63.58497332998593, 34.22476970625509, 2, 0, 2, 2, 0, 1, 0, 0, 1, 4, 0, 1, 4, 2, 94876.52977347375);
+    (33, 'Rusty', 'Cat', 'Persian', 'White', 25.89390594469659, 'Female', 167.044799127038, 185.13633965171684, 1, 1, 4, 3, 2, 4, 2, 2, 0, 0, 2, 0, 0, 2, 2, 349085.2200495151);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (34, 'Malble', 'Bird', 'Budgerigars', 'Green', 15.846954465057804, 'Male', 194.6587372830637, 45.102814444352326, 1, 0, 0, 4, 1, 0, 0, 1, 4, 0, 2, 0, 4, 0, 125524.24045593686);
+    (34, 'Bear', 'Dog', 'German Shepard', 'Black', 8.63781830256547, 'Male', 41.61028255505003, 96.59332976249601, 0, 2, 2, 1, 4, 1, 4, 1, 0, 1, 3, 0, 2, 0, 0, 212774.2879336724);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (35, 'Ed', 'Hamster', 'Robo', 'Blue', 13.53974520783516, 'Male', 155.17999871294353, 80.90017824849949, 4, 2, 4, 3, 4, 4, 4, 4, 0, 4, 1, 2, 2, 1, 112894.42065274632);
+    (35, 'Phoenix', 'Hamster', 'Winter White', 'Red', 14.148462808937092, 'Male', 196.02702972702136, 127.13338185426136, 2, 3, 3, 2, 3, 2, 2, 2, 3, 2, 1, 4, 4, 4, 0, 155960.3097405314);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (36, 'Snoopy', 'Hamster', 'Syrian', 'Black', 14.554661782459334, 'Male', 52.524977376862196, 89.5514207933007, 4, 0, 4, 1, 0, 1, 1, 2, 4, 3, 0, 2, 1, 2, 281923.8210469957);
+    (36, 'Landon', 'Horse', 'Barb', 'Black', 28.458079988367125, 'Female', 109.19435885575085, 46.275469250226145, 4, 3, 4, 2, 2, 1, 3, 1, 4, 2, 0, 1, 3, 4, 2, 295874.6902090504);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (37, 'Buddy', 'Cat', 'Munchkin', 'Yellow', 27.73688509358623, 'Male', 37.19749200264271, 128.17310000932133, 0, 2, 0, 2, 3, 1, 1, 1, 4, 1, 0, 3, 3, 0, 126193.16625549096);
+    (37, 'Maya', 'Bird', 'Budgerigars', 'Green', 22.953118675737905, 'Female', 100.06550589640452, 59.20701423024973, 4, 3, 0, 3, 3, 4, 2, 0, 3, 2, 0, 4, 2, 1, 0, 157122.7439775112);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (38, 'Lefty', 'Hamster', 'Robo', 'Brown', 25.01982318702048, 'Male', 174.88155327436, 194.59437793887074, 3, 2, 2, 2, 2, 3, 2, 2, 1, 2, 0, 2, 1, 2, 398277.2591086326);
+    (38, 'Kai', 'Cat', 'Siamese', 'Yellow', 28.746611470959227, 'Male', 98.32416375719298, 179.2733583329063, 2, 4, 0, 4, 0, 2, 4, 1, 3, 1, 2, 2, 1, 1, 2, 382340.6451137458);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (39, 'Sophie', 'Dog', 'Labrador', 'Red', 8.258864540222365, 'Male', 199.16570199417893, 60.54183340054041, 2, 2, 1, 1, 0, 0, 2, 1, 0, 0, 1, 0, 2, 0, 228543.16437183783);
+    (39, 'Donovan', 'Rabbit', 'Florida White', 'Blue', 19.411732208402988, 'Female', 142.89256125929106, 40.00250331701767, 0, 4, 3, 3, 1, 2, 4, 4, 4, 1, 1, 2, 1, 0, 0, 260181.38385727257);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (40, 'Harry', 'Cat', 'Munchkin', 'Blue', 13.934058859832728, 'Female', 41.944746459548064, 88.82021059666131, 2, 1, 4, 3, 1, 0, 0, 3, 1, 2, 1, 0, 3, 2, 331203.81891541876);
+    (40, 'Cessa', 'Rabbit', 'Britannia Petite', 'Spotted', 18.818844802293302, 'Female', 121.15194459593914, 77.06478180163336, 4, 0, 4, 1, 3, 3, 4, 3, 3, 0, 1, 2, 2, 0, 0, 427013.81346064643);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (41, 'Mitzi', 'Dog', 'Husky', 'Gray', 7.118005783484291, 'Male', 79.46286638040718, 125.17619749296912, 4, 1, 0, 2, 4, 4, 4, 2, 3, 1, 1, 3, 0, 2, 382807.59448181256);
+    (41, 'Laguna', 'Rabbit', 'Britannia Petite', 'Black', 0.7981059762516457, 'Male', 135.9179564570697, 42.41620835910571, 3, 0, 2, 0, 2, 2, 2, 2, 1, 3, 1, 1, 2, 1, 2, 128309.26129826892);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (42, 'Snooky', 'Rabbit', 'Florida White', 'Blue', 18.590917492788044, 'Male', 29.57511058362814, 95.78977094350682, 1, 0, 3, 1, 0, 3, 2, 0, 1, 1, 4, 2, 2, 0, 184867.79314758125);
+    (42, 'Kingston', 'Rabbit', 'Florida White', 'Brown', 23.664959806558187, 'Male', 126.91538733845373, 147.8550485831803, 2, 1, 3, 0, 2, 0, 2, 0, 2, 4, 3, 1, 0, 3, 1, 178332.37647743666);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (43, 'Bella', 'Horse', 'Thoroughbred', 'Brown', 6.886971527103139, 'Male', 49.056127628259, 94.61311501953993, 2, 1, 1, 2, 1, 2, 2, 1, 2, 0, 1, 4, 3, 0, 207959.08329588172);
+    (43, 'Kaly', 'Rabbit', 'Florida White', 'Yellow', 15.606567007871035, 'Female', 123.78872716638638, 33.26950753632632, 3, 3, 2, 3, 0, 1, 4, 2, 2, 1, 2, 0, 2, 2, 0, 366382.54309420055);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (44, 'China', 'Horse', 'Trakehner', 'Brown', 23.526506632459704, 'Male', 147.14371095167036, 173.10929186355264, 0, 4, 4, 2, 4, 3, 3, 4, 3, 2, 1, 1, 2, 2, 101913.60480285561);
+    (44, 'Potter', 'Dog', 'German Shepard', 'Yellow', 5.300564417235258, 'Female', 76.4451113753324, 105.67814753638172, 0, 0, 4, 2, 3, 2, 1, 2, 0, 1, 2, 2, 2, 4, 2, 231097.56616929203);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (45, 'Logan', 'Horse', 'Trakehner', 'Spotted', 26.599140608736633, 'Male', 191.19645326115239, 54.52944621730762, 3, 3, 4, 2, 0, 0, 4, 2, 1, 4, 3, 4, 1, 0, 261114.31786949543);
+    (45, 'Mitzi', 'Hamster', 'Winter White', 'Spotted', 6.029288152739404, 'Male', 125.11096123870338, 27.65156815202783, 4, 2, 2, 0, 3, 2, 4, 4, 0, 1, 2, 3, 3, 4, 1, 162570.2747841397);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (46, 'Monkey', 'Fish', 'Goldfish', 'Gray', 6.887329463719584, 'Male', 162.46908906181017, 168.95621826884783, 3, 4, 3, 2, 4, 1, 1, 0, 1, 3, 3, 4, 3, 0, 459794.34617402335);
+    (46, 'Jeeves', 'Cat', 'Siamese', 'Brown', 10.906990301673623, 'Female', 156.99838522292202, 151.2106004389151, 2, 2, 4, 4, 1, 4, 2, 3, 0, 2, 1, 3, 1, 4, 2, 355671.0970781689);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (47, 'Tangerine', 'Cat', 'Scottish Fold', 'Yellow', 2.56676954069223, 'Female', 21.133143654112335, 98.75867410773527, 2, 1, 0, 3, 2, 0, 3, 0, 4, 3, 3, 1, 2, 0, 306643.17783794116);
+    (47, 'Bagel', 'Bird', 'Budgerigars', 'Yellow', 19.310871524474386, 'Female', 138.32325676661378, 151.72545284224063, 3, 4, 4, 2, 2, 1, 1, 2, 3, 1, 2, 1, 3, 4, 2, 149915.18779303657);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (48, 'Logan', 'Bird', 'Cockatiels', 'Brown', 3.2880267534751626, 'Female', 116.17490284157111, 142.91789569899032, 3, 1, 4, 3, 2, 0, 0, 3, 1, 0, 0, 3, 1, 0, 258422.89931538547);
+    (48, 'Biscuit', 'Rabbit', 'Britannia Petite', 'Brown', 23.81006240048308, 'Male', 70.8525571852717, 14.046829330203856, 1, 1, 1, 0, 0, 1, 4, 1, 4, 2, 0, 3, 2, 1, 0, 109585.42323650207);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (49, 'Skitty', 'Dog', 'Husky', 'Red', 5.398708029335564, 'Male', 67.90831106260701, 171.80614738325332, 1, 4, 0, 0, 2, 2, 3, 2, 3, 0, 3, 0, 4, 2, 164291.08613056169);
+    (49, 'Landon', 'Hamster', 'Chinese', 'Black', 29.209774797043977, 'Male', 124.56022287972833, 66.42741070863596, 3, 0, 2, 1, 3, 0, 1, 3, 4, 0, 0, 0, 0, 2, 0, 166482.26965168145);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (50, 'Holly', 'Fish', 'Siamese Fighting Fish', 'Brown', 18.586313833797927, 'Male', 174.42156779754092, 64.13884698904008, 1, 3, 2, 4, 1, 3, 1, 2, 2, 1, 4, 4, 3, 1, 218407.72950883696);
+    (50, 'Luna', 'Rabbit', 'Dwarf Hotot', 'Spotted', 27.369106817694625, 'Male', 144.018548330382, 69.3342971911169, 2, 3, 3, 4, 0, 2, 3, 4, 1, 0, 1, 4, 1, 4, 2, 4192.492005731412);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Mischa', '577-363-4184', '2 32nd St, Ottawa, ON, Canada', 'YohuA@gmail.com', 2, 0, 2, 73.4124646266724, 195174.79736533182, 50);
+    ('Persia', '665-508-3288', '26 Bank Cres, Nepean, ON, Canada', 'FwuEX@gmail.com', 1, 0, 2, 53.55471894674818, 118074.70746749007, 50);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (51, 'Tucke', 'Fish', 'Siamese Fighting Fish', 'Brown', 14.163987113761028, 'Female', 54.20451071764342, 120.84460016011411, 2, 3, 0, 0, 0, 0, 3, 0, 4, 1, 1, 0, 1, 0, 147621.10966180442);
+    (51, 'Sophie', 'Cat', 'Persian', 'Red', 22.93982248606232, 'Male', 163.76999697061765, 175.60275330992638, 1, 0, 1, 1, 1, 0, 1, 4, 3, 0, 2, 4, 4, 0, 0, 403594.389962537);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Paulie', '754-585-4243', '1 Woodridge St, Montreal, ON, Canada', 'iwfnM@gmail.com', 2, 1, 4, 61.89076550900493, 126989.67274333928, 51);
+    ('Kassie', '570-364-2484', '18 5th Rd, Nepean, ON, Canada', 'aAlRL@gmail.com', 1, 4, 2, 57.98133852994853, 302106.15945287485, 51);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (52, 'HuckFinn', 'Fish', 'Goldfish', 'Spotted', 14.329184031879317, 'Male', 62.980548359391534, 102.92894959962447, 4, 3, 4, 4, 3, 2, 0, 3, 2, 0, 0, 0, 1, 1, 85472.52818793182);
+    (52, 'Bella', 'Hamster', 'Syrian', 'Spotted', 24.095715825697784, 'Female', 61.903833111105214, 96.50241012587068, 2, 3, 3, 2, 2, 2, 0, 3, 4, 4, 1, 3, 0, 2, 2, 105680.41481464052);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Beck', '867-621-459', '7 Woodridge Ave, Ottawa, ON, Canada', 'nseea@gmail.com', 0, 2, 3, 63.21282245172703, 225862.9637796985, 52);
+    ('Jazzy', '792-680-2854', '1 32nd St, Montreal, ON, Canada', 'FKZTl@gmail.com', 1, 2, 3, 41.831648692109596, 33515.41453885108, 52);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (53, 'Owen', 'Dog', 'Labrador', 'Yellow', 19.989972320799907, 'Male', 38.46504163413449, 142.68939678691444, 2, 4, 4, 2, 0, 0, 2, 0, 3, 0, 1, 3, 3, 1, 372748.4265020693);
+    (53, 'Samsung', 'Fish', 'Goldfish', 'Spotted', 13.888692629773363, 'Female', 122.58460170330818, 45.686536783615146, 3, 1, 0, 1, 0, 1, 4, 3, 3, 3, 3, 3, 0, 1, 2, 86295.18535058305);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Oliver', '789-850-8767', '2 Bank Rd, Nepean, ON, Canada', 'SsYoF@gmail.com', 3, 3, 2, 67.32929410362809, 178578.94142906572, 53);
+    ('Spot', '582-994-2352', '45 Bank St, Cornwall, ON, Canada', 'ncDho@gmail.com', 3, 1, 3, 26.60235053762281, 296504.59463859035, 53);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (54, 'Buddy', 'Fish', 'Goldfish', 'Blue', 10.35967329092036, 'Male', 128.25987408275705, 170.99931074537798, 4, 1, 0, 1, 3, 4, 1, 3, 1, 0, 0, 0, 2, 1, 264721.09994109697);
+    (54, 'Keanna', 'Bird', 'Cockatoos', 'Gray', 27.010236821912095, 'Male', 191.12427352162462, 97.44103416508392, 1, 0, 3, 2, 3, 0, 4, 4, 3, 4, 4, 1, 4, 0, 2, 34364.83687072393);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Ed', '500-490-280', '48 Paterson St, Montreal, ON, Canada', 'MUBwT@gmail.com', 3, 0, 2, 55.91293926580951, 151151.1482391898, 54);
+    ('Syrah', '489-420-260', '15 Queen St, Ottawa, ON, Canada', 'tAjZz@gmail.com', 4, 1, 4, 28.047965911244372, 130763.44613663248, 54);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (55, 'Bella', 'Horse', 'Trakehner', 'Yellow', 15.477680003145338, 'Female', 120.38140856971697, 132.25646476512395, 1, 1, 0, 1, 4, 4, 1, 4, 4, 4, 1, 2, 3, 2, 191767.99153681085);
+    (55, 'Buffy', 'Hamster', 'Winter White', 'Black', 6.877965225323913, 'Male', 154.99371656962006, 108.20939317294221, 4, 4, 0, 4, 1, 4, 4, 0, 4, 3, 0, 2, 0, 4, 1, 38992.14373341064);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Fiona', '228-723-7729', '29 5th St, Ottawa, ON, Canada', 'fnLEn@gmail.com', 1, 4, 2, 73.83331061897525, 189414.52203794374, 55);
+    ('Hudson', '942-690-3780', '11 5th Rd, Toronto, ON, Canada', 'lJGBj@gmail.com', 0, 4, 3, 63.87032855915892, 70855.42392076022, 55);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (56, 'Tallulah', 'Fish', 'Green Swordtail', 'Red', 1.6968656289378974, 'Female', 137.98626424883568, 105.52663985758308, 1, 1, 0, 0, 0, 0, 4, 3, 0, 4, 2, 0, 0, 2, 225753.87999567774);
+    (56, 'Graysen', 'Cat', 'Persian', 'Brown', 15.268672984995408, 'Male', 141.36813724280094, 44.062617854691545, 3, 0, 4, 1, 4, 1, 1, 3, 2, 1, 4, 4, 1, 0, 1, 303859.5537224876);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Olive', '684-227-1247', '38 32nd Rd, Nepean, ON, Canada', 'rozyk@gmail.com', 3, 0, 4, 27.755277556360372, 397762.65492570365, 56);
+    ('Redford', '985-731-7913', '38 Queen Ave, Toronto, ON, Canada', 'bXMHF@gmail.com', 3, 1, 4, 19.649705513366015, 470899.2868818203, 56);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (57, 'HuckFinn', 'Dog', 'Husky', 'White', 24.43183031728131, 'Male', 142.89507743458933, 186.12045964020075, 4, 2, 3, 2, 3, 2, 4, 3, 1, 4, 3, 2, 0, 0, 225778.61440024135);
+    (57, 'Merlot', 'Bird', 'Budgerigars', 'Blue', 5.373340003942291, 'Female', 144.4126280885662, 178.16878914780742, 1, 4, 1, 2, 3, 0, 4, 0, 3, 3, 1, 4, 4, 3, 0, 433119.8105130932);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Potter', '962-759-6989', '12 54th St, Toronto, ON, Canada', 'kkRpv@gmail.com', 2, 0, 1, 49.388994392712945, 233604.37969527795, 57);
+    ('Nanda', '278-740-8790', '8 32nd St, Toronto, ON, Canada', 'XMGvX@gmail.com', 0, 0, 1, 28.713944353785916, 250151.05050766037, 57);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (58, 'Acorn', 'Hamster', 'Syrian', 'Spotted', 3.7373260145004856, 'Female', 72.74959381447297, 132.96645675868865, 4, 3, 2, 3, 2, 0, 2, 0, 0, 4, 0, 4, 1, 1, 355355.94433888106);
+    (58, 'Holly', 'Hamster', 'Winter White', 'Red', 17.019063291492266, 'Female', 151.91443949400391, 59.091212970754945, 2, 2, 1, 0, 3, 0, 0, 2, 1, 2, 1, 3, 2, 3, 0, 233579.74459015537);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Kaya', '540-312-9985', '47 Bank Cres, Ottawa, ON, Canada', 'OQmTK@gmail.com', 2, 0, 2, 59.78157239191442, 269543.95751047204, 58);
+    ('Mooshie', '867-911-2281', '25 32nd Ave, Montreal, ON, Canada', 'rAqbn@gmail.com', 4, 0, 0, 23.569817547173244, 132952.9562804355, 58);
 INSERT OR IGNORE INTO animal
-    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
+    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (59, 'Dallas', 'Rabbit', 'American Fuzzy Lop', 'Yellow', 27.56656652532264, 'Female', 157.3913155349622, 10.994452770471163, 1, 4, 2, 2, 0, 2, 2, 0, 2, 3, 2, 2, 2, 1, 435221.4842259783);
+    (59, 'Willow', 'Cat', 'Munchkin', 'Red', 14.25237780143975, 'Male', 89.03585152781342, 96.03485284041093, 3, 3, 1, 1, 0, 4, 4, 4, 2, 0, 2, 3, 0, 4, 1, 455796.263200996);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Rocky', '114-570-8387', '3 Paterson St, Nepean, ON, Canada', 'pMBCZ@gmail.com', 3, 4, 2, 57.93482673991717, 372158.7392585971, 59);
+    ('Lilypie', '324-503-1153', '8 Bank Rd, Montreal, ON, Canada', 'JBpJA@gmail.com', 1, 1, 4, 68.57723070590608, 201403.12364806118, 59);

@@ -106,6 +106,7 @@ void MainWindow::resetAnimalForm()
     this->ui->animalFormSexInput->setEnabled(true);
     this->ui->animalFormWeightInput->setEnabled(true);
     this->ui->animalFormHeightInput->setEnabled(true);
+    this->ui->animalFormHealthInput->setEnabled(true);
 
     this->ui->animalFormLibidoInput->setEnabled(true);
     this->ui->animalFormAggressivenessInput->setEnabled(true);
@@ -140,6 +141,12 @@ void MainWindow::resetClientForm()
     this->ui->clientFormAddressInput->setText("");
     this->ui->clientFormEmailInput->setText("");
 
+    this->ui->clientFormPatienceInput->setValue(0);
+    this->ui->clientFormExperienceInput->setValue(0);
+    this->ui->clientFormActivenessInput->setValue(0);
+    this->ui->clientFormAgeInput->setValue(18);
+    this->ui->clientFormIncomeInput->setValue(0);
+
     this->ui->clientFormPrefLibidoInput->setValue(0);
     this->ui->clientFormPrefAggressivenessInput->setValue(0);
     this->ui->clientFormPrefExtroversionInput->setValue(0);
@@ -160,22 +167,26 @@ void MainWindow::resetClientForm()
     this->ui->clientFormPhoneNumberInput->setEnabled(true);
     this->ui->clientFormAddressInput->setEnabled(true);
     this->ui->clientFormEmailInput->setEnabled(true);
+    // TODO: reset state of client attributes when saving
 
-    this->ui->clientFormPrefLibidoInput->setEnabled(true);
-    this->ui->clientFormPrefAggressivenessInput->setEnabled(true);
-    this->ui->clientFormPrefExtroversionInput->setEnabled(true);
-    this->ui->clientFormPrefTemperInput->setEnabled(true);
-    this->ui->clientFormPrefObedienceInput->setEnabled(true);
-    this->ui->clientFormPrefEnduranceInput->setEnabled(true);
-    this->ui->clientFormPrefActivenessInput->setEnabled(true);
-    this->ui->clientFormPrefImpulsivityInput->setEnabled(true);
-    this->ui->clientFormPrefDistractibilityInput->setEnabled(true);
-    this->ui->clientFormPrefAdaptabilityInput->setEnabled(true);
-    this->ui->clientFormPrefRegularityInput->setEnabled(true);
-    this->ui->clientFormPrefIntelligenceInput->setEnabled(true);
-    this->ui->clientFormPrefIndependenceInput->setEnabled(true);
-    this->ui->clientFormPrefTrainingInput->setEnabled(true);
-    this->ui->clientFormPrefCostInput->setEnabled(true);
+    // TODO: reset state properly when actually saving npa matching prefs
+//    this->ui->clientFormPrefLibidoInput->setEnabled(true);
+//    this->ui->clientFormPrefAggressivenessInput->setEnabled(true);
+//    this->ui->clientFormPrefExtroversionInput->setEnabled(true);
+//    this->ui->clientFormPrefTemperInput->setEnabled(true);
+//    this->ui->clientFormPrefObedienceInput->setEnabled(true);
+//    this->ui->clientFormPrefEnduranceInput->setEnabled(true);
+//    this->ui->clientFormPrefActivenessInput->setEnabled(true);
+//    this->ui->clientFormPrefImpulsivityInput->setEnabled(true);
+//    this->ui->clientFormPrefDistractibilityInput->setEnabled(true);
+//    this->ui->clientFormPrefAdaptabilityInput->setEnabled(true);
+//    this->ui->clientFormPrefRegularityInput->setEnabled(true);
+//    this->ui->clientFormPrefIntelligenceInput->setEnabled(true);
+//    this->ui->clientFormPrefIndependenceInput->setEnabled(true);
+//    this->ui->clientFormPrefTrainingInput->setEnabled(true);
+//    this->ui->clientFormPrefCostInput->setEnabled(true);
+    this->ui->clientFormSaveButton->setEnabled(true);
+    this->ui->clientFormCancelButton->setEnabled(true);
 }
 
 void MainWindow::on_loginAsClientButton_clicked()
@@ -266,6 +277,7 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormSexInput->setEnabled(false);
     this->ui->animalFormWeightInput->setEnabled(false);
     this->ui->animalFormHeightInput->setEnabled(false);
+    this->ui->animalFormHealthInput->setEnabled(false);
     this->ui->animalFormLibidoInput->setEnabled(false);
     this->ui->animalFormAggressivenessInput->setEnabled(false);
     this->ui->animalFormExtroversionInput->setEnabled(false);
@@ -279,6 +291,7 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormRegularityInput->setEnabled(false);
     this->ui->animalFormIntelligenceInput->setEnabled(false);
     this->ui->animalFormIndependenceInput->setEnabled(false);
+    this->ui->animalFormTrainingInput->setEnabled(false);
     this->ui->animalFormCostInput->setEnabled(false);
     this->ui->animalFormSaveButton->setEnabled(false);
     // }
@@ -292,6 +305,7 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormSexInput->setCurrentText(a.getSexString());
     this->ui->animalFormWeightInput->setValue(a.getWeight());
     this->ui->animalFormHeightInput->setValue(a.getHeight());
+    this->ui->animalFormHealthInput->setValue(a.getHealth());
 
     this->ui->animalFormLibidoInput->setValue(a.getNPA(0));
     this->ui->animalFormAggressivenessInput->setValue(a.getNPA(1));
@@ -333,6 +347,7 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
     this->ui->clientFormPrefIndependenceInput->setEnabled(false);
     this->ui->clientFormPrefTrainingInput->setEnabled(false);
     this->ui->clientFormPrefCostInput->setEnabled(false);
+    this->ui->clientFormSaveButton->setEnabled(false);
 
     Client c = this->clients[index.row()];
     this->ui->clientFormNameInput->setText(c.getName());
@@ -359,6 +374,8 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormRegularityInput->setValue(c.getPreferredAnimal().getNPA(10));
     this->ui->animalFormIntelligenceInput->setValue(c.getPreferredAnimal().getNPA(11));
     this->ui->animalFormIndependenceInput->setValue(c.getPreferredAnimal().getNPA(12));
+    this->ui->animalFormTrainingInput->setValue(c.getPreferredAnimal().getNPA(13));
+    this->ui->animalFormCostInput->setValue(c.getPreferredAnimal().getNPA(14));
 
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }

@@ -27,9 +27,9 @@ cities = ['Ottawa', 'Nepean', 'Cornwall', 'Toronto', 'Montreal']
 def insert_animal(f, aid=None):
     t = choice(types)
     print('INSERT OR IGNORE INTO animal', file=f)
-    print('    (id, name, type, breed, color, age, sex, weight, height, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)', file=f)
+    print('    (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)', file=f)
     print('VALUES', file=f)
-    print("    ({}, '{}', '{}', '{}', '{}', {}, '{}', {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {});".format(
+    print("    ({}, '{}', '{}', '{}', '{}', {}, '{}', {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {});".format(
         aid,
         choice(names),
         t,
@@ -39,6 +39,7 @@ def insert_animal(f, aid=None):
         choice(sexes),
         uniform(5, 200),
         uniform(5, 200),
+        choice(range(5)),
         *choices(range(5), k=13),
         choice(range(3)),
         uniform(50, 500000),
