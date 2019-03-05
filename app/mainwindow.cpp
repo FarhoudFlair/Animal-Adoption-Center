@@ -202,6 +202,7 @@ void MainWindow::on_loginAsStaffButton_clicked()
 
 void MainWindow::on_addAnimalButton_clicked()
 {
+    this->resetAnimalForm();
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
 }
 
@@ -359,7 +360,7 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormIntelligenceInput->setValue(c.getPreferredAnimal().getNPA(11));
     this->ui->animalFormIndependenceInput->setValue(c.getPreferredAnimal().getNPA(12));
 
-    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
+    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }
 
 void MainWindow::on_editAnimalButton_clicked()
@@ -411,11 +412,11 @@ void MainWindow::on_clientFormSaveButton_clicked()
 void MainWindow::on_clientFormCancelButton_clicked()
 {
     this->resetClientForm();
-    
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
 }
 
 void MainWindow::on_addClientButton_clicked()
 {
+    this->resetClientForm();
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }
