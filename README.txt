@@ -1,12 +1,11 @@
-COMP3004 cuACS Deliverable #1
-Due February 12, 2019
+COMP3004 cuACS Deliverable #2
+Due March 5, 2019
 
-A-Team:
+Team 006, A-Team:
 
 Farhoud Talebi - Team Leader - 100965969
 Lewis Yu                     - 100952460
 Bence Meszaros               - 100833054
-Simon Roy-Halverson          - 100985755
 
 Purpose:
 
@@ -23,14 +22,18 @@ Launching command:
 
 Program Instruction:
 
-    For deliverable #1, we have implemented functionality for:
-        Viewing Animals
-        Adding Animals
+    For deliverable #2, we have implemented functionality for:
+        View all animals (as staff or client)
+        Add animal
+        View all clients
+        Add client
 
-    Once application is launched, the user will be able to log in as client or staff.
+    Once application is launched, the user will be able to log in as client or staff. The user must select a client, then click "Login as Client" to login as that client.
 
-    Once logged in as client, the user is able to view the list of 5 animals we loaded in.
+    As a client, the user is able to view the list of 50 animals.
 
-    Once logged in as staff, the user is able to both view the list of animals and add new Animals.
+    As a staff member, the user is able to both view the list of animals and add new animals.
 
-    Application can be closed by clicking the "X" button.
+    As a client, to view the details of a particular client, simply double click the client within the list of clients.
+
+    As either a client or a staff member, to view the details of a particular animal, double click an animal on the list of animals.

@@ -14,11 +14,9 @@ enum AnimalType {
     Cat,
     Horse,
     Rabbit,
-//    GuinePig,
-//    Hamster,
-//    Bird,
-//    Fish,
-//    Reptile,
+    Hamster,
+    Bird,
+    Fish,
 };
 
 /// A function which returns a list of AnimalType variants
@@ -27,33 +25,30 @@ QList<AnimalType> animal_type_variants();
 /// A function which returns a list of a string representations of AnimalType variants
 QList<QString> animal_type_variants_str();
 
-/// An enum representing the possible gender choices for an animal
-enum Gender {
+/// An enum representing the possible sex choices for an animal
+enum Sex {
     Male,
     Female,
 };
 
-/// A function which returns a list of Gender variants
-QList<Gender> gender_variants();
+/// A function which returns a list of Sex variants
+QList<Sex> sex_variants();
 
-/// A function which returns a list of a string representations of Gender variants
-QList<QString> gender_variants_str();
-
-//enum DogBreed {
-//    Labrador,
-//    Husky,
-//};
-//enum CatBreed {
-//    MaineCoon,
-//    Persian,
-//    Siamese,
-//};
+/// A function which returns a list of a string representations of Sex variants
+QList<QString> sex_variants_str();
 
 /// Animal entity object
 class Animal
 {
 public:
-    Animal() : name(""), type(Dog), breed(""), color(""), age(0), gender(Male), weight(0), height(0) {}
+    Animal() : id(0), name(""), type(Dog), breed(""), color(""), age(0), sex(Male), weight(0), height(0) {}
+
+    int getId() const { return id; }
+    void setId(int value) { id = value; }
+
+    // standard getters/setters
+    QString getName() const { return name; }
+    void setName(const QString &value) { name = value; }
 
     AnimalType getType() const { return type; }
     void setType(const AnimalType &value) { type = value; }
@@ -70,11 +65,11 @@ public:
     double getAge() const { return age; }
     void setAge(const double &value) { age = value; }
 
-    Gender getGender() const { return gender; }
-    void setGender(const Gender &value) { gender = value; }
+    Sex getSex() const { return sex; }
+    void setSex(const Sex &value) { sex = value; }
 
-    QString getGenderString() const;
-    void setGenderString(const QString &value);
+    QString getSexString() const;
+    void setSexString(const QString &value);
 
     double getWeight() const { return weight; }
     void setWeight(double value) { weight = value; }
@@ -82,25 +77,37 @@ public:
     double getHeight() const { return height; }
     void setHeight(double value) { height = value; }
 
-    QString getName() const { return name; }
-    void setName(const QString &value) { name = value; }
-
+    double getNPA(int pos) const { return npa[pos]; }
+    void setNPA(int pos, double value) { npa[pos] = value; }
 
 private:
-    // physical attributes
+    int id;
     QString name;
+
+    // physical attributes
     AnimalType type;
     QString breed;
     QString color;
     double age;
-    Gender gender;
+    Sex sex;
     double weight;
     double height;
 
-    // non-physical attributes
-    // corresponds to the values of:
-    // Libido, Aggressiveness, Extroversion, Temper, Obedience, Endurance, Activity, Impulsivity, Distractibility, Adaptability, Regularity, Intelligence
-    std::array<double, 12> npa;
+    // npa is an array storing non-physical attributes in the following order:
+    // 1. Libido
+    // 2. Aggressiveness
+    // 3. Extroversion
+    // 4. Temper
+    // 5. Obedience
+    // 6. Endurance
+    // 7. Activity
+    // 8. Impulsivity
+    // 9. Distractibility
+    // 10. Adaptability
+    // 11. Regularity
+    // 12. Intelligence
+    // 13. Independence
+    std::array<double, 15> npa;
 };
 
 #endif // ANIMAL_H

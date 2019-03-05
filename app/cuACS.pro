@@ -26,12 +26,18 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     animal.cpp \
-    sqlserializer.cpp
+    sqlserializer.cpp \
+    client.cpp \
+    user.cpp \
+    staff.cpp
 
 HEADERS += \
         mainwindow.h \
     animal.h \
-    sqlserializer.h
+    sqlserializer.h \
+    client.h \
+    user.h \
+    staff.h
 
 FORMS += \
         mainwindow.ui

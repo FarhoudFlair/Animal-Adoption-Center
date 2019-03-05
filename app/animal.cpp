@@ -2,20 +2,20 @@
 
 QList<AnimalType> animal_type_variants()
 {
-    return {Dog, Cat, Horse, Rabbit};
+    return {Dog, Cat, Horse, Rabbit, Hamster, Bird, Fish};
 }
 
 QList<QString> animal_type_variants_str()
 {
-    return {"Dog", "Cat", "Horse", "Rabbit"};
+    return {"Dog", "Cat", "Horse", "Rabbit", "Hamster", "Bird", "Fish"};
 }
 
-QList<Gender> gender_variants()
+QList<Sex> sex_variants()
 {
     return {Male, Female};
 }
 
-QList<QString> gender_variants_str()
+QList<QString> sex_variants_str()
 {
     return {"Male", "Female"};
 }
@@ -50,29 +50,29 @@ void Animal::setTypeString(const QString &value)
     }
 }
 
-QString Animal::getGenderString() const
+QString Animal::getSexString() const
 {
-    auto variants = gender_variants();
-    auto variants_str = gender_variants_str();
-    ptrdiff_t pos = variants.indexOf(gender);
+    auto variants = sex_variants();
+    auto variants_str = sex_variants_str();
+    ptrdiff_t pos = variants.indexOf(sex);
     if (pos >= 0 && variants.size() == variants_str.size())
     {
         return variants_str[pos];
     }
     else
     {
-        throw QString("Stored Gender not a proper variant: %1").arg(gender);
+        throw QString("Stored Sex not a proper variant: %1").arg(sex);
     }
 }
 
-void Animal::setGenderString(const QString &value)
+void Animal::setSexString(const QString &value)
 {
-    auto variants = gender_variants();
-    auto variants_str = gender_variants_str();
+    auto variants = sex_variants();
+    auto variants_str = sex_variants_str();
     ptrdiff_t pos = variants_str.indexOf(value);
     if (pos >= 0 && variants.size() == variants_str.size())
     {
-        gender = variants[pos];
+        sex = variants[pos];
     }
     else
     {
