@@ -54,7 +54,7 @@ def insert_client(f, aid):
         name,
         randint(0, 999), randint(0, 999), randint(0, 9999),
         randint(1, 50), choice(places), choice(place_types), choice(cities),
-        name, choice(names),
+        name.lower(), choice(names).lower(),
         *choices(range(5), k=3),
         uniform(18, 80),
         uniform(20000, 500000),

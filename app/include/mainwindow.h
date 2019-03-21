@@ -23,8 +23,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void resetAnimalForm();
-    void resetClientForm();
+    void setAnimalForm(bool = true);
+    void setAnimalForm(Animal &, bool = true);
+    Animal animalFromForm();
+
+    void setClientForm(bool = true);
+    void setClientForm(Client &, bool = true);
+    Client clientFromForm();
 
 private slots:
     void on_loginAsClientButton_clicked();

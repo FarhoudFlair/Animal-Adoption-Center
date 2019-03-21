@@ -18,7 +18,7 @@ QVariant ClientListModel::data(const QModelIndex &index, int role) const {
 
     if (role == Qt::DisplayRole) {
         const Client &c = this->client_list[index.row()];
-        return QVariant(QString("%1 (%2)").arg(c.getName()).arg(c.getEmail()));
+        return QString("%1 (%2)").arg(c.getName()).arg(c.getEmail());
     }
 
     return QVariant();
@@ -34,6 +34,8 @@ QList<Client> &ClientListModel::getList() {
 
 void ClientListModel::setList(QList<Client> &&client_list) {
     this->client_list = client_list;
+
+    emit dataChanged(createIndex(0, 0), createIndex(client_list.size() - 1, 0));
 }
 
 Client &ClientListModel::getElement(int index) {

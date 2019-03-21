@@ -12,9 +12,12 @@
 class Client: public User
 {
 public:
-    Client() : id(0), name(""), phone_number(""), address(""), email(""), patience(0), experience(0), activeness(0), age(0), income(0), regularity(0), preferred_animal() {}
+    Client() : id(-1), name(""), phone_number(""), address(""), email(""), patience(0), experience(0), activeness(0), age(18), income(0), regularity(0), preferred_animal() {}
 
     virtual bool isStaff();
+
+    double getId() const { return id; }
+    void setId(const int value) { id = value; }
 
     // standard getters/setters
     QString getName() const { return name; }
@@ -51,7 +54,7 @@ public:
     void setPreferredAnimal(const Animal &value) { preferred_animal = value; }
 
 private:
-    int id; // TODO: use id for edit feature
+    int id;
 
     QString name;
     QString phone_number;

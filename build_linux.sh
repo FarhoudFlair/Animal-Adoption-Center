@@ -8,4 +8,4 @@ cd ./build
 
 cp ../app/cuACS.db ./
 qmake -spec linux-g++ ../app/cuACS.pro CONFIG+=debug CONFIG+=x86_64
-make all
+make -j2 all

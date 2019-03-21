@@ -41,7 +41,7 @@ QList<QString> sex_variants_str();
 class Animal
 {
 public:
-    Animal() : id(0), name(""), type(Dog), breed(""), color(""), age(0), sex(Male), weight(0), height(0), health(0) {}
+    Animal() : id(-1), name(""), type(Dog), breed(""), color(""), age(0), sex(Male), weight(0), height(0), health(0) {}
 
     int getId() const { return id; }
     void setId(int value) { id = value; }

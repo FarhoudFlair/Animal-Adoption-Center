@@ -34,6 +34,8 @@ QList<Animal> &AnimalListModel::getList() {
 
 void AnimalListModel::setList(QList<Animal> &&animal_list) {
     this->animal_list = animal_list;
+
+    emit dataChanged(createIndex(0, 0), createIndex(animal_list.size() - 1, 0));
 }
 
 Animal &AnimalListModel::getElement(int index) {
