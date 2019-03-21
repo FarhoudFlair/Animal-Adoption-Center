@@ -1,29 +1,11 @@
 #include <QDebug>
 
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "staff.h"
-#include "animal.h"
-#include "sqlserializer.h"
-
-QStringList animals_to_string_list(const QList<Animal> &animals)
-{
-    QStringList ret;
-    std::transform(animals.begin(), animals.end(), std::back_inserter(ret), [](auto a){
-        return QString("%1 (%2, %3 years)").arg(a.getName()).arg(a.getTypeString()).arg(a.getAge(), 0, 'f', 1);
-    });
-    return ret;
-}
-
-QStringList clients_to_string_list(const QList<Client> &clients)
-{
-    QStringList ret;
-    std::transform(clients.begin(), clients.end(), std::back_inserter(ret), [](auto c){
-        return QString("%1 (%2)").arg(c.getName()).arg(c.getEmail());
-    });
-    return ret;
-}
+#include "include/staff.h"
+#include "include/animal.h"
+#include "include/sqlserializer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -37,38 +19,29 @@ MainWindow::MainWindow(QWidget *parent) :
     this->resetClientForm();
 
     // add animals to animal list view
-    this->updateAnimalList(SQLSerializer::readAnimals());
-    this->ui->animalListView->setModel(&this->animalModel);
+    this->animal_model.setList(SQLSerializer::readAnimals());
+    this->ui->animalListView->setModel(&this->animal_model);
 
     // set combo box items for animal type
     this->ui->animalFormTypeInput->addItems(animal_type_variants_str());
     this->ui->clientFormPrefAnimalTypeInput->addItems(animal_type_variants_str());
 
     // add clients to client list view
-    this->updateClientList(SQLSerializer::readClients());
-    this->ui->clientListView->setModel(&this->clientModel);
-    this->ui->mainViewClientLoginList->setModel(&this->clientModel);
+    this->client_model.setList(SQLSerializer::readClients());
+    this->ui->clientListView->setModel(&this->client_model);
+    this->ui->mainViewClientLoginList->setModel(&this->client_model);
 
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
     this->ui->mainTabWidget->setCurrentWidget(this->ui->animalTab);
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
-
-    this->ui->editClientButton->setVisible(false);
-    this->ui->editAnimalButton->setVisible(false);
 }
 
 MainWindow::~MainWindow()
 {
     delete this->ui;
     if (this->loggedInUser != nullptr) delete this->loggedInUser;
-}
-
-void MainWindow::updateAnimalList(const QList<Animal> &animals)
-{
-    this->animals = animals;
-    this->animalModel.setStringList(animals_to_string_list(animals));
 }
 
 void MainWindow::resetAnimalForm()
@@ -128,12 +101,6 @@ void MainWindow::resetAnimalForm()
     this->ui->animalFormSaveButton->setEnabled(true);
 }
 
-void MainWindow::updateClientList(const QList<Client> &clients)
-{
-    this->clients = clients;
-    this->clientModel.setStringList(clients_to_string_list(this->clients));
-}
-
 void MainWindow::resetClientForm()
 {
     this->ui->clientFormNameInput->setText("");
@@ -170,21 +137,21 @@ void MainWindow::resetClientForm()
     // TODO: reset state of client attributes when saving
 
     // TODO: reset state properly when actually saving npa matching prefs
-//    this->ui->clientFormPrefLibidoInput->setEnabled(true);
-//    this->ui->clientFormPrefAggressivenessInput->setEnabled(true);
-//    this->ui->clientFormPrefExtroversionInput->setEnabled(true);
-//    this->ui->clientFormPrefTemperInput->setEnabled(true);
-//    this->ui->clientFormPrefObedienceInput->setEnabled(true);
-//    this->ui->clientFormPrefEnduranceInput->setEnabled(true);
-//    this->ui->clientFormPrefActivenessInput->setEnabled(true);
-//    this->ui->clientFormPrefImpulsivityInput->setEnabled(true);
-//    this->ui->clientFormPrefDistractibilityInput->setEnabled(true);
-//    this->ui->clientFormPrefAdaptabilityInput->setEnabled(true);
-//    this->ui->clientFormPrefRegularityInput->setEnabled(true);
-//    this->ui->clientFormPrefIntelligenceInput->setEnabled(true);
-//    this->ui->clientFormPrefIndependenceInput->setEnabled(true);
-//    this->ui->clientFormPrefTrainingInput->setEnabled(true);
-//    this->ui->clientFormPrefCostInput->setEnabled(true);
+    this->ui->clientFormPrefLibidoInput->setEnabled(true);
+    this->ui->clientFormPrefAggressivenessInput->setEnabled(true);
+    this->ui->clientFormPrefExtroversionInput->setEnabled(true);
+    this->ui->clientFormPrefTemperInput->setEnabled(true);
+    this->ui->clientFormPrefObedienceInput->setEnabled(true);
+    this->ui->clientFormPrefEnduranceInput->setEnabled(true);
+    this->ui->clientFormPrefActivenessInput->setEnabled(true);
+    this->ui->clientFormPrefImpulsivityInput->setEnabled(true);
+    this->ui->clientFormPrefDistractibilityInput->setEnabled(true);
+    this->ui->clientFormPrefAdaptabilityInput->setEnabled(true);
+    this->ui->clientFormPrefRegularityInput->setEnabled(true);
+    this->ui->clientFormPrefIntelligenceInput->setEnabled(true);
+    this->ui->clientFormPrefIndependenceInput->setEnabled(true);
+    this->ui->clientFormPrefTrainingInput->setEnabled(true);
+    this->ui->clientFormPrefCostInput->setEnabled(true);
     this->ui->clientFormSaveButton->setEnabled(true);
     this->ui->clientFormCancelButton->setEnabled(true);
 }
@@ -195,10 +162,9 @@ void MainWindow::on_loginAsClientButton_clicked()
 
     if (!index.isValid()) return;
 
-    this->loggedInUser = new Client(this->clients[index.row()]);
+    this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
 
     this->ui->addAnimalButton->setVisible(false);
-    this->ui->editAnimalButton->setVisible(false);
     this->ui->mainTabWidget->removeTab(1);
 
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->mainPage);
@@ -220,7 +186,6 @@ void MainWindow::on_addAnimalButton_clicked()
 void MainWindow::on_animalFormCancelButton_clicked()
 {
     this->resetAnimalForm();
-
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
 }
 
@@ -257,7 +222,7 @@ void MainWindow::on_animalFormSaveButton_clicked()
     SQLSerializer::addAnimal(animal);
 
     // update list from database
-    this->updateAnimalList(SQLSerializer::readAnimals());
+    this->animal_model.setList(SQLSerializer::readAnimals());
     this->resetAnimalForm();
 
     // reset stacked view to list
@@ -266,37 +231,39 @@ void MainWindow::on_animalFormSaveButton_clicked()
 
 void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
 {
-    // TODO: disable fields when a client is viewing the animal
-    // if (!this->loggedInUser->isStaff())
-    // {
-    this->ui->animalFormNameInput->setEnabled(false);
-    this->ui->animalFormTypeInput->setEnabled(false);
-    this->ui->animalFormBreedInput->setEnabled(false);
-    this->ui->animalFormColorInput->setEnabled(false);
-    this->ui->animalFormAgeInput->setEnabled(false);
-    this->ui->animalFormSexInput->setEnabled(false);
-    this->ui->animalFormWeightInput->setEnabled(false);
-    this->ui->animalFormHeightInput->setEnabled(false);
-    this->ui->animalFormHealthInput->setEnabled(false);
-    this->ui->animalFormLibidoInput->setEnabled(false);
-    this->ui->animalFormAggressivenessInput->setEnabled(false);
-    this->ui->animalFormExtroversionInput->setEnabled(false);
-    this->ui->animalFormTemperInput->setEnabled(false);
-    this->ui->animalFormObedienceInput->setEnabled(false);
-    this->ui->animalFormEnduranceInput->setEnabled(false);
-    this->ui->animalFormActivenessInput->setEnabled(false);
-    this->ui->animalFormImpulsionInput->setEnabled(false);
-    this->ui->animalFormDistractibilityInput->setEnabled(false);
-    this->ui->animalFormAdaptabilityInput->setEnabled(false);
-    this->ui->animalFormRegularityInput->setEnabled(false);
-    this->ui->animalFormIntelligenceInput->setEnabled(false);
-    this->ui->animalFormIndependenceInput->setEnabled(false);
-    this->ui->animalFormTrainingInput->setEnabled(false);
-    this->ui->animalFormCostInput->setEnabled(false);
-    this->ui->animalFormSaveButton->setEnabled(false);
-    // }
+    if (index.row() < 0 || index.row() >= this->animal_model.getList().size()) return;
 
-    Animal a = this->animals[index.row()];
+    // TODO: disable fields when a client is viewing the animal
+    if (!this->loggedInUser->isStaff())
+    {
+        this->ui->animalFormNameInput->setEnabled(false);
+        this->ui->animalFormTypeInput->setEnabled(false);
+        this->ui->animalFormBreedInput->setEnabled(false);
+        this->ui->animalFormColorInput->setEnabled(false);
+        this->ui->animalFormAgeInput->setEnabled(false);
+        this->ui->animalFormSexInput->setEnabled(false);
+        this->ui->animalFormWeightInput->setEnabled(false);
+        this->ui->animalFormHeightInput->setEnabled(false);
+        this->ui->animalFormHealthInput->setEnabled(false);
+        this->ui->animalFormLibidoInput->setEnabled(false);
+        this->ui->animalFormAggressivenessInput->setEnabled(false);
+        this->ui->animalFormExtroversionInput->setEnabled(false);
+        this->ui->animalFormTemperInput->setEnabled(false);
+        this->ui->animalFormObedienceInput->setEnabled(false);
+        this->ui->animalFormEnduranceInput->setEnabled(false);
+        this->ui->animalFormActivenessInput->setEnabled(false);
+        this->ui->animalFormImpulsionInput->setEnabled(false);
+        this->ui->animalFormDistractibilityInput->setEnabled(false);
+        this->ui->animalFormAdaptabilityInput->setEnabled(false);
+        this->ui->animalFormRegularityInput->setEnabled(false);
+        this->ui->animalFormIntelligenceInput->setEnabled(false);
+        this->ui->animalFormIndependenceInput->setEnabled(false);
+        this->ui->animalFormTrainingInput->setEnabled(false);
+        this->ui->animalFormCostInput->setEnabled(false);
+        this->ui->animalFormSaveButton->setEnabled(false);
+    }
+
+    Animal a = this->animal_model.getElement(index.row());
     this->ui->animalFormNameInput->setText(a.getName());
     this->ui->animalFormTypeInput->setCurrentText(a.getTypeString());
     this->ui->animalFormBreedInput->setText(a.getBreed());
@@ -328,6 +295,8 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
 {
+    if (index.row() <= 0 || index.row() >= this->client_model.getList().size()) return;
+
     this->ui->clientFormNameInput->setEnabled(false);
     this->ui->clientFormPhoneNumberInput->setEnabled(false);
     this->ui->clientFormAddressInput->setEnabled(false);
@@ -349,7 +318,7 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
     this->ui->clientFormPrefCostInput->setEnabled(false);
     this->ui->clientFormSaveButton->setEnabled(false);
 
-    Client c = this->clients[index.row()];
+    Client c = this->client_model.getList()[index.row()];
     this->ui->clientFormNameInput->setText(c.getName());
     this->ui->clientFormPhoneNumberInput->setText(c.getPhoneNumber());
     this->ui->clientFormAddressInput->setText(c.getAddress());
@@ -378,10 +347,6 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
     this->ui->animalFormCostInput->setValue(c.getPreferredAnimal().getNPA(14));
 
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
-}
-
-void MainWindow::on_editAnimalButton_clicked()
-{
 }
 
 void MainWindow::on_clientFormSaveButton_clicked()
@@ -419,7 +384,7 @@ void MainWindow::on_clientFormSaveButton_clicked()
     SQLSerializer::addClient(client);
 
     // update list from database
-    this->updateClientList(SQLSerializer::readClients());
+    this->client_model.setList(SQLSerializer::readClients());
     this->resetClientForm();
 
     // reset stacked view to list

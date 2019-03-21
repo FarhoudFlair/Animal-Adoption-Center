@@ -15,12 +15,12 @@ public:
     SQLSerializer() = delete;
     static void init();
 
-    static void addAnimal(Animal &animal);
-//    static void saveAnimal(Animal &animal); // TODO: later
+    static int addAnimal(Animal &animal);
+    static void saveAnimal(Animal &animal);
     static QList<Animal> readAnimals();
 
-    static void addClient(Client &client);
-//    static void saveClient(Client &client); // TODO: later
+    static int addClient(Client &client);
+    static void saveClient(Client &client);
     static QList<Client> readClients();
 };
 

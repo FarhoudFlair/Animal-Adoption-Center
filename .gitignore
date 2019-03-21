@@ -148,3 +148,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/qt,macos,linux,windows,qtcreator
+
+**/build

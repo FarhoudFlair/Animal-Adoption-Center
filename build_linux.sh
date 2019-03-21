@@ -7,5 +7,5 @@ mkdir -p ./build
 cd ./build
 
 cp ../app/cuACS.db ./
-qmake -spec linux-g++ ../app/cuACS.pro CONFIG+=debug
+qmake -spec linux-g++ ../app/cuACS.pro CONFIG+=debug CONFIG+=x86_64
 make all

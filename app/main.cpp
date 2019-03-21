@@ -1,10 +1,10 @@
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 
 #include <exception>
 #include <QDebug>
 #include <QApplication>
 
-#include "sqlserializer.h"
+#include "include/sqlserializer.h"
 
 int main(int argc, char *argv[])
 {

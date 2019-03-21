@@ -1,4 +1,4 @@
-#include "animal.h"
+#include "include/animal.h"
 
 QList<AnimalType> animal_type_variants()
 {

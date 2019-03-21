@@ -23,21 +23,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-    animal.cpp \
-    sqlserializer.cpp \
-    client.cpp \
-    user.cpp \
-    staff.cpp
+    src/animal.cpp \
+    src/animallistmodel.cpp \
+    src/client.cpp \
+    src/mainwindow.cpp \
+    src/sqlserializer.cpp \
+    src/staff.cpp \
+    src/user.cpp \
+    main.cpp \
+    src/clientlistmodel.cpp
 
 HEADERS += \
-        mainwindow.h \
-    animal.h \
-    sqlserializer.h \
-    client.h \
-    user.h \
-    staff.h
+    include/animal.h \
+    include/animallistmodel.h \
+    include/client.h \
+    include/mainwindow.h \
+    include/sqlserializer.h \
+    include/staff.h \
+    include/user.h \
+    include/clientlistmodel.h
 
 FORMS += \
-        mainwindow.ui
+    mainwindow.ui

@@ -13,6 +13,15 @@
   <property name="windowTitle">
    <string>cuACS</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background: rgb(149, 126, 171);
+}
+
+QListView {
+	background: rgb(224, 188, 227);
+}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="leftMargin">
@@ -82,7 +91,7 @@
             <item>
              <widget class="QStackedWidget" name="animalsStackedWidget">
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="animalViewPage">
                <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -102,6 +111,13 @@
                     </property>
                     <property name="text">
                      <string>View Animal</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="text">
+                     <string>Your Profile</string>
                     </property>
                    </widget>
                   </item>
@@ -129,7 +145,7 @@
                      <x>0</x>
                      <y>0</y>
                      <width>567</width>
-                     <height>959</height>
+                     <height>945</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -871,7 +887,7 @@
             <item>
              <widget class="QStackedWidget" name="clientsStackedWidget">
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="clientViewPage">
                <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -901,6 +917,9 @@
                   <property name="editTriggers">
                    <set>QAbstractItemView::NoEditTriggers</set>
                   </property>
+                  <property name="showDropIndicator" stdset="0">
+                   <bool>false</bool>
+                  </property>
                  </widget>
                 </item>
                </layout>
@@ -917,8 +936,8 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>591</width>
-                     <height>1308</height>
+                     <width>567</width>
+                     <height>1296</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -1818,16 +1837,16 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_9">
                   <item>
-                   <widget class="QPushButton" name="clientFormSaveButton">
+                   <widget class="QPushButton" name="clientFormCancelButton">
                     <property name="text">
-                     <string>Save</string>
+                     <string>Cancel</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="clientFormCancelButton">
+                   <widget class="QPushButton" name="clientFormSaveButton">
                     <property name="text">
-                     <string>Cancel</string>
+                     <string>Save</string>
                     </property>
                    </widget>
                   </item>

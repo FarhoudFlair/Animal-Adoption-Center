@@ -1,4 +1,4 @@
-#include "staff.h"
+#include "include/staff.h"
 
 bool Staff::isStaff()
 {

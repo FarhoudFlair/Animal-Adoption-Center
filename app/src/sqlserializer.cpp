@@ -1,4 +1,4 @@
-#include "sqlserializer.h"
+#include "include/sqlserializer.h"
 
 #include <QSqlDatabase>
 #include <QSqlDriver>
@@ -23,7 +23,7 @@ void SQLSerializer::init()
     }
 }
 
-void SQLSerializer::addAnimal(Animal &animal)
+int SQLSerializer::addAnimal(Animal &animal)
 {
     QSqlQuery query;
     query.prepare(R"(
@@ -66,6 +66,8 @@ void SQLSerializer::addAnimal(Animal &animal)
 
     if(!query.exec())
         throw QString("Error writing animals: %1").arg(query.lastError().text());
+
+    return query.lastInsertId().toInt();
 }
 
 QList<Animal> SQLSerializer::readAnimals()
@@ -119,14 +121,16 @@ QList<Animal> SQLSerializer::readAnimals()
     return list;
 }
 
-void SQLSerializer::addClient(Client &client)
+int SQLSerializer::addClient(Client &client)
 {
+    int animal_id = SQLSerializer::addAnimal(client.getPreferredAnimal());
+
     QSqlQuery query;
     query.prepare(R"(
         INSERT INTO client
-            (name, phone_number, address, email, patience, experience, activeness, age, income)
+            (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
         VALUES
-            (:name, :phone_number, :address, :email, :patience, :experience, :activeness, :age, :income)
+            (:name, :phone_number, :address, :email, :patience, :experience, :activeness, :age, :income, :preferred_animal)
     )");
     query.bindValue(":name", client.getName());
     query.bindValue(":phone_number", client.getPhoneNumber());
@@ -137,6 +141,12 @@ void SQLSerializer::addClient(Client &client)
     query.bindValue(":activeness", client.getActiveness());
     query.bindValue(":age", client.getAge());
     query.bindValue(":income", client.getIncome());
+    query.bindValue(":preferred_animal", animal_id);
+
+    if(!query.exec())
+        throw QString("Error adding client: %1").arg(query.lastError().text());
+
+    int ret = query.lastInsertId().toInt();
 
     // TODO: save animal matching prefernces
 //    query.bindValue(":libido", client.getPreferredAnimal().getNPA(0));
@@ -155,9 +165,10 @@ void SQLSerializer::addClient(Client &client)
 //    query.bindValue(":training", client.getPreferredAnimal().getNPA(13));
 //    query.bindValue(":cost", client.getPreferredAnimal().getNPA(14));
 
-    if(!query.exec())
-        throw QString("Error writing clients: %1").arg(query.lastError().text());
+    return ret;
 }
+
+static void saveClient(Client &client);
 
 QList<Client> SQLSerializer::readClients()
 {
