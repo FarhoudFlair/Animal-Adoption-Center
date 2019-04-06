@@ -228,36 +228,24 @@ Client MainWindow::clientFromForm()
     Client client;
 
     if (this->ui->clientFormNameInput->text() == ""){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter a Name.");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
         client.setName(this->ui->clientFormNameInput->text());
     }
 
     if (this->ui->clientFormPhoneNumberInput->text() == ""){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter a Phone Number.");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
          client.setPhoneNumber(this->ui->clientFormPhoneNumberInput->text());
     }
 
     if (this->ui->clientFormAddressInput->text() == ""){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter an Address.");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
         client.setAddress(this->ui->clientFormAddressInput->text());
     }
 
     if (this->ui->clientFormEmailInput->text() == ""){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter an Email");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
         client.setEmail(this->ui->clientFormEmailInput->text());
@@ -268,18 +256,12 @@ Client MainWindow::clientFromForm()
     client.setActiveness(this->ui->clientFormActivenessInput->value());
 
     if (this->ui->clientFormAgeInput->value() < 18){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter a valid age.");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
         client.setAge(this->ui->clientFormAgeInput->value());
     }
 
     if (this->ui->clientFormIncomeInput->value() == 0){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please enter a valid income");
-        messageBox.setFixedSize(500,1000);
         client.setValid(false);
     }else{
         client.setIncome(this->ui->clientFormIncomeInput->value());
@@ -458,8 +440,11 @@ void MainWindow::on_clientFormSaveButton_clicked()
         client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
         SQLSerializer::saveClient(client);
     }
-
+    //checks for client validity before adding to DB
     if (client.getValid() == false){
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Please fill in all fields.");
+        messageBox.setFixedSize(500,1000);
         return;
     }
     this->client_model.setList(SQLSerializer::readClients());
