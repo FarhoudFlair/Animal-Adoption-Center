@@ -425,8 +425,9 @@ void MainWindow::on_clientFormSaveButton_clicked()
     if (this->loggedInUser->isStaff())
     {
         // save client to database
-        SQLSerializer::addClient(client);
-
+        if (client.getValid() != false){
+            SQLSerializer::addClient(client);
+        }
         // update list from database
         this->setClientForm();
 
@@ -446,8 +447,10 @@ void MainWindow::on_clientFormSaveButton_clicked()
         messageBox.critical(0,"Error","Please fill in all fields.");
         messageBox.setFixedSize(500,1000);
         return;
+    }else {
+        this->client_model.setList(SQLSerializer::readClients());
     }
-    this->client_model.setList(SQLSerializer::readClients());
+
 }
 
 void MainWindow::on_clientFormCancelButton_clicked()
