@@ -12,7 +12,7 @@
 class Client: public User
 {
 public:
-    Client() : id(-1), name(""), phone_number(""), address(""), email(""), patience(0), experience(0), activeness(0), age(18), income(0), regularity(0), preferred_animal() {}
+    Client() : id(-1), name(""), phone_number(""), address(""), email(""), patience(0), experience(0), activeness(0), age(18), income(0), regularity(0), isValid(true), preferred_animal() {}
 
     virtual bool isStaff();
 
@@ -21,7 +21,7 @@ public:
 
     // standard getters/setters
     QString getName() const { return name; }
-    void setName(const QString &value) { name = value; }
+    void setName(const QString &value) {name = value;}
 
     QString getPhoneNumber() const { return phone_number; }
     void setPhoneNumber(const QString &value) { phone_number = value; }
@@ -50,6 +50,9 @@ public:
     double getRegularity() const { return regularity; }
     void setRegularity(const double value) { regularity = value; }
 
+    bool getValid() const { return isValid; }
+    void setValid(const bool value) { isValid = value; }
+
     Animal &getPreferredAnimal() { return preferred_animal; }
     void setPreferredAnimal(const Animal &value) { preferred_animal = value; }
 
@@ -67,6 +70,8 @@ private:
     double age;
     double income;
     double regularity;
+
+    bool isValid;
 
     Animal preferred_animal;
 };
