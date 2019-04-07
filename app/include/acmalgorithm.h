@@ -6,6 +6,7 @@
 
 #include <utility>
 #include <cmath>
+#include <cassert>
 #include <algorithm>
 
 #include "animal.h"
