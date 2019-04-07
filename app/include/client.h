@@ -53,6 +53,8 @@ public:
     Animal &getPreferredAnimal() { return preferred_animal; }
     void setPreferredAnimal(const Animal &value) { preferred_animal = value; }
 
+    bool operator==(const Client &) const;
+
 private:
     int id;
 

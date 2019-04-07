@@ -31,7 +31,9 @@ SOURCES += \
     src/staff.cpp \
     src/user.cpp \
     main.cpp \
-    src/clientlistmodel.cpp
+    src/clientlistmodel.cpp \
+    src/launchalgorithmcontrol.cpp \
+    src/acmalgorithm.cpp
 
 HEADERS += \
     include/animal.h \
@@ -41,7 +43,9 @@ HEADERS += \
     include/sqlserializer.h \
     include/staff.h \
     include/user.h \
-    include/clientlistmodel.h
+    include/clientlistmodel.h \
+    include/launchalgorithmcontrol.h \
+    include/acmalgorithm.h
 
 FORMS += \
     mainwindow.ui

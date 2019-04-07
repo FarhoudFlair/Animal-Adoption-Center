@@ -83,6 +83,10 @@ public:
     double getNPA(int pos) const { return npa[pos]; }
     void setNPA(int pos, double value) { npa[pos] = value; }
 
+    std::array<double, 15> getNPAArray() const { return npa; }
+
+    bool operator==(const Animal &) const;
+
 private:
     int id;
     QString name;
