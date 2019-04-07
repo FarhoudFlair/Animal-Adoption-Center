@@ -105,7 +105,7 @@ QListView {
         <item>
          <widget class="QTabWidget" name="mainTabWidget">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="animalTab">
            <attribute name="title">
@@ -187,8 +187,8 @@ QListView {
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>610</width>
-                     <height>945</height>
+                     <width>598</width>
+                     <height>793</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -942,7 +942,7 @@ QListView {
             <item>
              <widget class="QStackedWidget" name="clientsStackedWidget">
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="clientViewPage">
                <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -1005,8 +1005,8 @@ QListView {
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>623</width>
-                     <height>1282</height>
+                     <width>598</width>
+                     <height>1116</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -1943,7 +1943,6 @@ QListView {
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page"/>
      </widget>
     </item>
    </layout>

@@ -4,12 +4,19 @@
 #include <QMainWindow>
 #include <QStringListModel>
 #include <QList>
+#include <QDebug>
 
 #include "animallistmodel.h"
 #include "clientlistmodel.h"
 #include "animal.h"
 #include "client.h"
 #include "user.h"
+#include "ui_mainwindow.h"
+
+#include "include/staff.h"
+#include "include/animal.h"
+#include "include/sqlserializer.h"
+#include "include/applicationcontrol.h"
 
 namespace Ui {
 class MainWindow;
@@ -42,6 +49,12 @@ private slots:
     void on_clientFormSaveButton_clicked();
     void on_clientFormCancelButton_clicked();
     void on_addClientButton_clicked();
+
+    void on_mainTabWidget_tabBarDoubleClicked(int index);
+
+    void on_mainTabWidget_tabBarClicked(int index);
+
+    void on_mainTabWidget_currentChanged(int index);
 
 private:
     Ui::MainWindow *ui;
