@@ -108,14 +108,44 @@ Animal MainWindow::animalFromForm()
 {
     Animal animal;
 
-    animal.setName(this->ui->animalFormNameInput->text());
+    if (this->ui->animalFormNameInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setName(this->ui->animalFormNameInput->text());
+    }
+
     animal.setTypeString(this->ui->animalFormTypeInput->currentText());
-    animal.setBreed(this->ui->animalFormBreedInput->text());
-    animal.setColor(this->ui->animalFormColorInput->text());
-    animal.setAge(this->ui->animalFormAgeInput->value());
-    animal.setSexString(this->ui->animalFormSexInput->currentText());
-    animal.setWeight(this->ui->animalFormWeightInput->value());
-    animal.setHeight(this->ui->animalFormHeightInput->value());
+
+    if (this->ui->animalFormBreedInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setBreed(this->ui->animalFormBreedInput->text());
+    }
+
+
+    if (this->ui->animalFormColorInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setColor(this->ui->animalFormColorInput->text());
+    }
+
+    if (this->ui->animalFormAgeInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setAge(this->ui->animalFormAgeInput->value());
+    }
+
+    if (this->ui->animalFormWeightInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setWeight(this->ui->animalFormWeightInput->value());
+    }
+
+    if (this->ui->animalFormWeightInput->text() == ""){
+        animal.setValid(false);
+    }else{
+        animal.setHeight(this->ui->animalFormHeightInput->value());
+    }
 
     animal.setNPA(0, this->ui->animalFormLibidoInput->value());
     animal.setNPA(1, this->ui->animalFormAggressivenessInput->value());
@@ -336,7 +366,12 @@ void MainWindow::on_animalFormSaveButton_clicked()
 
     Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
     Animal animal = this->animalFromForm();
-
+    if (animal.getValid() == false){
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Please fill in all fields.");
+        messageBox.setFixedSize(500,1000);
+        return;
+    }
     // save animal to database
     if (staff->animal_id_being_edited < 0)
     {
@@ -381,6 +416,13 @@ void MainWindow::on_clientFormSaveButton_clicked()
     // create client with data from form
     Client client = this->clientFromForm();
 
+    if (client.getValid() == false){
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Please fill in all fields.");
+        messageBox.setFixedSize(500,1000);
+        return;
+    }
+
     if (this->loggedInUser->isStaff())
     {
         // save client to database
@@ -401,14 +443,8 @@ void MainWindow::on_clientFormSaveButton_clicked()
         SQLSerializer::saveClient(client);
     }
     //checks for client validity before adding to DB
-    if (client.getValid() == false){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please fill in all fields.");
-        messageBox.setFixedSize(500,1000);
-        return;
-    }else {
-        this->client_model.setList(SQLSerializer::readClients());
-    }
+
+    this->client_model.setList(SQLSerializer::readClients());
 
 }
 
