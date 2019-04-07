@@ -16,7 +16,7 @@ public:
 
     virtual bool isStaff();
 
-    double getId() const { return id; }
+    int getId() const { return id; }
     void setId(const int value) { id = value; }
 
     // standard getters/setters

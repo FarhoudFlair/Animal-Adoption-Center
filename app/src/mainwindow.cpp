@@ -408,6 +408,7 @@ void MainWindow::on_clientFormSaveButton_clicked()
         client.setId(existing_client->getId());
         client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
         SQLSerializer::saveClient(client);
+        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
     }
 
     this->client_model.setList(SQLSerializer::readClients());
