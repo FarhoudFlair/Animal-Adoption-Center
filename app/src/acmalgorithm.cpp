@@ -96,17 +96,12 @@ QList<pair<M, W>> gale_shapley(QList<M> &men, QList<QList<int>> &men_prefs, QLis
     for (auto &el: men_prefs) assert(el.size() == women.size());
     for (auto &el: women_prefs) assert(el.size() == men.size());
 
-    qDebug() << women.size();
-
     QList<pair<M, W>> pairs;
     QList<int> next_proposals;
     for (int i = 0; i < men.size(); ++i) next_proposals.push_back(0);
 
     int cur_man = -1;
     while ((cur_man = find_free_man(pairs, men)) != -1) {
-        qDebug() << "cur_man: " << cur_man;
-        qDebug() << "next_proposal_for_cur_man: " << next_proposals[cur_man];
-
         int next_proposal_for_cur_man = next_proposals[cur_man];
 
         assert(next_proposal_for_cur_man >= 0);
