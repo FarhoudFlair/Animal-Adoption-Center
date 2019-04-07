@@ -34,8 +34,8 @@ MainWindow::MainWindow(QWidget *parent) :
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
-    this->ui->mainTabWidget->setCurrentWidget(this->ui->animalTab);
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
+    this->ui->algorithmStackedWidget->setCurrentWidget(this->ui->algorithmSummaryViewPage);
 }
 
 MainWindow::~MainWindow()
@@ -276,19 +276,20 @@ void MainWindow::on_loginAsClientButton_clicked()
     this->ui->animalFormSaveButton->setVisible(false);
     this->ui->animalFormCancelButton->setText("OK");
     this->ui->clientFormCancelButton->setVisible(false);
-    this->ui->mainTabWidget->setTabText(1, "Your Profile");
+    this->ui->homeViewClientsButton->setText("View Your Profile");
+    this->ui->homeViewAlgorithmButton->setVisible(false);
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 
     Client *c = dynamic_cast<Client *>(this->loggedInUser);
     this->setClientForm(*c, true);
 
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->mainPage);
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_loginAsStaffButton_clicked()
 {
     this->loggedInUser = new Staff();
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->mainPage);
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_addAnimalButton_clicked()
@@ -422,4 +423,36 @@ void MainWindow::on_addClientButton_clicked()
 {
     this->setClientForm();
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+}
+
+void MainWindow::on_algorithmBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_animalBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_clientBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_homeViewAnimalsButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->animalsPage);
+}
+
+void MainWindow::on_homeViewClientsButton_clicked()
+{
+
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
+}
+
+void MainWindow::on_homeViewAlgorithmButton_clicked()
+{
+
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->algorithmPage);
 }

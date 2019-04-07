@@ -39,7 +39,7 @@ QListView {
     <item>
      <widget class="QStackedWidget" name="mainStackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -82,7 +82,7 @@ QListView {
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="mainPage">
+      <widget class="QWidget" name="homePage">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -103,20 +103,98 @@ QListView {
          <number>5</number>
         </property>
         <item>
-         <widget class="QTabWidget" name="mainTabWidget">
+         <widget class="QPushButton" name="homeViewAnimalsButton">
+          <property name="text">
+           <string>View Animals</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="homeViewClientsButton">
+          <property name="text">
+           <string>View Clients</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="homeViewAlgorithmButton">
+          <property name="text">
+           <string>View Algorithm Page</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="animalsPage">
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QStackedWidget" name="animalsStackedWidget">
           <property name="currentIndex">
            <number>0</number>
           </property>
-          <widget class="QWidget" name="animalTab">
-           <attribute name="title">
-            <string>Animals</string>
-           </attribute>
-           <layout class="QVBoxLayout" name="verticalLayout">
+          <widget class="QWidget" name="animalViewPage">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QPushButton" name="animalBackButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>&lt;</string>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="default">
+                 <bool>false</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="addAnimalButton">
+                <property name="text">
+                 <string>Add Animal</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListView" name="animalListView">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="animalFormPage">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
             <property name="leftMargin">
              <number>5</number>
             </property>
             <property name="topMargin">
-             <number>0</number>
+             <number>5</number>
             </property>
             <property name="rightMargin">
              <number>5</number>
@@ -125,794 +203,719 @@ QListView {
              <number>5</number>
             </property>
             <item>
-             <widget class="QStackedWidget" name="animalsStackedWidget">
-              <property name="currentIndex">
-               <number>1</number>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
               </property>
-              <widget class="QWidget" name="animalViewPage">
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="leftMargin">
-                 <number>5</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>5</number>
-                </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>612</width>
+                 <height>945</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
                 <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_8">
-                  <item>
-                   <widget class="QPushButton" name="addAnimalButton">
+                 <layout class="QFormLayout" name="formLayout_7">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_9">
                     <property name="text">
-                     <string>Add Animal</string>
+                     <string>Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="animalFormNameInput"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>26</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Physical Attributes</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::PlainText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QFormLayout" name="formLayout">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="text">
+                     <string>Animal Type</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="animalFormTypeInput">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>Breed</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="animalFormBreedInput">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="animalFormColorInput"/>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>Age</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="animalFormAgeInput">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.500000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="maximumSize">
+                       <size>
+                        <width>45</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>years</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>Sex</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QComboBox" name="animalFormSexInput">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Male</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Female</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>Height</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="animalFormHeightInput">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <double>500.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_11">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>cm</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>Weight</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="animalFormWeightInput">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <double>500.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_10">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>kg</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QSlider" name="animalFormHealthInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_64">
+                    <property name="text">
+                     <string>Health</string>
                     </property>
                    </widget>
                   </item>
                  </layout>
                 </item>
                 <item>
-                 <widget class="QListView" name="animalListView">
-                  <property name="editTriggers">
-                   <set>QAbstractItemView::NoEditTriggers</set>
+                 <widget class="QLabel" name="label_13">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>26</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Non-Physical Attributes</string>
                   </property>
                  </widget>
                 </item>
-               </layout>
-              </widget>
-              <widget class="QWidget" name="animalFormPage">
-               <layout class="QVBoxLayout" name="verticalLayout_5">
-                <property name="leftMargin">
-                 <number>5</number>
-                </property>
-                <property name="topMargin">
-                 <number>5</number>
-                </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>5</number>
-                </property>
                 <item>
-                 <widget class="QScrollArea" name="scrollArea">
-                  <property name="widgetResizable">
-                   <bool>true</bool>
-                  </property>
-                  <widget class="QWidget" name="scrollAreaWidgetContents">
-                   <property name="geometry">
-                    <rect>
-                     <x>0</x>
-                     <y>0</y>
-                     <width>610</width>
-                     <height>945</height>
-                    </rect>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_8">
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_7">
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_9">
-                        <property name="text">
-                         <string>Name</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QLineEdit" name="animalFormNameInput"/>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_12">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>26</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Physical Attributes</string>
-                      </property>
-                      <property name="textFormat">
-                       <enum>Qt::PlainText</enum>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout">
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label">
-                        <property name="text">
-                         <string>Animal Type</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QComboBox" name="animalFormTypeInput">
-                        <property name="sizePolicy">
-                         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                          <horstretch>0</horstretch>
-                          <verstretch>0</verstretch>
-                         </sizepolicy>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_2">
-                        <property name="text">
-                         <string>Breed</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QLineEdit" name="animalFormBreedInput">
-                        <property name="sizePolicy">
-                         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                          <horstretch>0</horstretch>
-                          <verstretch>0</verstretch>
-                         </sizepolicy>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_3">
-                        <property name="text">
-                         <string>Color</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="1">
-                       <widget class="QLineEdit" name="animalFormColorInput"/>
-                      </item>
-                      <item row="4" column="0">
-                       <widget class="QLabel" name="label_4">
-                        <property name="text">
-                         <string>Age</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_5">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="animalFormAgeInput">
-                          <property name="sizePolicy">
-                           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                           </sizepolicy>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="singleStep">
-                           <double>0.500000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_8">
-                          <property name="maximumSize">
-                           <size>
-                            <width>45</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>years</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="5" column="0">
-                       <widget class="QLabel" name="label_5">
-                        <property name="text">
-                         <string>Sex</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QComboBox" name="animalFormSexInput">
-                        <property name="sizePolicy">
-                         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                          <horstretch>0</horstretch>
-                          <verstretch>0</verstretch>
-                         </sizepolicy>
-                        </property>
-                        <item>
-                         <property name="text">
-                          <string>Male</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Female</string>
-                         </property>
-                        </item>
-                       </widget>
-                      </item>
-                      <item row="6" column="0">
-                       <widget class="QLabel" name="label_7">
-                        <property name="text">
-                         <string>Height</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_7">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="animalFormHeightInput">
-                          <property name="sizePolicy">
-                           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                           </sizepolicy>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="maximum">
-                           <double>500.000000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_11">
-                          <property name="maximumSize">
-                           <size>
-                            <width>20</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>cm</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="7" column="0">
-                       <widget class="QLabel" name="label_6">
-                        <property name="text">
-                         <string>Weight</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_10">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="animalFormWeightInput">
-                          <property name="sizePolicy">
-                           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                           </sizepolicy>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="maximum">
-                           <double>500.000000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_10">
-                          <property name="maximumSize">
-                           <size>
-                            <width>20</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>kg</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="8" column="1">
-                       <widget class="QSlider" name="animalFormHealthInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="8" column="0">
-                       <widget class="QLabel" name="label_64">
-                        <property name="text">
-                         <string>Health</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_13">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>26</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Non-Physical Attributes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_2">
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_14">
-                        <property name="text">
-                         <string>Libido</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label_15">
-                        <property name="text">
-                         <string>Aggressiveness</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_16">
-                        <property name="text">
-                         <string>Extroversion</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_17">
-                        <property name="text">
-                         <string>Temper</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="0">
-                       <widget class="QLabel" name="label_18">
-                        <property name="text">
-                         <string>Obedience</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="0">
-                       <widget class="QLabel" name="label_19">
-                        <property name="text">
-                         <string>Endurance</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="0">
-                       <widget class="QLabel" name="label_20">
-                        <property name="text">
-                         <string>Activeness</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="0">
-                       <widget class="QLabel" name="label_21">
-                        <property name="text">
-                         <string>Impulsion</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="8" column="0">
-                       <widget class="QLabel" name="label_22">
-                        <property name="text">
-                         <string>Distractibility</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="9" column="0">
-                       <widget class="QLabel" name="label_23">
-                        <property name="text">
-                         <string>Adaptability</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="0">
-                       <widget class="QLabel" name="label_24">
-                        <property name="text">
-                         <string>Regularity</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="0">
-                       <widget class="QLabel" name="label_25">
-                        <property name="text">
-                         <string>Intelligence</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QSlider" name="animalFormLibidoInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="singleStep">
-                         <number>1</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="sliderPosition">
-                         <number>0</number>
-                        </property>
-                        <property name="tracking">
-                         <bool>true</bool>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="invertedAppearance">
-                         <bool>false</bool>
-                        </property>
-                        <property name="invertedControls">
-                         <bool>false</bool>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QSlider" name="animalFormAggressivenessInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QSlider" name="animalFormExtroversionInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="1">
-                       <widget class="QSlider" name="animalFormTemperInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <widget class="QSlider" name="animalFormObedienceInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QSlider" name="animalFormEnduranceInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="1">
-                       <widget class="QSlider" name="animalFormActivenessInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="1">
-                       <widget class="QSlider" name="animalFormImpulsionInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="8" column="1">
-                       <widget class="QSlider" name="animalFormDistractibilityInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="singleStep">
-                         <number>1</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="9" column="1">
-                       <widget class="QSlider" name="animalFormAdaptabilityInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="1">
-                       <widget class="QSlider" name="animalFormRegularityInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="1">
-                       <widget class="QSlider" name="animalFormIntelligenceInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="singleStep">
-                         <number>1</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                         <number>1</number>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="13" column="0">
-                       <widget class="QLabel" name="label_65">
-                        <property name="text">
-                         <string>Training</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="13" column="1">
-                       <widget class="QSlider" name="animalFormTrainingInput">
-                        <property name="maximum">
-                         <number>2</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="1">
-                       <widget class="QSlider" name="animalFormIndependenceInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="0">
-                       <widget class="QLabel" name="label_66">
-                        <property name="text">
-                         <string>Independence</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="14" column="0">
-                       <widget class="QLabel" name="label_68">
-                        <property name="text">
-                         <string>Cost</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="14" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_4">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="animalFormCostInput">
-                          <property name="enabled">
-                           <bool>true</bool>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="maximum">
-                           <double>1000000.000000000000000</double>
-                          </property>
-                          <property name="singleStep">
-                           <double>50.000000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_69">
-                          <property name="maximumSize">
-                           <size>
-                            <width>48</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>$ / year</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                     </layout>
-                    </item>
-                   </layout>
-                  </widget>
-                 </widget>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_3">
-                  <item>
-                   <widget class="QPushButton" name="animalFormCancelButton">
+                 <layout class="QFormLayout" name="formLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_14">
                     <property name="text">
-                     <string>Cancel</string>
+                     <string>Libido</string>
                     </property>
                    </widget>
                   </item>
-                  <item>
-                   <widget class="QPushButton" name="animalFormSaveButton">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_15">
                     <property name="text">
-                     <string>Save</string>
+                     <string>Aggressiveness</string>
                     </property>
                    </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>Extroversion</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>Temper</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>Obedience</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>Endurance</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>Activeness</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>Impulsion</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>Distractibility</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Adaptability</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Regularity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="0">
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Intelligence</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSlider" name="animalFormLibidoInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>1</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="sliderPosition">
+                     <number>0</number>
+                    </property>
+                    <property name="tracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="invertedAppearance">
+                     <bool>false</bool>
+                    </property>
+                    <property name="invertedControls">
+                     <bool>false</bool>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSlider" name="animalFormAggressivenessInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSlider" name="animalFormExtroversionInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QSlider" name="animalFormTemperInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSlider" name="animalFormObedienceInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QSlider" name="animalFormEnduranceInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QSlider" name="animalFormActivenessInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QSlider" name="animalFormImpulsionInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QSlider" name="animalFormDistractibilityInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>1</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="1">
+                   <widget class="QSlider" name="animalFormAdaptabilityInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <widget class="QSlider" name="animalFormRegularityInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="1">
+                   <widget class="QSlider" name="animalFormIntelligenceInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>1</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="0">
+                   <widget class="QLabel" name="label_65">
+                    <property name="text">
+                     <string>Training</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="1">
+                   <widget class="QSlider" name="animalFormTrainingInput">
+                    <property name="maximum">
+                     <number>2</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="1">
+                   <widget class="QSlider" name="animalFormIndependenceInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="label_66">
+                    <property name="text">
+                     <string>Independence</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="0">
+                   <widget class="QLabel" name="label_68">
+                    <property name="text">
+                     <string>Cost</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="animalFormCostInput">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <double>1000000.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>50.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_69">
+                      <property name="maximumSize">
+                       <size>
+                        <width>48</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>$ / year</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </item>
                  </layout>
                 </item>
@@ -920,1022 +923,23 @@ QListView {
               </widget>
              </widget>
             </item>
-           </layout>
-          </widget>
-          <widget class="QWidget" name="clientTab">
-           <attribute name="title">
-            <string>Clients</string>
-           </attribute>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
-            <property name="leftMargin">
-             <number>5</number>
-            </property>
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <property name="rightMargin">
-             <number>5</number>
-            </property>
-            <property name="bottomMargin">
-             <number>5</number>
-            </property>
             <item>
-             <widget class="QStackedWidget" name="clientsStackedWidget">
-              <property name="currentIndex">
-               <number>1</number>
-              </property>
-              <widget class="QWidget" name="clientViewPage">
-               <layout class="QVBoxLayout" name="verticalLayout_6">
-                <property name="leftMargin">
-                 <number>5</number>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="animalFormCancelButton">
+                <property name="text">
+                 <string>Cancel</string>
                 </property>
-                <property name="topMargin">
-                 <number>0</number>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="animalFormSaveButton">
+                <property name="text">
+                 <string>Save</string>
                 </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>5</number>
-                </property>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_6">
-                  <item>
-                   <widget class="QPushButton" name="addClientButton">
-                    <property name="text">
-                     <string>Add Client</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <widget class="QListView" name="clientListView">
-                  <property name="editTriggers">
-                   <set>QAbstractItemView::NoEditTriggers</set>
-                  </property>
-                  <property name="showDropIndicator" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-              <widget class="QWidget" name="clientFormPage">
-               <layout class="QVBoxLayout" name="verticalLayout_9">
-                <property name="leftMargin">
-                 <number>5</number>
-                </property>
-                <property name="topMargin">
-                 <number>5</number>
-                </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>5</number>
-                </property>
-                <item>
-                 <widget class="QScrollArea" name="scrollArea_2">
-                  <property name="widgetResizable">
-                   <bool>true</bool>
-                  </property>
-                  <widget class="QWidget" name="scrollAreaWidgetContents_2">
-                   <property name="geometry">
-                    <rect>
-                     <x>0</x>
-                     <y>0</y>
-                     <width>623</width>
-                     <height>1282</height>
-                    </rect>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_10">
-                    <property name="leftMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>5</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>5</number>
-                    </property>
-                    <item>
-                     <widget class="QLabel" name="label_26">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>26</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Contact Information</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_3">
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label_30">
-                        <property name="text">
-                         <string>Phone Number</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_31">
-                        <property name="text">
-                         <string>Address</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_32">
-                        <property name="text">
-                         <string>Email</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QLineEdit" name="clientFormNameInput"/>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QLineEdit" name="clientFormPhoneNumberInput"/>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QLineEdit" name="clientFormAddressInput"/>
-                      </item>
-                      <item row="3" column="1">
-                       <widget class="QLineEdit" name="clientFormEmailInput"/>
-                      </item>
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_29">
-                        <property name="text">
-                         <string>Name</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_27">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>26</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Attributes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_5">
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_34">
-                        <property name="text">
-                         <string>Patience</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label_58">
-                        <property name="text">
-                         <string>Experience</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_59">
-                        <property name="text">
-                         <string>Activeness</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_60">
-                        <property name="text">
-                         <string>Age</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="0">
-                       <widget class="QLabel" name="label_61">
-                        <property name="text">
-                         <string>Income (per year)</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_14">
-                        <item>
-                         <widget class="QLabel" name="label_62">
-                          <property name="maximumSize">
-                           <size>
-                            <width>7</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>$</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormIncomeInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="maximum">
-                           <double>999999.989999999990687</double>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QSlider" name="clientFormPatienceInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QSlider" name="clientFormExperienceInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QSlider" name="clientFormActivenessInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_15">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormAgeInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="minimum">
-                           <double>18.000000000000000</double>
-                          </property>
-                          <property name="maximum">
-                           <double>200.000000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_63">
-                          <property name="maximumSize">
-                           <size>
-                            <width>35</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>years</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="5" column="0">
-                       <widget class="QLabel" name="label_67">
-                        <property name="text">
-                         <string>Regularity</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QSlider" name="clientFormRegularityInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_28">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>26</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Matching Preferences</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_41">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>16</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Physical Attributes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_4">
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_33">
-                        <property name="text">
-                         <string>Animal Type</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QComboBox" name="clientFormPrefAnimalTypeInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label_35">
-                        <property name="text">
-                         <string>Breed</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QLineEdit" name="clientFormPrefBreedInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_36">
-                        <property name="text">
-                         <string>Color</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QLineEdit" name="clientFormPrefColorInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_37">
-                        <property name="text">
-                         <string>Age</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_11">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormPrefAgeInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="singleStep">
-                           <double>0.500000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_44">
-                          <property name="maximumSize">
-                           <size>
-                            <width>35</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>years</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="4" column="0">
-                       <widget class="QLabel" name="label_38">
-                        <property name="text">
-                         <string>Sex</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <widget class="QComboBox" name="clientFormPrefSexInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <item>
-                         <property name="text">
-                          <string>Male</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Female</string>
-                         </property>
-                        </item>
-                       </widget>
-                      </item>
-                      <item row="5" column="0">
-                       <widget class="QLabel" name="label_39">
-                        <property name="text">
-                         <string>Weight</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_12">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormPrefWeightInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="maximum">
-                           <double>499.990000000000009</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_45">
-                          <property name="maximumSize">
-                           <size>
-                            <width>20</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>kg</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="6" column="0">
-                       <widget class="QLabel" name="label_40">
-                        <property name="text">
-                         <string>Height</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_13">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormPrefHeightInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="maximum">
-                           <double>499.990000000000009</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_46">
-                          <property name="maximumSize">
-                           <size>
-                            <width>20</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>cm</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_42">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <family>Verdana</family>
-                        <pointsize>16</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Non-Physical Attributes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <layout class="QFormLayout" name="formLayout_6">
-                      <item row="0" column="0">
-                       <widget class="QLabel" name="label_43">
-                        <property name="text">
-                         <string>Libido</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QLabel" name="label_47">
-                        <property name="text">
-                         <string>Aggressiveness</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="0">
-                       <widget class="QLabel" name="label_48">
-                        <property name="text">
-                         <string>Extroversion</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QLabel" name="label_49">
-                        <property name="text">
-                         <string>Temper</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="0">
-                       <widget class="QLabel" name="label_50">
-                        <property name="text">
-                         <string>Obedience</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="0">
-                       <widget class="QLabel" name="label_51">
-                        <property name="text">
-                         <string>Endurance</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="0">
-                       <widget class="QLabel" name="label_52">
-                        <property name="text">
-                         <string>Activeness</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="0">
-                       <widget class="QLabel" name="label_53">
-                        <property name="text">
-                         <string>Impulsivity</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="8" column="0">
-                       <widget class="QLabel" name="label_54">
-                        <property name="text">
-                         <string>Distractibility</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="9" column="0">
-                       <widget class="QLabel" name="label_55">
-                        <property name="text">
-                         <string>Adaptability</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="0">
-                       <widget class="QLabel" name="label_56">
-                        <property name="text">
-                         <string>Regularity</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="0">
-                       <widget class="QLabel" name="label_57">
-                        <property name="text">
-                         <string>Intelligence</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="0" column="1">
-                       <widget class="QSlider" name="clientFormPrefLibidoInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="1">
-                       <widget class="QSlider" name="clientFormPrefAggressivenessInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="2" column="1">
-                       <widget class="QSlider" name="clientFormPrefExtroversionInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="3" column="1">
-                       <widget class="QSlider" name="clientFormPrefTemperInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <widget class="QSlider" name="clientFormPrefObedienceInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QSlider" name="clientFormPrefEnduranceInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="1">
-                       <widget class="QSlider" name="clientFormPrefActivenessInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="1">
-                       <widget class="QSlider" name="clientFormPrefImpulsivityInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="8" column="1">
-                       <widget class="QSlider" name="clientFormPrefDistractibilityInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="9" column="1">
-                       <widget class="QSlider" name="clientFormPrefAdaptabilityInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="1">
-                       <widget class="QSlider" name="clientFormPrefRegularityInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="1">
-                       <widget class="QSlider" name="clientFormPrefIntelligenceInput">
-                        <property name="enabled">
-                         <bool>false</bool>
-                        </property>
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="0">
-                       <widget class="QLabel" name="label_70">
-                        <property name="text">
-                         <string>Independence</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="13" column="0">
-                       <widget class="QLabel" name="label_71">
-                        <property name="text">
-                         <string>Training</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="14" column="0">
-                       <widget class="QLabel" name="label_72">
-                        <property name="text">
-                         <string>Cost</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="14" column="1">
-                       <layout class="QHBoxLayout" name="horizontalLayout_16">
-                        <item>
-                         <widget class="QDoubleSpinBox" name="clientFormPrefCostInput">
-                          <property name="enabled">
-                           <bool>false</bool>
-                          </property>
-                          <property name="decimals">
-                           <number>1</number>
-                          </property>
-                          <property name="maximum">
-                           <double>1000000.000000000000000</double>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QLabel" name="label_73">
-                          <property name="maximumSize">
-                           <size>
-                            <width>49</width>
-                            <height>16777215</height>
-                           </size>
-                          </property>
-                          <property name="text">
-                           <string>$ / year</string>
-                          </property>
-                         </widget>
-                        </item>
-                       </layout>
-                      </item>
-                      <item row="13" column="1">
-                       <widget class="QSlider" name="clientFormPrefTrainingInput">
-                        <property name="maximum">
-                         <number>2</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="1">
-                       <widget class="QSlider" name="clientFormPrefIndependenceInput">
-                        <property name="maximum">
-                         <number>4</number>
-                        </property>
-                        <property name="pageStep">
-                         <number>1</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                         <enum>QSlider::TicksBelow</enum>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </item>
-                   </layout>
-                  </widget>
-                 </widget>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_9">
-                  <item>
-                   <widget class="QPushButton" name="clientFormCancelButton">
-                    <property name="text">
-                     <string>Cancel</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="clientFormSaveButton">
-                    <property name="text">
-                     <string>Save</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </widget>
-             </widget>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
           </widget>
@@ -1943,7 +947,1076 @@ QListView {
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page"/>
+      <widget class="QWidget" name="clientsPage">
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QStackedWidget" name="clientsStackedWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="clientViewPage">
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="clientBackButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>&lt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="addClientButton">
+                <property name="text">
+                 <string>Add Client</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListView" name="clientListView">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="showDropIndicator" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="clientFormPage">
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>622</width>
+                 <height>1282</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_26">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>26</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Contact Information</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QFormLayout" name="formLayout_3">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string>Phone Number</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string>Address</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>Email</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="clientFormNameInput"/>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="clientFormPhoneNumberInput"/>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="clientFormAddressInput"/>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="clientFormEmailInput"/>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_27">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>26</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Attributes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QFormLayout" name="formLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>Patience</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_58">
+                    <property name="text">
+                     <string>Experience</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_59">
+                    <property name="text">
+                     <string>Activeness</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_60">
+                    <property name="text">
+                     <string>Age</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_61">
+                    <property name="text">
+                     <string>Income (per year)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <widget class="QLabel" name="label_62">
+                      <property name="maximumSize">
+                       <size>
+                        <width>7</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>$</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormIncomeInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="maximum">
+                       <double>999999.989999999990687</double>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSlider" name="clientFormPatienceInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSlider" name="clientFormExperienceInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSlider" name="clientFormActivenessInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormAgeInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="minimum">
+                       <double>18.000000000000000</double>
+                      </property>
+                      <property name="maximum">
+                       <double>200.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_63">
+                      <property name="maximumSize">
+                       <size>
+                        <width>35</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>years</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_67">
+                    <property name="text">
+                     <string>Regularity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QSlider" name="clientFormRegularityInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_28">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>26</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Matching Preferences</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_41">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Physical Attributes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QFormLayout" name="formLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>Animal Type</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="clientFormPrefAnimalTypeInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>Breed</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="clientFormPrefBreedInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="clientFormPrefColorInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>Age</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormPrefAgeInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.500000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_44">
+                      <property name="maximumSize">
+                       <size>
+                        <width>35</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>years</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_38">
+                    <property name="text">
+                     <string>Sex</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="clientFormPrefSexInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Male</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Female</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_39">
+                    <property name="text">
+                     <string>Weight</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormPrefWeightInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="maximum">
+                       <double>499.990000000000009</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_45">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>kg</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_40">
+                    <property name="text">
+                     <string>Height</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_13">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormPrefHeightInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="maximum">
+                       <double>499.990000000000009</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_46">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>cm</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_42">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Non-Physical Attributes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QFormLayout" name="formLayout_6">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_43">
+                    <property name="text">
+                     <string>Libido</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_47">
+                    <property name="text">
+                     <string>Aggressiveness</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_48">
+                    <property name="text">
+                     <string>Extroversion</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_49">
+                    <property name="text">
+                     <string>Temper</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_50">
+                    <property name="text">
+                     <string>Obedience</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_51">
+                    <property name="text">
+                     <string>Endurance</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_52">
+                    <property name="text">
+                     <string>Activeness</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_53">
+                    <property name="text">
+                     <string>Impulsivity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_54">
+                    <property name="text">
+                     <string>Distractibility</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="label_55">
+                    <property name="text">
+                     <string>Adaptability</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="label_56">
+                    <property name="text">
+                     <string>Regularity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="0">
+                   <widget class="QLabel" name="label_57">
+                    <property name="text">
+                     <string>Intelligence</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSlider" name="clientFormPrefLibidoInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSlider" name="clientFormPrefAggressivenessInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSlider" name="clientFormPrefExtroversionInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QSlider" name="clientFormPrefTemperInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSlider" name="clientFormPrefObedienceInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QSlider" name="clientFormPrefEnduranceInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QSlider" name="clientFormPrefActivenessInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QSlider" name="clientFormPrefImpulsivityInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QSlider" name="clientFormPrefDistractibilityInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="1">
+                   <widget class="QSlider" name="clientFormPrefAdaptabilityInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <widget class="QSlider" name="clientFormPrefRegularityInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="1">
+                   <widget class="QSlider" name="clientFormPrefIntelligenceInput">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="label_70">
+                    <property name="text">
+                     <string>Independence</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="0">
+                   <widget class="QLabel" name="label_71">
+                    <property name="text">
+                     <string>Training</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="0">
+                   <widget class="QLabel" name="label_72">
+                    <property name="text">
+                     <string>Cost</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <item>
+                     <widget class="QDoubleSpinBox" name="clientFormPrefCostInput">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="decimals">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <double>1000000.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_73">
+                      <property name="maximumSize">
+                       <size>
+                        <width>49</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>$ / year</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="13" column="1">
+                   <widget class="QSlider" name="clientFormPrefTrainingInput">
+                    <property name="maximum">
+                     <number>2</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="1">
+                   <widget class="QSlider" name="clientFormPrefIndependenceInput">
+                    <property name="maximum">
+                     <number>4</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QPushButton" name="clientFormCancelButton">
+                <property name="text">
+                 <string>Cancel</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="clientFormSaveButton">
+                <property name="text">
+                 <string>Save</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="algorithmPage">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QStackedWidget" name="algorithmStackedWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="algorithmSummaryViewPage">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="QPushButton" name="algorithmBackButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>&lt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>Launch Matching Algorithm</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListView" name="listView"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="algorithmDetailedViewPage"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
