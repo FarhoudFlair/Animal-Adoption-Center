@@ -2,14 +2,14 @@
 #define VIEWCLIENTLISTCONTROL_H
 
 #include "clientlistmodel.h"
-#include "include/sqlserializer.h"
 #include "ui_mainwindow.h"
 
 class ViewClientListControl
 {
 public:
     ViewClientListControl();
-    void launch(Ui::MainWindow *);
+    void launchLogin(Ui::MainWindow *, ClientListModel *);
+    void launch(Ui::MainWindow *, ClientListModel *);
 };
 
 #endif // VIEWCLIENTLISTCONTROL_H
