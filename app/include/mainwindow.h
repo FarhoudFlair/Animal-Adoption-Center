@@ -69,6 +69,8 @@ private:
     User *loggedInUser;
     AnimalListModel animal_model;
     ClientListModel client_model;
+    ApplicationControl appCtrl;
+
 };
 
 #endif // MAINWINDOW_H

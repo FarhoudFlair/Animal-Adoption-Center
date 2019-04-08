@@ -10,8 +10,6 @@ class ViewAnimalListControl
 public:
     ViewAnimalListControl();
     void launch(Ui::MainWindow *);
-private:
-    AnimalListModel animal_model;
 };
 
 #endif // VIEWANIMALLISTCONTROL_H
