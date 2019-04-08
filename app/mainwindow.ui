@@ -39,7 +39,7 @@ QListView {
     <item>
      <widget class="QStackedWidget" name="mainStackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -130,7 +130,7 @@ QListView {
         <item>
          <widget class="QStackedWidget" name="animalsStackedWidget">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="animalViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -212,7 +212,7 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>330</width>
+                 <width>612</width>
                  <height>945</height>
                 </rect>
                </property>
@@ -1999,7 +1999,7 @@ QListView {
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_3">
+               <widget class="QPushButton" name="algorithmLaunchAlgorithmButton">
                 <property name="text">
                  <string>Launch Matching Algorithm</string>
                 </property>
@@ -2008,7 +2008,7 @@ QListView {
              </layout>
             </item>
             <item>
-             <widget class="QListView" name="listView"/>
+             <widget class="QListView" name="algorithmSummaryListView"/>
             </item>
            </layout>
           </widget>

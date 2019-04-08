@@ -20,6 +20,7 @@
 #include "include/animal.h"
 #include "include/sqlserializer.h"
 #include "include/applicationcontrol.h"
+#include "include/launchalgorithmcontrol.h"
 
 namespace Ui {
 class MainWindow;
@@ -62,6 +63,8 @@ private slots:
     void on_homeViewAnimalsButton_clicked();
     void on_homeViewClientsButton_clicked();
     void on_homeViewAlgorithmButton_clicked();
+
+    void on_algorithmLaunchAlgorithmButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -23,4 +23,4 @@ private:
     QList<Animal> animal_list;
 };
 
-#endif // ANIMALLISTMODEL
+#endif // ANIMALLISTMODEL_H

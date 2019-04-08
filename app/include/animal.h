@@ -119,6 +119,8 @@ private:
     // 11. Regularity
     // 12. Intelligence
     // 13. Independence
+    // 14. Training
+    // 15. Cost
     std::array<double, 15> npa;
 };
 

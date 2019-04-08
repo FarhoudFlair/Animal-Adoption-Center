@@ -3,8 +3,8 @@ import sys
 from random import choices, uniform, choice, randint
 from itertools import count
 
-NUM_ANIMALS = 50;
-NUM_CLIENTS = 40;
+NUM_ANIMALS = 100;
+NUM_CLIENTS = 80;
 
 names = ['Bob', 'Spot', 'Tangerine', 'Mister Tiggywinkles', 'Chloe Alice', 'Simon', 'Simone', 'Jon Snow', 'Pumba', 'Samsung', 'Robert', 'Paul', 'Caustic', 'Fibre', 'Pablo', 'Apple', 'Hunter', 'Arya', 'Sansa', 'Harry', 'Potter', 'Ron', 'Farhoud', 'Hermione', 'Emma', 'Peaches', 'Arnold', 'Max', 'Charlie', 'Cooper', 'Buddy', 'Jack', 'Rocky', 'Oliver', 'Bear', 'Duke', 'Tucke', 'Bella', 'Lucy', 'Daisy', 'Luna', 'Lola', 'Sadie', 'Molly', 'Maggie', 'Bailey', 'Sophie', 'Acorn', 'Alvin', 'Asia', 'Audi', 'Bagel', 'Balou', 'Barclay', 'Barney', 'Beck', 'Bellatrix', 'Bianca', 'Biloxi', 'Birdie', 'Biscuit', 'Blanca', 'Bobbafett', 'Bodie', 'Bono', 'Booboo', 'Bootsie', 'Bordeaux', 'Brandy', 'Bren', 'Bronco', 'Bruin', 'Bubbles', 'Buffy', 'Burt', 'Butler', 'Button', 'Calvin', 'Candy', 'Carter', 'Cece', 'Cessa', 'Chandler', 'Chaucer', 'Chevy', 'China', 'Choochoo', 'Cisco', 'Claire', 'Cleopatra', 'Clooney', 'Coco', 'Connor', 'Cosmo', 'Crosby', 'Cupcake', 'Daisy', 'Dallas', 'Daphne', 'Delilah', 'Diva', 'Doc', 'Domino', 'Donna', 'Donovan', 'Dulus', 'Dutch', 'Ebony', 'Ed', 'Elton', 'Elwood', 'Ernie', 'Faith', 'Faya', 'Felix', 'Fig', 'Fiona', 'Foxy', 'Fritz', 'Fuse', 'Giblet', 'Gibson', 'Gingi', 'Goofy', 'Graysen', 'Greystoke', 'Guinness', 'Hershey', 'Holly', 'Honey', 'Huck' 'Finn', 'Hudson', 'Hutch', 'Ike', 'Indira', 'Iris', 'Ivory', 'Jade', 'Jasmine', 'Jasper', 'Jazzy', 'Jeeves', 'Jenna', 'Jenne', 'Joy', 'Kai', 'Kalua', 'Kaly', 'Kassie', 'Kaya', 'Keanna', 'Keesha', 'Keiko', 'Kiefer', 'Kingston', 'Koby', 'Kona', 'Laguna', 'Landon', 'Larissa', 'Lefty', 'Leia', 'Lexi', 'Lilbit', 'Lilypie', 'Linus', 'Logan', 'Lola', 'Luca', 'Lucy', 'Luke', 'Madonna', 'Malble', 'Malibu', 'Margo', 'Marshmellow', 'Marti', 'Max', 'Maya', 'Meadow', 'Mercedes', 'Merlot', 'Merry', 'Mia', 'Midnight', 'Midori', 'Mika', 'Milan', 'Mira', 'Mischa', 'Mitzi', 'Moby', 'Mochi', 'Monet', 'Monkey', 'Mooshie', 'Mozart', 'Mr' 'Big', 'Muggles', 'Mulder', 'Mulligan', 'Murphy', 'Mylo', 'Nanda', 'Nate', 'Nell', 'Niana', 'Nico', 'Noodle', 'Nugget', 'Olive', 'Onyx', 'Otis', 'Owen', 'Ozzie', 'Paddington', 'Paisley', 'Paris', 'Parker', 'Paulie', 'Pazzo', 'Peanut', 'Pearl', 'Pepper', 'Persia', 'Pesci', 'Phoenix', 'Picasso', 'Pinot', 'Pipsie', 'Pixie', 'Porche', 'Quattro', 'Ramona', 'Redford', 'Reece', 'Rico', 'Robin' 'Hood', 'Rocco', 'Rocky', 'Romeo', 'Roxie', 'Rufus', 'Rusty', 'Scotty', 'Scout', 'Shadow', 'Shaggy', 'Shane', 'Shaq', 'Sheba', 'Silas', 'Skip', 'Skitty', 'Skyler', 'Smitty', 'Snooky', 'Snoopy', 'Sookie', 'Spark', 'Sprite', 'Stitch', 'Strsky', 'Sugar', 'Summer', 'Sunny', 'Sushi', 'Sweetpea', 'Syrah', 'Tallulah', 'Tango', 'Tank', 'Tanner', 'Tatertot', 'Theo', 'Tibbs', 'Timber', 'Tink', 'Toast', 'Toffee', 'Tonka', 'Vegas', 'Wednesday', 'Wilbur', 'Willow', 'Winnie', 'Wolfie', 'Yoshiko', 'Zach', 'Zara', 'Zeke', 'Zelda', 'Zeppelin', 'ZsaZsa']
 types = ['Dog', 'Cat', 'Horse', 'Rabbit', 'Hamster', 'Bird', 'Fish']
@@ -42,11 +42,11 @@ def insert_animal(f, aid=None):
         choice(range(5)),
         *choices(range(5), k=13),
         choice(range(3)),
-        uniform(50, 500000),
+        uniform(50, 10000),
     ), file=f)
 
 def insert_client(f, aid):
-    name = choice(names)
+    name = choice(names) + " " + choice(names)
     print('INSERT OR IGNORE INTO client', file=f)
     print('    (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)', file=f)
     print('VALUES', file=f)
@@ -54,7 +54,7 @@ def insert_client(f, aid):
         name,
         randint(0, 999), randint(0, 999), randint(0, 9999),
         randint(1, 50), choice(places), choice(place_types), choice(cities),
-        name.lower(), choice(names).lower(),
+        name.replace(' ', '_').lower(), choice(names).lower(),
         *choices(range(5), k=3),
         uniform(18, 80),
         uniform(20000, 500000),
