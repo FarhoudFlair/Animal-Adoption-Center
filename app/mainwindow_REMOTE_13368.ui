@@ -45,21 +45,8 @@ QListView {
         <bold>true</bold>
        </font>
       </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
-      </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -86,13 +73,13 @@ QPushButton:disabled {
           <property name="font">
            <font>
             <family>DejaVu Sans Mono</family>
-            <pointsize>20</pointsize>
+            <pointsize>14</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
           <property name="text">
-           <string>Carleton University Animal Care System</string>
+           <string>Welcome to the Carleton University Animal Care System</string>
           </property>
          </widget>
         </item>
@@ -111,19 +98,6 @@ QPushButton:disabled {
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
           </property>
           <property name="text">
            <string>Login as Client</string>
@@ -145,19 +119,6 @@ QPushButton:disabled {
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
           </property>
           <property name="text">
            <string>Login as Staff</string>
@@ -362,8 +323,8 @@ QPushButton:disabled {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>597</width>
-                 <height>945</height>
+                 <width>428</width>
+                 <height>793</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1185,8 +1146,8 @@ QPushButton:disabled {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>290</width>
-                 <height>1282</height>
+                 <width>390</width>
+                 <height>1116</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_10">
