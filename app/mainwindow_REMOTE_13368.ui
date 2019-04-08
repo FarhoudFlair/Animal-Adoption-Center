@@ -46,7 +46,7 @@ QListView {
        </font>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -323,7 +323,7 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>604</width>
+                 <width>428</width>
                  <height>793</height>
                 </rect>
                </property>

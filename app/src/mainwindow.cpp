@@ -539,3 +539,11 @@ void MainWindow::on_homeViewAlgorithmButton_clicked()
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->algorithmPage);
 }
 
+
+void MainWindow::on_algorithmLaunchAlgorithmButton_clicked()
+{
+    LaunchAlgorithmControl algoControl;
+    auto animals = SQLSerializer::readAnimals();
+    auto clients = SQLSerializer::readClients();
+    algoControl.launch(animals, clients, this->ui);
+}

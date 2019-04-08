@@ -38,13 +38,6 @@ QListView {
     </property>
     <item>
      <widget class="QStackedWidget" name="mainStackedWidget">
-      <property name="font">
-       <font>
-        <family>DejaVu Sans Mono</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
       <property name="currentIndex">
        <number>4</number>
       </property>
@@ -62,43 +55,8 @@ QListView {
         <property name="bottomMargin">
          <number>5</number>
         </property>
-        <item alignment="Qt::AlignHCenter">
-         <widget class="QLabel" name="label_74">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>50</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Welcome to the Carleton University Animal Care System</string>
-          </property>
-         </widget>
-        </item>
         <item>
          <widget class="QPushButton" name="loginAsClientButton">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Login as Client</string>
           </property>
@@ -106,20 +64,6 @@ QListView {
         </item>
         <item>
          <widget class="QPushButton" name="loginAsStaffButton">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Login as Staff</string>
           </property>
@@ -160,20 +104,6 @@ QListView {
         </property>
         <item>
          <widget class="QPushButton" name="homeViewAnimalsButton">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
           <property name="text">
            <string>View Animals</string>
           </property>
@@ -181,20 +111,6 @@ QListView {
         </item>
         <item>
          <widget class="QPushButton" name="homeViewClientsButton">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
           <property name="text">
            <string>View Clients</string>
           </property>
@@ -202,20 +118,6 @@ QListView {
         </item>
         <item>
          <widget class="QPushButton" name="homeViewAlgorithmButton">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>DejaVu Sans Mono</family>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
           <property name="text">
            <string>View Algorithm Page</string>
           </property>
@@ -228,7 +130,7 @@ QListView {
         <item>
          <widget class="QStackedWidget" name="animalsStackedWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="animalViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -270,19 +172,6 @@ QListView {
               </item>
               <item>
                <widget class="QPushButton" name="addAnimalButton">
-                <property name="minimumSize">
-                 <size>
-                  <width>570</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <family>DejaVu Sans Mono</family>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
                 <property name="text">
                  <string>Add Animal</string>
                 </property>
@@ -1096,13 +985,6 @@ QListView {
               </item>
               <item>
                <widget class="QPushButton" name="addClientButton">
-                <property name="font">
-                 <font>
-                  <family>DejaVu Sans Mono</family>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
                 <property name="text">
                  <string>Add Client</string>
                 </property>
@@ -2117,14 +1999,7 @@ QListView {
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="algorithmLaunchAlgorithmButton">
-                <property name="font">
-                 <font>
-                  <family>DejaVu Sans Mono</family>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
+               <widget class="QPushButton" name="pushButton_3">
                 <property name="text">
                  <string>Launch Matching Algorithm</string>
                 </property>
@@ -2133,7 +2008,7 @@ QListView {
              </layout>
             </item>
             <item>
-             <widget class="QListView" name="algorithmSummaryListView"/>
+             <widget class="QListView" name="listView"/>
             </item>
            </layout>
           </widget>

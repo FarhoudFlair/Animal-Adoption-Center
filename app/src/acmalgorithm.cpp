@@ -12,13 +12,18 @@ double dist (Client &client, Animal &animal) noexcept {
 }
 
 template<typename T>
-QList<int> sorted_indexes(const QList<T> &arr) {
+QList<std::pair<int, T>> enumerate(const QList<T> &arr) {
     QList<pair<int, T>> zipped;
-    QList<int> ret;
-
     for (int i = 0; i < arr.size(); ++i) {
         zipped.push_back(pair<int, T>(i, arr[i]));
     }
+    return zipped;
+}
+
+template<typename T>
+QList<int> sorted_indexes(const QList<T> &arr) {
+    QList<pair<int, T>> zipped = enumerate(arr);
+    QList<int> ret;
 
     sort(zipped.begin(), zipped.end(), [](auto a, auto b) {
         return a.second < b.second;
@@ -35,12 +40,8 @@ template <typename T>
 QList<T> sort_by_indexes(QList<T> &arr, const QList<int> &ind) {
     assert(arr.size() == ind.size());
 
-    QList<pair<int, T>> zipped;
+    QList<pair<int, T>> zipped = enumerate(arr);
     QList<T> ret;
-
-    for (int i = 0; i < arr.size; ++i) {
-        zipped.push_back(pair<int, T>(i, arr[i]));
-    }
 
     sort(zipped.begin(), zipped.end(), [&](auto a, auto b) {
         return ind[a.first] < ind[b.first];
@@ -90,13 +91,12 @@ int simple_indexof(const QList<T> &arr, const T &el) {
 template<typename M, typename W>
 QList<pair<M, W>> gale_shapley(QList<M> &men, QList<QList<int>> &men_prefs, QList<W> &women, QList<QList<int>> &women_prefs, QList<QString> *explanation)
 {
-    ((void)explanation); // TODO: make use of explanation
+//    QList<QString> &summary = *explanation;
+    (void(explanation));
 
     assert(men.size() == women.size());
     for (auto &el: men_prefs) assert(el.size() == women.size());
     for (auto &el: women_prefs) assert(el.size() == men.size());
-
-    qDebug() << women.size();
 
     QList<pair<M, W>> pairs;
     QList<int> next_proposals;
@@ -104,9 +104,6 @@ QList<pair<M, W>> gale_shapley(QList<M> &men, QList<QList<int>> &men_prefs, QLis
 
     int cur_man = -1;
     while ((cur_man = find_free_man(pairs, men)) != -1) {
-        qDebug() << "cur_man: " << cur_man;
-        qDebug() << "next_proposal_for_cur_man: " << next_proposals[cur_man];
-
         int next_proposal_for_cur_man = next_proposals[cur_man];
 
         assert(next_proposal_for_cur_man >= 0);
@@ -187,6 +184,48 @@ void remove_dummies_from_results(QList<std::pair<Animal, Client>> &matches) {
     }
 }
 
+void reorder_prefs_for_cost(QList<Animal> &animals, QList<Client> &clients, QList<QList<int>> &client_prefs)
+{
+    QList<pair<int, Animal>> animals_zipped = enumerate(animals);
+    for (int i = 0; i < clients.size(); ++i) {
+        stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
+            bool ag = animals[a].getNPA(14) < clients[i].getIncome();
+            bool bg = animals[b].getNPA(14) < clients[i].getIncome();
+            return ag != bg || (static_cast<int>(ag) < static_cast<int>(bg));
+        });
+    }
+}
+
+void break_matches_for_cost(QList<std::pair<Animal, Client>> &matches) {
+    for (int i = 0; i < matches.size(); ++i) {
+        if (matches[i].first.getNPA(14) > matches[i].second.getIncome()) {
+            matches.removeAt(i);
+            i -= 1;
+        }
+    }
+}
+
+void reorder_prefs_for_type(QList<Animal> &animals, QList<Client> &clients, QList<QList<int>> &client_prefs)
+{
+    QList<pair<int, Animal>> animals_zipped = enumerate(animals);
+    for (int i = 0; i < clients.size(); ++i) {
+        stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
+            bool ag = animals[a].getType() == clients[i].getPreferredAnimal().getType();
+            bool bg = animals[b].getType() == clients[i].getPreferredAnimal().getType();
+            return ag != bg || (static_cast<int>(ag) < static_cast<int>(bg));
+        });
+    }
+}
+
+void break_matches_for_type(QList<std::pair<Animal, Client>> &matches) {
+    for (int i = 0; i < matches.size(); ++i) {
+        if (matches[i].first.getType() != matches[i].second.getPreferredAnimal().getType()) {
+            matches.removeAt(i);
+            i -= 1;
+        }
+    }
+}
+
 QList<int> rank_clients_by_dist(Animal &animal, QList<Client> &clients) {
     QList<double> dists;
     for (auto &el: clients) dists.push_back(dist(el, animal));
@@ -205,11 +244,16 @@ QList<std::pair<Animal, Client>> ACMAlgorithm::launch(QList<Animal> &animals, QL
     QList<QList<int>> client_prefs;
     for (auto &el: clients) client_prefs.push_back(rank_animals_by_dist(el, animals));
 
+    reorder_prefs_for_cost(animals, clients, client_prefs);
+    reorder_prefs_for_type(animals, clients, client_prefs);
+
     equalize_lists_with_dummies(animals, animal_prefs, clients, client_prefs);
 
     auto matches = gale_shapley(animals, animal_prefs, clients, client_prefs, nullptr);
 
     remove_dummies_from_results(matches);
+    break_matches_for_cost(matches);
+    break_matches_for_type(matches);
 
     return matches;
 }

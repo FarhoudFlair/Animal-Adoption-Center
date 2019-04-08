@@ -46,7 +46,11 @@ QListView {
        </font>
       </property>
       <property name="currentIndex">
+<<<<<<< HEAD
        <number>4</number>
+=======
+       <number>0</number>
+>>>>>>> c17edcde73b76cd032f98ba7224f84966403c1f5
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -323,7 +327,11 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
+<<<<<<< HEAD
                  <width>604</width>
+=======
+                 <width>428</width>
+>>>>>>> c17edcde73b76cd032f98ba7224f84966403c1f5
                  <height>793</height>
                 </rect>
                </property>
