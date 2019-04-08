@@ -23,9 +23,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->ui->clientFormPrefAnimalTypeInput->addItems(animal_type_variants_str());
 
     // add clients to client list view
-    this->client_model.setList(SQLSerializer::readClients());
-    this->ui->clientListView->setModel(&this->client_model);
-    this->ui->mainViewClientLoginList->setModel(&this->client_model);
+//    this->client_model.setList(SQLSerializer::readClients());
+//    this->ui->clientListView->setModel(&this->client_model);
+//    this->ui->mainViewClientLoginList->setModel(&this->client_model);
 
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
@@ -525,7 +525,8 @@ void MainWindow::on_homeViewAnimalsButton_clicked()
 void MainWindow::on_homeViewClientsButton_clicked()
 {
 
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
+    appCtrl.viewClientList(this->ui);
+   // this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
 }
 
 void MainWindow::on_homeViewAlgorithmButton_clicked()
