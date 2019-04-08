@@ -39,7 +39,7 @@ QListView {
     <item>
      <widget class="QStackedWidget" name="mainStackedWidget">
       <property name="currentIndex">
-       <number>4</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -148,7 +148,7 @@ QListView {
             </property>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_8">
-              <item>
+              <item alignment="Qt::AlignLeft">
                <widget class="QPushButton" name="animalBackButton">
                 <property name="maximumSize">
                  <size>
@@ -212,8 +212,8 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>612</width>
-                 <height>945</height>
+                 <width>604</width>
+                 <height>793</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1028,8 +1028,8 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>622</width>
-                 <height>1282</height>
+                 <width>390</width>
+                 <height>1116</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_10">

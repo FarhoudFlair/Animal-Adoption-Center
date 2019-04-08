@@ -6,8 +6,8 @@ ApplicationControl::ApplicationControl()
 }
 
 
-void ApplicationControl::viewAnimalList()
+void ApplicationControl::viewAnimalList(Ui::MainWindow *ui)
 {
     ViewAnimalListControl vALControl;
-    vALControl.launch();
+    vALControl.launch(ui);
 }

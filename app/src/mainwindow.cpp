@@ -14,9 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setAnimalForm();
     this->setClientForm();
 
-    // add animals to animal list view
-    this->animal_model.setList(SQLSerializer::readAnimals());
-    this->ui->animalListView->setModel(&this->animal_model);
+//    // add animals to animal list view
+//    this->animal_model.setList(SQLSerializer::readAnimals());
+//    this->ui->animalListView->setModel(&this->animal_model);
 
     // set combo box items for animal type
     this->ui->animalFormTypeInput->addItems(animal_type_variants_str());
@@ -516,7 +516,11 @@ void MainWindow::on_clientBackButton_clicked()
 
 void MainWindow::on_homeViewAnimalsButton_clicked()
 {
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->animalsPage);
+    ApplicationControl appCtrl;
+    appCtrl.viewAnimalList(this->ui);
+    //this->animal_model.setList(SQLSerializer::readAnimals());
+   // this->ui->animalListView->setModel(&this->animal_model);
+   // this->ui->mainStackedWidget->setCurrentWidget(this->ui->animalsPage);
 }
 
 void MainWindow::on_homeViewClientsButton_clicked()
