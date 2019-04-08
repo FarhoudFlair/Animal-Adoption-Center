@@ -516,7 +516,6 @@ void MainWindow::on_clientBackButton_clicked()
 
 void MainWindow::on_homeViewAnimalsButton_clicked()
 {
-    ApplicationControl appCtrl;
     appCtrl.viewAnimalList(this->ui);
     //this->animal_model.setList(SQLSerializer::readAnimals());
    // this->ui->animalListView->setModel(&this->animal_model);
