@@ -21,9 +21,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->ui->clientFormPrefAnimalTypeInput->addItems(animal_type_variants_str());
 
     // add clients to client list view
-    this->client_model.setList(SQLSerializer::readClients());
-    this->ui->clientListView->setModel(&this->client_model);
-    this->ui->clientLoginClientListView->setModel(&this->client_model);
+//    this->client_model.setList(SQLSerializer::readClients());
+//    this->ui->clientListView->setModel(&this->client_model);
+//    this->ui->clientLoginClientListView->setModel(&this->client_model);
 
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
@@ -321,13 +321,15 @@ Client MainWindow::clientFromForm()
 
 void MainWindow::on_loginAsClientButton_clicked()
 {
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientLoginPage);
+    appCtrl.viewClientList(this->ui);
+  //  this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientLoginPage);
 }
 
 void MainWindow::on_clientLoginClientListView_doubleClicked(const QModelIndex &index)
 {
     if (!index.isValid()) return;
 
+    qDebug() << this->client_model.getList().size() << " space" << index.row();
     this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
 
     this->ui->addAnimalButton->setVisible(false);
