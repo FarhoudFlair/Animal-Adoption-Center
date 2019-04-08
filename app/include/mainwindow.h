@@ -5,6 +5,9 @@
 #include <QStringListModel>
 #include <QList>
 #include <QDebug>
+#include <QMessageBox>
+
+#include <limits>
 
 #include "animallistmodel.h"
 #include "clientlistmodel.h"
@@ -27,7 +30,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     void setAnimalForm(bool = true);
@@ -44,11 +47,13 @@ private slots:
     void on_addAnimalButton_clicked();
     void on_animalFormCancelButton_clicked();
     void on_animalFormSaveButton_clicked();
-    void on_animalListView_doubleClicked(const QModelIndex &index);
-    void on_clientListView_doubleClicked(const QModelIndex &index);
+    void on_animalListView_doubleClicked(const QModelIndex &);
+    void on_clientListView_doubleClicked(const QModelIndex &);
     void on_clientFormSaveButton_clicked();
     void on_clientFormCancelButton_clicked();
     void on_addClientButton_clicked();
+
+    void on_clientLoginClientListView_doubleClicked(const QModelIndex &);
 
     void on_animalBackButton_clicked();
     void on_clientBackButton_clicked();

@@ -1,5 +1,3 @@
-#include <QDebug>
-#include <QMessageBox>
 #include "include/mainwindow.h"
 
 
@@ -25,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     // add clients to client list view
     this->client_model.setList(SQLSerializer::readClients());
     this->ui->clientListView->setModel(&this->client_model);
-    this->ui->mainViewClientLoginList->setModel(&this->client_model);
+    this->ui->clientLoginClientListView->setModel(&this->client_model);
 
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
@@ -286,7 +284,7 @@ Client MainWindow::clientFromForm()
         client.setAge(this->ui->clientFormAgeInput->value());
     }
 
-    if (this->ui->clientFormIncomeInput->value() == 0){
+    if (this->ui->clientFormIncomeInput->value() < std::numeric_limits<double>::epsilon()){
         client.setValid(false);
     }else{
         client.setIncome(this->ui->clientFormIncomeInput->value());
@@ -323,8 +321,11 @@ Client MainWindow::clientFromForm()
 
 void MainWindow::on_loginAsClientButton_clicked()
 {
-    auto index = this->ui->mainViewClientLoginList->currentIndex();
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientLoginPage);
+}
 
+void MainWindow::on_clientLoginClientListView_doubleClicked(const QModelIndex &index)
+{
     if (!index.isValid()) return;
 
     this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
