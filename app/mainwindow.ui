@@ -39,7 +39,7 @@ QListView {
     <item>
      <widget class="QStackedWidget" name="mainStackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -56,29 +56,29 @@ QListView {
          <number>5</number>
         </property>
         <item>
-         <widget class="QListView" name="mainViewClientLoginList">
-          <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+         <widget class="QPushButton" name="loginAsClientButton">
+          <property name="text">
+           <string>Login as Client</string>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="QPushButton" name="loginAsClientButton">
-            <property name="text">
-             <string>Login as Client</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="loginAsStaffButton">
-            <property name="text">
-             <string>Login as Staff</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QPushButton" name="loginAsStaffButton">
+          <property name="text">
+           <string>Login as Staff</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="clientLoginPage">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QListView" name="clientLoginClientListView">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -212,8 +212,8 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>604</width>
-                 <height>793</height>
+                 <width>330</width>
+                 <height>945</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1028,8 +1028,8 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>390</width>
-                 <height>1116</height>
+                 <width>290</width>
+                 <height>1282</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_10">
