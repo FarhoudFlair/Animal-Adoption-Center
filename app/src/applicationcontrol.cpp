@@ -1,6 +1,6 @@
 #include "include/applicationcontrol.h"
 
-ApplicationControl::ApplicationControl()
+ApplicationControl::ApplicationControl():loggedInUser(nullptr)
 {
 
 }
@@ -24,6 +24,12 @@ void ApplicationControl::clientLogin(Ui::MainWindow *ui, int indexRow, User *log
 //    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
+void ApplicationControl::staffLogin(Ui::MainWindow *ui)
+{
+    this->loggedInUser = new Staff();
+    ui->mainStackedWidget->setCurrentWidget(ui->homePage);
+}
+
 void ApplicationControl::viewAnimalList(Ui::MainWindow *ui)
 {
     ViewAnimalListControl vALControl;
@@ -39,5 +45,5 @@ void ApplicationControl::viewClientList(Ui::MainWindow *ui)
 void ApplicationControl::manageClients(Ui::MainWindow *ui, int choice, int index)
 {
     ManageClientsControl mCControl;
-    mCControl.launch(ui, choice, index);
+    mCControl.launch(ui, choice, index, this->loggedInUser);
 }

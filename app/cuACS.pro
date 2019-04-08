@@ -47,7 +47,8 @@ SOURCES += \
     src/viewalgorithmsummarycontrol.cpp \
     src/viewmatchdetailscontrol.cpp \
     src/acmalgorithm.cpp \
-    src/algorithmlistmodel.cpp
+    src/algorithmlistmodel.cpp \
+    src/saveclientcontrol.cpp
 
 HEADERS += \
     include/animal.h \
@@ -82,7 +83,8 @@ HEADERS += \
     include/viewmatchdetailscontrol.h \
     include/viewownprofilecontrol.h \
     include/acmalgorithm.h \
-    include/algorithmlistmodel.h
+    include/algorithmlistmodel.h \
+    include/saveclientcontrol.h
 
 FORMS += \
     mainwindow.ui

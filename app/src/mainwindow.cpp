@@ -166,8 +166,8 @@ Animal MainWindow::animalFromForm()
 
 void MainWindow::setClientForm(bool e)
 {
-    Client dummy;
-    this->setClientForm(dummy, e);
+//    Client dummy;
+//    this->setClientForm(dummy, e);
 }
 
 void MainWindow::setClientForm(Client &c, bool e)
@@ -348,8 +348,9 @@ void MainWindow::on_clientLoginClientListView_doubleClicked(const QModelIndex &i
 
 void MainWindow::on_loginAsStaffButton_clicked()
 {
-    this->loggedInUser = new Staff();
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+    appCtrl.staffLogin(this->ui);
+//    this->loggedInUser = new Staff();
+//    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_addAnimalButton_clicked()
@@ -455,39 +456,40 @@ void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_clientFormSaveButton_clicked()
 {
-    // create client with data from form
-    Client client = this->clientFromForm();
+    appCtrl.manageClients(ui, 4, -1);
+//    // create client with data from form
+//    Client client = this->clientFromForm();
 
-    if (client.getValid() == false){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please fill in all fields.");
-        messageBox.setFixedSize(500,1000);
-        return;
-    }
+//    if (client.getValid() == false){
+//        QMessageBox messageBox;
+//        messageBox.critical(0,"Error","Please fill in all fields.");
+//        messageBox.setFixedSize(500,1000);
+//        return;
+//    }
 
-    if (this->loggedInUser->isStaff())
-    {
-        // save client to database
-        if (client.getValid() != false){
-            SQLSerializer::addClient(client);
-        }
-        // update list from database
-        this->setClientForm();
+//    if (this->loggedInUser->isStaff())
+//    {
+//        // save client to database
+//        if (client.getValid() != false){
+//            SQLSerializer::addClient(client);
+//        }
+//        // update list from database
+//        this->setClientForm();
 
-        // reset stacked view to list
-        this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
-    }
-    else
-    {
-        Client *existing_client = dynamic_cast<Client *>(this->loggedInUser);
-        client.setId(existing_client->getId());
-        client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
-        SQLSerializer::saveClient(client);
-        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
-    }
-    //checks for client validity before adding to DB
+//        // reset stacked view to list
+//        this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
+//    }
+//    else
+//    {
+//        Client *existing_client = dynamic_cast<Client *>(this->loggedInUser);
+//        client.setId(existing_client->getId());
+//        client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
+//        SQLSerializer::saveClient(client);
+//        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+//    }
+//    //checks for client validity before adding to DB
 
-    this->client_model.setList(SQLSerializer::readClients());
+//    this->client_model.setList(SQLSerializer::readClients());
 
 }
 
@@ -499,8 +501,9 @@ void MainWindow::on_clientFormCancelButton_clicked()
 
 void MainWindow::on_addClientButton_clicked()
 {
-    this->setClientForm();
-    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+    appCtrl.manageClients(this->ui, 3, -1);
+//    this->setClientForm();
+//    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }
 
 void MainWindow::on_algorithmBackButton_clicked()
@@ -528,7 +531,6 @@ void MainWindow::on_homeViewAnimalsButton_clicked()
 
 void MainWindow::on_homeViewClientsButton_clicked()
 {
-
     appCtrl.manageClients(this->ui, 1, -1);
    // this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
 }

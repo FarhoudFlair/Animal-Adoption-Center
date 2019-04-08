@@ -6,13 +6,14 @@
 #include "ui_mainwindow.h"
 #include "viewclientlistcontrol.h"
 #include "viewclientprofilecontrol.h"
-
+#include "addclientcontrol.h"
+#include "saveclientcontrol.h"
 
 class ManageClientsControl
 {
 public:
     ManageClientsControl();
-    void launch(Ui::MainWindow *, int, int);
+    void launch(Ui::MainWindow *, int, int, User *);
 };
 
 #endif // MANAGECLIENTSCONTROL_H

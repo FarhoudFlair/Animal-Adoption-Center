@@ -228,7 +228,7 @@ QListView {
         <item>
          <widget class="QStackedWidget" name="animalsStackedWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="animalViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -1063,7 +1063,7 @@ QListView {
         <item>
          <widget class="QStackedWidget" name="clientsStackedWidget">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="clientViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -1146,7 +1146,7 @@ QListView {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>390</width>
+                 <width>614</width>
                  <height>1116</height>
                 </rect>
                </property>
