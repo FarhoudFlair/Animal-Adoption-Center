@@ -30,8 +30,8 @@ MainWindow::MainWindow(QWidget *parent) :
     // set default pages for stacked widgets
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->loginPage);
     this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
-    this->ui->mainTabWidget->setCurrentWidget(this->ui->animalTab);
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
+    this->ui->algorithmStackedWidget->setCurrentWidget(this->ui->algorithmSummaryViewPage);
 }
 
 MainWindow::~MainWindow()
@@ -333,19 +333,20 @@ void MainWindow::on_loginAsClientButton_clicked()
     this->ui->animalFormSaveButton->setVisible(false);
     this->ui->animalFormCancelButton->setText("OK");
     this->ui->clientFormCancelButton->setVisible(false);
-    this->ui->mainTabWidget->setTabText(1, "Your Profile");
+    this->ui->homeViewClientsButton->setText("View Your Profile");
+    this->ui->homeViewAlgorithmButton->setVisible(false);
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 
     Client *c = dynamic_cast<Client *>(this->loggedInUser);
     this->setClientForm(*c, true);
 
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->mainPage);
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_loginAsStaffButton_clicked()
 {
     this->loggedInUser = new Staff();
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->mainPage);
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_addAnimalButton_clicked()
@@ -396,8 +397,45 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
 {
     if (index.row() < 0 || index.row() >= this->animal_model.getList().size()) return;
 
-    ApplicationControl appControl;
-    appControl.viewAnimalList();
+    Animal a = this->animal_model.getElement(index.row());
+
+    if (!this->loggedInUser->isStaff())
+    {
+        this->ui->animalFormNameInput->setEnabled(false);
+        this->ui->animalFormTypeInput->setEnabled(false);
+        this->ui->animalFormBreedInput->setEnabled(false);
+        this->ui->animalFormColorInput->setEnabled(false);
+        this->ui->animalFormAgeInput->setEnabled(false);
+        this->ui->animalFormSexInput->setEnabled(false);
+        this->ui->animalFormWeightInput->setEnabled(false);
+        this->ui->animalFormHeightInput->setEnabled(false);
+        this->ui->animalFormHealthInput->setEnabled(false);
+        this->ui->animalFormLibidoInput->setEnabled(false);
+        this->ui->animalFormAggressivenessInput->setEnabled(false);
+        this->ui->animalFormExtroversionInput->setEnabled(false);
+        this->ui->animalFormTemperInput->setEnabled(false);
+        this->ui->animalFormObedienceInput->setEnabled(false);
+        this->ui->animalFormEnduranceInput->setEnabled(false);
+        this->ui->animalFormActivenessInput->setEnabled(false);
+        this->ui->animalFormImpulsionInput->setEnabled(false);
+        this->ui->animalFormDistractibilityInput->setEnabled(false);
+        this->ui->animalFormAdaptabilityInput->setEnabled(false);
+        this->ui->animalFormRegularityInput->setEnabled(false);
+        this->ui->animalFormIntelligenceInput->setEnabled(false);
+        this->ui->animalFormIndependenceInput->setEnabled(false);
+        this->ui->animalFormTrainingInput->setEnabled(false);
+        this->ui->animalFormCostInput->setEnabled(false);
+        this->ui->animalFormSaveButton->setEnabled(false);
+    }
+    else
+    {
+        Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
+        staff->animal_id_being_edited = a.getId();
+    }
+
+    this->setAnimalForm(a, this->loggedInUser->isStaff());
+
+    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
 }
 
 void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
@@ -441,6 +479,7 @@ void MainWindow::on_clientFormSaveButton_clicked()
         client.setId(existing_client->getId());
         client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
         SQLSerializer::saveClient(client);
+        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
     }
     //checks for client validity before adding to DB
 
@@ -458,4 +497,36 @@ void MainWindow::on_addClientButton_clicked()
 {
     this->setClientForm();
     this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+}
+
+void MainWindow::on_algorithmBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_animalBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_clientBackButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+}
+
+void MainWindow::on_homeViewAnimalsButton_clicked()
+{
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->animalsPage);
+}
+
+void MainWindow::on_homeViewClientsButton_clicked()
+{
+
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
+}
+
+void MainWindow::on_homeViewAlgorithmButton_clicked()
+{
+
+    this->ui->mainStackedWidget->setCurrentWidget(this->ui->algorithmPage);
 }

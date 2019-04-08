@@ -34,7 +34,6 @@ SOURCES += \
     src/clientlistmodel.cpp \
     src/viewanimallistcontrol.cpp \
     src/applicationcontrol.cpp \
-    src/viewanimalprofile.cpp \
     src/viewownprofilecontrol.cpp \
     src/editclientprofilecontrol.cpp \
     src/addanimalcontrol.cpp \
@@ -42,12 +41,12 @@ SOURCES += \
     src/viewclientlistcontrol.cpp \
     src/viewclientprofilecontrol.cpp \
     src/addclientcontrol.cpp \
-    src/accessanimalscontrol.cpp \
     src/manageanimalscontrol.cpp \
     src/manageclientscontrol.cpp \
     src/launchalgorithmcontrol.cpp \
     src/viewalgorithmsummarycontrol.cpp \
-    src/viewmatchdetailscontrol.cpp
+    src/viewmatchdetailscontrol.cpp \
+    src/acmalgorithm.cpp
 
 HEADERS += \
     include/animal.h \
@@ -60,8 +59,6 @@ HEADERS += \
     include/clientlistmodel.h \
     include/viewanimallistcontrol.h \
     include/applicationcontrol.h \
-    include/viewanimalprofile.h \
-    include/accessanimalscontrol.h \
     include/addanimalcontrol.h \
     include/addclientcontrol.h \
     include/animal.h \
@@ -72,7 +69,6 @@ HEADERS += \
     include/editanimalprofilecontrol.h \
     include/editclientprofilecontrol.h \
     include/launchalgorithmcontrol.h \
-    include/mainwindow.h \
     include/manageanimalscontrol.h \
     include/manageclientscontrol.h \
     include/sqlserializer.h \
@@ -80,11 +76,11 @@ HEADERS += \
     include/user.h \
     include/viewalgorithmsummarycontrol.h \
     include/viewanimallistcontrol.h \
-    include/viewanimalprofile.h \
     include/viewclientlistcontrol.h \
     include/viewclientprofilecontrol.h \
     include/viewmatchdetailscontrol.h \
-    include/viewownprofilecontrol.h
+    include/viewownprofilecontrol.h \
+    include/acmalgorithm.h
 
 FORMS += \
     mainwindow.ui

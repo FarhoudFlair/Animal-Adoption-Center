@@ -16,7 +16,7 @@ public:
 
     virtual bool isStaff();
 
-    double getId() const { return id; }
+    int getId() const { return id; }
     void setId(const int value) { id = value; }
 
     // standard getters/setters
@@ -55,6 +55,8 @@ public:
 
     Animal &getPreferredAnimal() { return preferred_animal; }
     void setPreferredAnimal(const Animal &value) { preferred_animal = value; }
+
+    bool operator==(const Client &) const;
 
 private:
     int id;

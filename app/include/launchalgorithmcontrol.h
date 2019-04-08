@@ -1,11 +1,13 @@
 #ifndef LAUNCHALGORITHMCONTROL_H
 #define LAUNCHALGORITHMCONTROL_H
 
+#include "animal.h"
+#include "client.h"
 
 class LaunchAlgorithmControl
 {
 public:
-    LaunchAlgorithmControl();
+    void launch();
 };
 
 #endif // LAUNCHALGORITHMCONTROL_H

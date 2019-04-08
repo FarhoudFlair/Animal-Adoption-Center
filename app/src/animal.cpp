@@ -79,3 +79,7 @@ void Animal::setSexString(const QString &value)
         throw QString("Invalid AnimalType variant: %1").arg(value);
     }
 }
+
+bool Animal::operator==(const Animal &a) const {
+    return this == &a || id == a.id;
+}

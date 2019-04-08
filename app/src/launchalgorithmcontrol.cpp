@@ -1,6 +1,5 @@
-#include "launchalgorithmcontrol.h"
+#include "include/launchalgorithmcontrol.h"
 
-LaunchAlgorithmControl::LaunchAlgorithmControl()
-{
+void LaunchAlgorithmControl::launch() {
 
 }

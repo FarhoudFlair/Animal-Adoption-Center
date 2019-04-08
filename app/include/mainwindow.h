@@ -50,11 +50,13 @@ private slots:
     void on_clientFormCancelButton_clicked();
     void on_addClientButton_clicked();
 
-    void on_mainTabWidget_tabBarDoubleClicked(int index);
+    void on_animalBackButton_clicked();
+    void on_clientBackButton_clicked();
+    void on_algorithmBackButton_clicked();
 
-    void on_mainTabWidget_tabBarClicked(int index);
-
-    void on_mainTabWidget_currentChanged(int index);
+    void on_homeViewAnimalsButton_clicked();
+    void on_homeViewClientsButton_clicked();
+    void on_homeViewAlgorithmButton_clicked();
 
 private:
     Ui::MainWindow *ui;
