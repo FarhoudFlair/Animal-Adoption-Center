@@ -45,21 +45,12 @@ QListView {
         <bold>true</bold>
        </font>
       </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
-      </property>
       <property name="currentIndex">
-       <number>2</number>
+<<<<<<< HEAD
+       <number>4</number>
+=======
+       <number>0</number>
+>>>>>>> c17edcde73b76cd032f98ba7224f84966403c1f5
       </property>
       <widget class="QWidget" name="loginPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -86,13 +77,13 @@ QPushButton:disabled {
           <property name="font">
            <font>
             <family>DejaVu Sans Mono</family>
-            <pointsize>20</pointsize>
+            <pointsize>14</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
           <property name="text">
-           <string>Carleton University Animal Care System</string>
+           <string>Welcome to the Carleton University Animal Care System</string>
           </property>
          </widget>
         </item>
@@ -111,19 +102,6 @@ QPushButton:disabled {
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
           </property>
           <property name="text">
            <string>Login as Client</string>
@@ -145,19 +123,6 @@ QPushButton:disabled {
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton:pressed {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
-}
-QPushButton {
-     background-color: #f7aaf4; border: 1px solid black;
-     border-radius: 5px;
-}
-
-QPushButton:disabled {
-    background-color: #a9dbf9
-}</string>
           </property>
           <property name="text">
            <string>Login as Staff</string>
@@ -267,7 +232,7 @@ QPushButton:disabled {
         <item>
          <widget class="QStackedWidget" name="animalsStackedWidget">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="animalViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -362,7 +327,11 @@ QPushButton:disabled {
                 <rect>
                  <x>0</x>
                  <y>0</y>
+<<<<<<< HEAD
+                 <width>604</width>
+=======
                  <width>428</width>
+>>>>>>> c17edcde73b76cd032f98ba7224f84966403c1f5
                  <height>793</height>
                 </rect>
                </property>
@@ -1102,7 +1071,7 @@ QPushButton:disabled {
         <item>
          <widget class="QStackedWidget" name="clientsStackedWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="clientViewPage">
            <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -1185,7 +1154,7 @@ QPushButton:disabled {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>614</width>
+                 <width>390</width>
                  <height>1116</height>
                 </rect>
                </property>
@@ -2172,44 +2141,11 @@ QPushButton:disabled {
              </layout>
             </item>
             <item>
-             <widget class="QListView" name="algorithmSummaryListView">
-              <property name="editTriggers">
-               <set>QAbstractItemView::NoEditTriggers</set>
-              </property>
-             </widget>
+             <widget class="QListView" name="algorithmSummaryListView"/>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="algorithmDetailedViewPage">
-           <layout class="QVBoxLayout" name="verticalLayout_14">
-            <property name="leftMargin">
-             <number>0</number>
-            </property>
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <property name="rightMargin">
-             <number>0</number>
-            </property>
-            <property name="bottomMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <widget class="QTextEdit" name="algorithmDetailedTextBrowser">
-              <property name="readOnly">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="algorithmDetailedButton">
-              <property name="text">
-               <string>Ok</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <widget class="QWidget" name="algorithmDetailedViewPage"/>
          </widget>
         </item>
        </layout>

@@ -49,7 +49,8 @@ SOURCES += \
     src/acmalgorithm.cpp \
     src/algorithmlistmodel.cpp \
     src/acmalgorithmmatch.cpp \
-    src/galeshapley.cpp
+    src/galeshapley.cpp \
+    src/saveclientcontrol.cpp
 
 HEADERS += \
     include/animal.h \
@@ -86,7 +87,8 @@ HEADERS += \
     include/acmalgorithm.h \
     include/algorithmlistmodel.h \
     include/acmalgorithmmatch.h \
-    include/galeshapley.h
+    include/galeshapley.h \
+    include/saveclientcontrol.h
 
 FORMS += \
     mainwindow.ui

@@ -166,84 +166,84 @@ Animal MainWindow::animalFromForm()
 
 void MainWindow::setClientForm(bool e)
 {
-    Client dummy;
-    this->setClientForm(dummy, e);
+//    Client dummy;
+//    this->setClientForm(dummy, e);
 }
 
 void MainWindow::setClientForm(Client &c, bool e)
 {
-    this->ui->clientFormNameInput->setText(c.getName());
-    this->ui->clientFormPhoneNumberInput->setText(c.getPhoneNumber());
-    this->ui->clientFormAddressInput->setText(c.getAddress());
-    this->ui->clientFormEmailInput->setText(c.getEmail());
-    this->ui->clientFormPatienceInput->setValue(c.getPatience());
-    this->ui->clientFormExperienceInput->setValue(c.getExperience());
-    this->ui->clientFormActivenessInput->setValue(c.getActiveness());
-    this->ui->clientFormAgeInput->setValue(c.getAge());
-    this->ui->clientFormIncomeInput->setValue(c.getIncome());
-    this->ui->clientFormRegularityInput->setValue(c.getRegularity());
+//    this->ui->clientFormNameInput->setText(c.getName());
+//    this->ui->clientFormPhoneNumberInput->setText(c.getPhoneNumber());
+//    this->ui->clientFormAddressInput->setText(c.getAddress());
+//    this->ui->clientFormEmailInput->setText(c.getEmail());
+//    this->ui->clientFormPatienceInput->setValue(c.getPatience());
+//    this->ui->clientFormExperienceInput->setValue(c.getExperience());
+//    this->ui->clientFormActivenessInput->setValue(c.getActiveness());
+//    this->ui->clientFormAgeInput->setValue(c.getAge());
+//    this->ui->clientFormIncomeInput->setValue(c.getIncome());
+//    this->ui->clientFormRegularityInput->setValue(c.getRegularity());
 
-    this->ui->clientFormPrefAnimalTypeInput->setCurrentText(c.getPreferredAnimal().getTypeString());
-    this->ui->clientFormPrefBreedInput->setText(c.getPreferredAnimal().getBreed());
-    this->ui->clientFormPrefColorInput->setText(c.getPreferredAnimal().getColor());
-    this->ui->clientFormPrefAgeInput->setValue(c.getPreferredAnimal().getAge());
-    this->ui->clientFormPrefSexInput->setCurrentText(c.getPreferredAnimal().getSexString());
-    this->ui->clientFormPrefWeightInput->setValue(c.getPreferredAnimal().getWeight());
-    this->ui->clientFormPrefHeightInput->setValue(c.getPreferredAnimal().getHeight());
+//    this->ui->clientFormPrefAnimalTypeInput->setCurrentText(c.getPreferredAnimal().getTypeString());
+//    this->ui->clientFormPrefBreedInput->setText(c.getPreferredAnimal().getBreed());
+//    this->ui->clientFormPrefColorInput->setText(c.getPreferredAnimal().getColor());
+//    this->ui->clientFormPrefAgeInput->setValue(c.getPreferredAnimal().getAge());
+//    this->ui->clientFormPrefSexInput->setCurrentText(c.getPreferredAnimal().getSexString());
+//    this->ui->clientFormPrefWeightInput->setValue(c.getPreferredAnimal().getWeight());
+//    this->ui->clientFormPrefHeightInput->setValue(c.getPreferredAnimal().getHeight());
 
-    this->ui->clientFormPrefLibidoInput->setValue(c.getPreferredAnimal().getNPA(0));
-    this->ui->clientFormPrefAggressivenessInput->setValue(c.getPreferredAnimal().getNPA(1));
-    this->ui->clientFormPrefExtroversionInput->setValue(c.getPreferredAnimal().getNPA(2));
-    this->ui->clientFormPrefTemperInput->setValue(c.getPreferredAnimal().getNPA(3));
-    this->ui->clientFormPrefObedienceInput->setValue(c.getPreferredAnimal().getNPA(4));
-    this->ui->clientFormPrefEnduranceInput->setValue(c.getPreferredAnimal().getNPA(5));
-    this->ui->clientFormPrefActivenessInput->setValue(c.getPreferredAnimal().getNPA(6));
-    this->ui->clientFormPrefImpulsivityInput->setValue(c.getPreferredAnimal().getNPA(7));
-    this->ui->clientFormPrefDistractibilityInput->setValue(c.getPreferredAnimal().getNPA(8));
-    this->ui->clientFormPrefAdaptabilityInput->setValue(c.getPreferredAnimal().getNPA(9));
-    this->ui->clientFormPrefRegularityInput->setValue(c.getPreferredAnimal().getNPA(10));
-    this->ui->clientFormPrefIntelligenceInput->setValue(c.getPreferredAnimal().getNPA(11));
-    this->ui->clientFormPrefIndependenceInput->setValue(c.getPreferredAnimal().getNPA(12));
-    this->ui->clientFormPrefTrainingInput->setValue(c.getPreferredAnimal().getNPA(13));
-    this->ui->clientFormPrefCostInput->setValue(c.getPreferredAnimal().getNPA(14));
+//    this->ui->clientFormPrefLibidoInput->setValue(c.getPreferredAnimal().getNPA(0));
+//    this->ui->clientFormPrefAggressivenessInput->setValue(c.getPreferredAnimal().getNPA(1));
+//    this->ui->clientFormPrefExtroversionInput->setValue(c.getPreferredAnimal().getNPA(2));
+//    this->ui->clientFormPrefTemperInput->setValue(c.getPreferredAnimal().getNPA(3));
+//    this->ui->clientFormPrefObedienceInput->setValue(c.getPreferredAnimal().getNPA(4));
+//    this->ui->clientFormPrefEnduranceInput->setValue(c.getPreferredAnimal().getNPA(5));
+//    this->ui->clientFormPrefActivenessInput->setValue(c.getPreferredAnimal().getNPA(6));
+//    this->ui->clientFormPrefImpulsivityInput->setValue(c.getPreferredAnimal().getNPA(7));
+//    this->ui->clientFormPrefDistractibilityInput->setValue(c.getPreferredAnimal().getNPA(8));
+//    this->ui->clientFormPrefAdaptabilityInput->setValue(c.getPreferredAnimal().getNPA(9));
+//    this->ui->clientFormPrefRegularityInput->setValue(c.getPreferredAnimal().getNPA(10));
+//    this->ui->clientFormPrefIntelligenceInput->setValue(c.getPreferredAnimal().getNPA(11));
+//    this->ui->clientFormPrefIndependenceInput->setValue(c.getPreferredAnimal().getNPA(12));
+//    this->ui->clientFormPrefTrainingInput->setValue(c.getPreferredAnimal().getNPA(13));
+//    this->ui->clientFormPrefCostInput->setValue(c.getPreferredAnimal().getNPA(14));
 
-    this->ui->clientFormNameInput->setEnabled(e);
-    this->ui->clientFormPhoneNumberInput->setEnabled(e);
-    this->ui->clientFormAddressInput->setEnabled(e);
-    this->ui->clientFormEmailInput->setEnabled(e);
-    this->ui->clientFormPatienceInput->setEnabled(e);
-    this->ui->clientFormExperienceInput->setEnabled(e);
-    this->ui->clientFormActivenessInput->setEnabled(e);
-    this->ui->clientFormAgeInput->setEnabled(e);
-    this->ui->clientFormIncomeInput->setEnabled(e);
-    this->ui->clientFormRegularityInput->setEnabled(e);
+//    this->ui->clientFormNameInput->setEnabled(e);
+//    this->ui->clientFormPhoneNumberInput->setEnabled(e);
+//    this->ui->clientFormAddressInput->setEnabled(e);
+//    this->ui->clientFormEmailInput->setEnabled(e);
+//    this->ui->clientFormPatienceInput->setEnabled(e);
+//    this->ui->clientFormExperienceInput->setEnabled(e);
+//    this->ui->clientFormActivenessInput->setEnabled(e);
+//    this->ui->clientFormAgeInput->setEnabled(e);
+//    this->ui->clientFormIncomeInput->setEnabled(e);
+//    this->ui->clientFormRegularityInput->setEnabled(e);
 
-    this->ui->clientFormPrefAnimalTypeInput->setEnabled(e);
-    this->ui->clientFormPrefBreedInput->setEnabled(e);
-    this->ui->clientFormPrefColorInput->setEnabled(e);
-    this->ui->clientFormPrefAgeInput->setEnabled(e);
-    this->ui->clientFormPrefSexInput->setEnabled(e);
-    this->ui->clientFormPrefWeightInput->setEnabled(e);
-    this->ui->clientFormPrefHeightInput->setEnabled(e);
+//    this->ui->clientFormPrefAnimalTypeInput->setEnabled(e);
+//    this->ui->clientFormPrefBreedInput->setEnabled(e);
+//    this->ui->clientFormPrefColorInput->setEnabled(e);
+//    this->ui->clientFormPrefAgeInput->setEnabled(e);
+//    this->ui->clientFormPrefSexInput->setEnabled(e);
+//    this->ui->clientFormPrefWeightInput->setEnabled(e);
+//    this->ui->clientFormPrefHeightInput->setEnabled(e);
 
-    this->ui->clientFormPrefLibidoInput->setEnabled(e);
-    this->ui->clientFormPrefAggressivenessInput->setEnabled(e);
-    this->ui->clientFormPrefExtroversionInput->setEnabled(e);
-    this->ui->clientFormPrefTemperInput->setEnabled(e);
-    this->ui->clientFormPrefObedienceInput->setEnabled(e);
-    this->ui->clientFormPrefEnduranceInput->setEnabled(e);
-    this->ui->clientFormPrefActivenessInput->setEnabled(e);
-    this->ui->clientFormPrefImpulsivityInput->setEnabled(e);
-    this->ui->clientFormPrefDistractibilityInput->setEnabled(e);
-    this->ui->clientFormPrefAdaptabilityInput->setEnabled(e);
-    this->ui->clientFormPrefRegularityInput->setEnabled(e);
-    this->ui->clientFormPrefIntelligenceInput->setEnabled(e);
-    this->ui->clientFormPrefIndependenceInput->setEnabled(e);
-    this->ui->clientFormPrefTrainingInput->setEnabled(e);
-    this->ui->clientFormPrefCostInput->setEnabled(e);
+//    this->ui->clientFormPrefLibidoInput->setEnabled(e);
+//    this->ui->clientFormPrefAggressivenessInput->setEnabled(e);
+//    this->ui->clientFormPrefExtroversionInput->setEnabled(e);
+//    this->ui->clientFormPrefTemperInput->setEnabled(e);
+//    this->ui->clientFormPrefObedienceInput->setEnabled(e);
+//    this->ui->clientFormPrefEnduranceInput->setEnabled(e);
+//    this->ui->clientFormPrefActivenessInput->setEnabled(e);
+//    this->ui->clientFormPrefImpulsivityInput->setEnabled(e);
+//    this->ui->clientFormPrefDistractibilityInput->setEnabled(e);
+//    this->ui->clientFormPrefAdaptabilityInput->setEnabled(e);
+//    this->ui->clientFormPrefRegularityInput->setEnabled(e);
+//    this->ui->clientFormPrefIntelligenceInput->setEnabled(e);
+//    this->ui->clientFormPrefIndependenceInput->setEnabled(e);
+//    this->ui->clientFormPrefTrainingInput->setEnabled(e);
+//    this->ui->clientFormPrefCostInput->setEnabled(e);
 
-    this->ui->clientFormSaveButton->setEnabled(true);
-    this->ui->clientFormCancelButton->setEnabled(true);
+//    this->ui->clientFormSaveButton->setEnabled(true);
+//    this->ui->clientFormCancelButton->setEnabled(true);
 }
 
 Client MainWindow::clientFromForm()
@@ -321,35 +321,36 @@ Client MainWindow::clientFromForm()
 
 void MainWindow::on_loginAsClientButton_clicked()
 {
-    appCtrl.viewClientList(this->ui);
-  //  this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientLoginPage);
+    appCtrl.manageClients(this->ui, 0, -1);
 }
 
 void MainWindow::on_clientLoginClientListView_doubleClicked(const QModelIndex &index)
 {
     if (!index.isValid()) return;
 
-    qDebug() << this->client_model.getList().size() << " space" << index.row();
-    this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
+    appCtrl.clientLogin(this->ui, index.row(), loggedInUser);
+//    qDebug() << this->client_model.getList().size() << " space" << index.row();
+//    this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
 
-    this->ui->addAnimalButton->setVisible(false);
-    this->ui->animalFormSaveButton->setVisible(false);
-    this->ui->animalFormCancelButton->setText("OK");
-    this->ui->clientFormCancelButton->setVisible(false);
-    this->ui->homeViewClientsButton->setText("View Your Profile");
-    this->ui->homeViewAlgorithmButton->setVisible(false);
-    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+//    this->ui->addAnimalButton->setVisible(false);
+//    this->ui->animalFormSaveButton->setVisible(false);
+//    this->ui->animalFormCancelButton->setText("OK");
+//    this->ui->clientFormCancelButton->setVisible(false);
+//    this->ui->homeViewClientsButton->setText("View Your Profile");
+//    this->ui->homeViewAlgorithmButton->setVisible(false);
+//    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 
-    Client *c = dynamic_cast<Client *>(this->loggedInUser);
-    this->setClientForm(*c, true);
+//    Client *c = dynamic_cast<Client *>(this->loggedInUser);
+//    this->setClientForm(*c, true);
 
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+//    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_loginAsStaffButton_clicked()
 {
-    this->loggedInUser = new Staff();
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+    appCtrl.staffLogin(this->ui);
+//    this->loggedInUser = new Staff();
+//    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_addAnimalButton_clicked()
@@ -443,50 +444,52 @@ void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
 {
-    if (index.row() <= 0 || index.row() >= this->client_model.getList().size()) return;
+//    if (index.row() <= 0 || index.row() >= this->client_model.getList().size()) return;
 
     //Convert to ManageClientsControl
-    Client c = this->client_model.getElement(index.row());
-    this->setClientForm(c, false);
+    appCtrl.manageClients(this->ui, 2, index.row());
+//    Client c = this->client_model.getElement(index.row());
+//    this->setClientForm(c, false);
 
-    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+//    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }
 
 void MainWindow::on_clientFormSaveButton_clicked()
 {
-    // create client with data from form
-    Client client = this->clientFromForm();
+    appCtrl.manageClients(ui, 4, -1);
+//    // create client with data from form
+//    Client client = this->clientFromForm();
 
-    if (client.getValid() == false){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please fill in all fields.");
-        messageBox.setFixedSize(500,1000);
-        return;
-    }
+//    if (client.getValid() == false){
+//        QMessageBox messageBox;
+//        messageBox.critical(0,"Error","Please fill in all fields.");
+//        messageBox.setFixedSize(500,1000);
+//        return;
+//    }
 
-    if (this->loggedInUser->isStaff())
-    {
-        // save client to database
-        if (client.getValid() != false){
-            SQLSerializer::addClient(client);
-        }
-        // update list from database
-        this->setClientForm();
+//    if (this->loggedInUser->isStaff())
+//    {
+//        // save client to database
+//        if (client.getValid() != false){
+//            SQLSerializer::addClient(client);
+//        }
+//        // update list from database
+//        this->setClientForm();
 
-        // reset stacked view to list
-        this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
-    }
-    else
-    {
-        Client *existing_client = dynamic_cast<Client *>(this->loggedInUser);
-        client.setId(existing_client->getId());
-        client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
-        SQLSerializer::saveClient(client);
-        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
-    }
-    //checks for client validity before adding to DB
+//        // reset stacked view to list
+//        this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientViewPage);
+//    }
+//    else
+//    {
+//        Client *existing_client = dynamic_cast<Client *>(this->loggedInUser);
+//        client.setId(existing_client->getId());
+//        client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
+//        SQLSerializer::saveClient(client);
+//        this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+//    }
+//    //checks for client validity before adding to DB
 
-    this->client_model.setList(SQLSerializer::readClients());
+//    this->client_model.setList(SQLSerializer::readClients());
 
 }
 
@@ -498,8 +501,9 @@ void MainWindow::on_clientFormCancelButton_clicked()
 
 void MainWindow::on_addClientButton_clicked()
 {
-    this->setClientForm();
-    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+    appCtrl.manageClients(this->ui, 3, -1);
+//    this->setClientForm();
+//    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 }
 
 void MainWindow::on_algorithmBackButton_clicked()
@@ -527,8 +531,11 @@ void MainWindow::on_homeViewAnimalsButton_clicked()
 
 void MainWindow::on_homeViewClientsButton_clicked()
 {
-
-    appCtrl.viewClientList(this->ui);
+    if (ui->homeViewClientsButton->text() == "View Your Profile") {
+        appCtrl.viewOwnProfile(this->ui);
+    } else {
+        appCtrl.manageClients(this->ui, 1, -1);
+    }
    // this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
 }
 
@@ -537,6 +544,7 @@ void MainWindow::on_homeViewAlgorithmButton_clicked()
 
     this->ui->mainStackedWidget->setCurrentWidget(this->ui->algorithmPage);
 }
+
 
 void MainWindow::on_algorithmLaunchAlgorithmButton_clicked()
 {
