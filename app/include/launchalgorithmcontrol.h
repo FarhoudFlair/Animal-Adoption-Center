@@ -8,13 +8,14 @@
 #include "include/clientlistmodel.h"
 #include "include/algorithmlistmodel.h"
 #include "include/acmalgorithmmatch.h"
+#include "sqlserializer.h"
 
 #include "ui_mainwindow.h"
 
 class LaunchAlgorithmControl
 {
 public:
-    void launch(QList<Animal> &, QList<Client> &, Ui::MainWindow *);
+    void launch(Ui::MainWindow *);
 };
 
 #endif // LAUNCHALGORITHMCONTROL_H

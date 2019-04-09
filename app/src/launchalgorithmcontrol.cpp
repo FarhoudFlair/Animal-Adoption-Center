@@ -1,6 +1,8 @@
 #include "include/launchalgorithmcontrol.h"
 
-void LaunchAlgorithmControl::launch(QList<Animal> &animals, QList<Client> &clients, Ui::MainWindow *ui) {
+void LaunchAlgorithmControl::launch(Ui::MainWindow *ui) {
+    auto animals = SQLSerializer::readAnimals();
+    auto clients = SQLSerializer::readClients();
     ACMAlgorithm algo;
     QList<ACMAlgorithmMatch<Animal, Client>> matches = algo.launch(animals, clients);
 

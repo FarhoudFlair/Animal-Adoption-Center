@@ -9,16 +9,8 @@
 
 #include <limits>
 
-#include "animallistmodel.h"
-#include "clientlistmodel.h"
-#include "animal.h"
-#include "client.h"
-#include "user.h"
 #include "ui_mainwindow.h"
 
-#include "include/staff.h"
-#include "include/animal.h"
-#include "include/sqlserializer.h"
 #include "include/applicationcontrol.h"
 #include "include/launchalgorithmcontrol.h"
 
