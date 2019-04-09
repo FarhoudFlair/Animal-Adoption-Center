@@ -50,9 +50,9 @@ SOURCES += \
     src/algorithmlistmodel.cpp \
     src/saveclientcontrol.cpp \
     src/viewanimalprofilecontrol.cpp \
-    src/saveanimalcontrol.cpp
+    src/saveanimalcontrol.cpp \
     src/acmalgorithmmatch.cpp \
-    src/galeshapley.cpp \
+    src/galeshapley.cpp
 
 HEADERS += \
     include/animal.h \
@@ -90,9 +90,9 @@ HEADERS += \
     include/algorithmlistmodel.h \
     include/saveclientcontrol.h \
     include/viewanimalprofilecontrol.h \
-    include/saveanimalcontrol.h
+    include/saveanimalcontrol.h \
     include/acmalgorithmmatch.h \
-    include/galeshapley.h \
+    include/galeshapley.h
 
 FORMS += \
     mainwindow.ui
