@@ -46,122 +46,122 @@ void MainWindow::setAnimalForm(bool e)
 
 void MainWindow::setAnimalForm(Animal &a, bool e)
 {
-    this->ui->animalFormNameInput->setText(a.getName());
-    this->ui->animalFormTypeInput->setCurrentText(a.getTypeString());
-    this->ui->animalFormBreedInput->setText(a.getBreed());
-    this->ui->animalFormColorInput->setText(a.getColor());
-    this->ui->animalFormAgeInput->setValue(a.getAge());
-    this->ui->animalFormSexInput->setCurrentText(a.getSexString());
-    this->ui->animalFormWeightInput->setValue(a.getWeight());
-    this->ui->animalFormHeightInput->setValue(a.getHeight());
-    this->ui->animalFormHealthInput->setValue(a.getHealth());
+//    this->ui->animalFormNameInput->setText(a.getName());
+//    this->ui->animalFormTypeInput->setCurrentText(a.getTypeString());
+//    this->ui->animalFormBreedInput->setText(a.getBreed());
+//    this->ui->animalFormColorInput->setText(a.getColor());
+//    this->ui->animalFormAgeInput->setValue(a.getAge());
+//    this->ui->animalFormSexInput->setCurrentText(a.getSexString());
+//    this->ui->animalFormWeightInput->setValue(a.getWeight());
+//    this->ui->animalFormHeightInput->setValue(a.getHeight());
+//    this->ui->animalFormHealthInput->setValue(a.getHealth());
 
-    this->ui->animalFormLibidoInput->setValue(a.getNPA(0));
-    this->ui->animalFormAggressivenessInput->setValue(a.getNPA(1));
-    this->ui->animalFormExtroversionInput->setValue(a.getNPA(2));
-    this->ui->animalFormTemperInput->setValue(a.getNPA(3));
-    this->ui->animalFormObedienceInput->setValue(a.getNPA(4));
-    this->ui->animalFormEnduranceInput->setValue(a.getNPA(5));
-    this->ui->animalFormActivenessInput->setValue(a.getNPA(6));
-    this->ui->animalFormImpulsionInput->setValue(a.getNPA(7));
-    this->ui->animalFormDistractibilityInput->setValue(a.getNPA(8));
-    this->ui->animalFormAdaptabilityInput->setValue(a.getNPA(9));
-    this->ui->animalFormRegularityInput->setValue(a.getNPA(10));
-    this->ui->animalFormIntelligenceInput->setValue(a.getNPA(11));
-    this->ui->animalFormIndependenceInput->setValue(a.getNPA(12));
-    this->ui->animalFormTrainingInput->setValue(a.getNPA(13));
-    this->ui->animalFormCostInput->setValue(a.getNPA(14));
+//    this->ui->animalFormLibidoInput->setValue(a.getNPA(0));
+//    this->ui->animalFormAggressivenessInput->setValue(a.getNPA(1));
+//    this->ui->animalFormExtroversionInput->setValue(a.getNPA(2));
+//    this->ui->animalFormTemperInput->setValue(a.getNPA(3));
+//    this->ui->animalFormObedienceInput->setValue(a.getNPA(4));
+//    this->ui->animalFormEnduranceInput->setValue(a.getNPA(5));
+//    this->ui->animalFormActivenessInput->setValue(a.getNPA(6));
+//    this->ui->animalFormImpulsionInput->setValue(a.getNPA(7));
+//    this->ui->animalFormDistractibilityInput->setValue(a.getNPA(8));
+//    this->ui->animalFormAdaptabilityInput->setValue(a.getNPA(9));
+//    this->ui->animalFormRegularityInput->setValue(a.getNPA(10));
+//    this->ui->animalFormIntelligenceInput->setValue(a.getNPA(11));
+//    this->ui->animalFormIndependenceInput->setValue(a.getNPA(12));
+//    this->ui->animalFormTrainingInput->setValue(a.getNPA(13));
+//    this->ui->animalFormCostInput->setValue(a.getNPA(14));
 
-    this->ui->animalFormNameInput->setEnabled(e);
-    this->ui->animalFormTypeInput->setEnabled(e);
-    this->ui->animalFormBreedInput->setEnabled(e);
-    this->ui->animalFormColorInput->setEnabled(e);
-    this->ui->animalFormAgeInput->setEnabled(e);
-    this->ui->animalFormSexInput->setEnabled(e);
-    this->ui->animalFormWeightInput->setEnabled(e);
-    this->ui->animalFormHeightInput->setEnabled(e);
-    this->ui->animalFormHealthInput->setEnabled(e);
+//    this->ui->animalFormNameInput->setEnabled(e);
+//    this->ui->animalFormTypeInput->setEnabled(e);
+//    this->ui->animalFormBreedInput->setEnabled(e);
+//    this->ui->animalFormColorInput->setEnabled(e);
+//    this->ui->animalFormAgeInput->setEnabled(e);
+//    this->ui->animalFormSexInput->setEnabled(e);
+//    this->ui->animalFormWeightInput->setEnabled(e);
+//    this->ui->animalFormHeightInput->setEnabled(e);
+//    this->ui->animalFormHealthInput->setEnabled(e);
 
-    this->ui->animalFormLibidoInput->setEnabled(e);
-    this->ui->animalFormAggressivenessInput->setEnabled(e);
-    this->ui->animalFormExtroversionInput->setEnabled(e);
-    this->ui->animalFormTemperInput->setEnabled(e);
-    this->ui->animalFormObedienceInput->setEnabled(e);
-    this->ui->animalFormEnduranceInput->setEnabled(e);
-    this->ui->animalFormActivenessInput->setEnabled(e);
-    this->ui->animalFormImpulsionInput->setEnabled(e);
-    this->ui->animalFormDistractibilityInput->setEnabled(e);
-    this->ui->animalFormAdaptabilityInput->setEnabled(e);
-    this->ui->animalFormRegularityInput->setEnabled(e);
-    this->ui->animalFormIntelligenceInput->setEnabled(e);
-    this->ui->animalFormIndependenceInput->setEnabled(e);
-    this->ui->animalFormTrainingInput->setEnabled(e);
-    this->ui->animalFormCostInput->setEnabled(e);
+//    this->ui->animalFormLibidoInput->setEnabled(e);
+//    this->ui->animalFormAggressivenessInput->setEnabled(e);
+//    this->ui->animalFormExtroversionInput->setEnabled(e);
+//    this->ui->animalFormTemperInput->setEnabled(e);
+//    this->ui->animalFormObedienceInput->setEnabled(e);
+//    this->ui->animalFormEnduranceInput->setEnabled(e);
+//    this->ui->animalFormActivenessInput->setEnabled(e);
+//    this->ui->animalFormImpulsionInput->setEnabled(e);
+//    this->ui->animalFormDistractibilityInput->setEnabled(e);
+//    this->ui->animalFormAdaptabilityInput->setEnabled(e);
+//    this->ui->animalFormRegularityInput->setEnabled(e);
+//    this->ui->animalFormIntelligenceInput->setEnabled(e);
+//    this->ui->animalFormIndependenceInput->setEnabled(e);
+//    this->ui->animalFormTrainingInput->setEnabled(e);
+//    this->ui->animalFormCostInput->setEnabled(e);
 
-    this->ui->animalFormCancelButton->setEnabled(true);
-    this->ui->animalFormSaveButton->setEnabled(true);
+//    this->ui->animalFormCancelButton->setEnabled(true);
+//    this->ui->animalFormSaveButton->setEnabled(true);
 }
 
 Animal MainWindow::animalFromForm()
 {
-    Animal animal;
+//    Animal animal;
 
-    if (this->ui->animalFormNameInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setName(this->ui->animalFormNameInput->text());
-    }
+//    if (this->ui->animalFormNameInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setName(this->ui->animalFormNameInput->text());
+//    }
 
-    animal.setTypeString(this->ui->animalFormTypeInput->currentText());
+//    animal.setTypeString(this->ui->animalFormTypeInput->currentText());
 
-    if (this->ui->animalFormBreedInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setBreed(this->ui->animalFormBreedInput->text());
-    }
+//    if (this->ui->animalFormBreedInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setBreed(this->ui->animalFormBreedInput->text());
+//    }
 
 
-    if (this->ui->animalFormColorInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setColor(this->ui->animalFormColorInput->text());
-    }
+//    if (this->ui->animalFormColorInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setColor(this->ui->animalFormColorInput->text());
+//    }
 
-    if (this->ui->animalFormAgeInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setAge(this->ui->animalFormAgeInput->value());
-    }
+//    if (this->ui->animalFormAgeInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setAge(this->ui->animalFormAgeInput->value());
+//    }
 
-    if (this->ui->animalFormWeightInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setWeight(this->ui->animalFormWeightInput->value());
-    }
+//    if (this->ui->animalFormWeightInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setWeight(this->ui->animalFormWeightInput->value());
+//    }
 
-    if (this->ui->animalFormWeightInput->text() == ""){
-        animal.setValid(false);
-    }else{
-        animal.setHeight(this->ui->animalFormHeightInput->value());
-    }
+//    if (this->ui->animalFormWeightInput->text() == ""){
+//        animal.setValid(false);
+//    }else{
+//        animal.setHeight(this->ui->animalFormHeightInput->value());
+//    }
 
-    animal.setNPA(0, this->ui->animalFormLibidoInput->value());
-    animal.setNPA(1, this->ui->animalFormAggressivenessInput->value());
-    animal.setNPA(2, this->ui->animalFormExtroversionInput->value());
-    animal.setNPA(3, this->ui->animalFormTemperInput->value());
-    animal.setNPA(4, this->ui->animalFormObedienceInput->value());
-    animal.setNPA(5, this->ui->animalFormEnduranceInput->value());
-    animal.setNPA(6, this->ui->animalFormActivenessInput->value());
-    animal.setNPA(7, this->ui->animalFormImpulsionInput->value());
-    animal.setNPA(8, this->ui->animalFormDistractibilityInput->value());
-    animal.setNPA(9, this->ui->animalFormAdaptabilityInput->value());
-    animal.setNPA(10, this->ui->animalFormRegularityInput->value());
-    animal.setNPA(11, this->ui->animalFormIntelligenceInput->value());
-    animal.setNPA(12, this->ui->animalFormIndependenceInput->value());
-    animal.setNPA(13, this->ui->animalFormTrainingInput->value());
-    animal.setNPA(14, this->ui->animalFormCostInput->value());
+//    animal.setNPA(0, this->ui->animalFormLibidoInput->value());
+//    animal.setNPA(1, this->ui->animalFormAggressivenessInput->value());
+//    animal.setNPA(2, this->ui->animalFormExtroversionInput->value());
+//    animal.setNPA(3, this->ui->animalFormTemperInput->value());
+//    animal.setNPA(4, this->ui->animalFormObedienceInput->value());
+//    animal.setNPA(5, this->ui->animalFormEnduranceInput->value());
+//    animal.setNPA(6, this->ui->animalFormActivenessInput->value());
+//    animal.setNPA(7, this->ui->animalFormImpulsionInput->value());
+//    animal.setNPA(8, this->ui->animalFormDistractibilityInput->value());
+//    animal.setNPA(9, this->ui->animalFormAdaptabilityInput->value());
+//    animal.setNPA(10, this->ui->animalFormRegularityInput->value());
+//    animal.setNPA(11, this->ui->animalFormIntelligenceInput->value());
+//    animal.setNPA(12, this->ui->animalFormIndependenceInput->value());
+//    animal.setNPA(13, this->ui->animalFormTrainingInput->value());
+//    animal.setNPA(14, this->ui->animalFormCostInput->value());
 
-    return animal;
+//    return animal;
 }
 
 void MainWindow::setClientForm(bool e)
@@ -248,75 +248,75 @@ void MainWindow::setClientForm(Client &c, bool e)
 
 Client MainWindow::clientFromForm()
 {
-    Client client;
+//    Client client;
 
-    if (this->ui->clientFormNameInput->text() == ""){
-        client.setValid(false);
-    }else{
-        client.setName(this->ui->clientFormNameInput->text());
-    }
+//    if (this->ui->clientFormNameInput->text() == ""){
+//        client.setValid(false);
+//    }else{
+//        client.setName(this->ui->clientFormNameInput->text());
+//    }
 
-    if (this->ui->clientFormPhoneNumberInput->text() == ""){
-        client.setValid(false);
-    }else{
-         client.setPhoneNumber(this->ui->clientFormPhoneNumberInput->text());
-    }
+//    if (this->ui->clientFormPhoneNumberInput->text() == ""){
+//        client.setValid(false);
+//    }else{
+//         client.setPhoneNumber(this->ui->clientFormPhoneNumberInput->text());
+//    }
 
-    if (this->ui->clientFormAddressInput->text() == ""){
-        client.setValid(false);
-    }else{
-        client.setAddress(this->ui->clientFormAddressInput->text());
-    }
+//    if (this->ui->clientFormAddressInput->text() == ""){
+//        client.setValid(false);
+//    }else{
+//        client.setAddress(this->ui->clientFormAddressInput->text());
+//    }
 
-    if (this->ui->clientFormEmailInput->text() == ""){
-        client.setValid(false);
-    }else{
-        client.setEmail(this->ui->clientFormEmailInput->text());
-    }
+//    if (this->ui->clientFormEmailInput->text() == ""){
+//        client.setValid(false);
+//    }else{
+//        client.setEmail(this->ui->clientFormEmailInput->text());
+//    }
 
-    client.setPatience(this->ui->clientFormPatienceInput->value());
-    client.setExperience(this->ui->clientFormExperienceInput->value());
-    client.setActiveness(this->ui->clientFormActivenessInput->value());
+//    client.setPatience(this->ui->clientFormPatienceInput->value());
+//    client.setExperience(this->ui->clientFormExperienceInput->value());
+//    client.setActiveness(this->ui->clientFormActivenessInput->value());
 
-    if (this->ui->clientFormAgeInput->value() < 18){
-        client.setValid(false);
-    }else{
-        client.setAge(this->ui->clientFormAgeInput->value());
-    }
+//    if (this->ui->clientFormAgeInput->value() < 18){
+//        client.setValid(false);
+//    }else{
+//        client.setAge(this->ui->clientFormAgeInput->value());
+//    }
 
-    if (this->ui->clientFormIncomeInput->value() < std::numeric_limits<double>::epsilon()){
-        client.setValid(false);
-    }else{
-        client.setIncome(this->ui->clientFormIncomeInput->value());
-    }
+//    if (this->ui->clientFormIncomeInput->value() < std::numeric_limits<double>::epsilon()){
+//        client.setValid(false);
+//    }else{
+//        client.setIncome(this->ui->clientFormIncomeInput->value());
+//    }
 
-    client.setRegularity(this->ui->clientFormRegularityInput->value());
+//    client.setRegularity(this->ui->clientFormRegularityInput->value());
 
-    client.getPreferredAnimal().setTypeString(this->ui->clientFormPrefAnimalTypeInput->currentText());
-    client.getPreferredAnimal().setBreed(this->ui->clientFormPrefBreedInput->text());
-    client.getPreferredAnimal().setColor(this->ui->clientFormPrefColorInput->text());
-    client.getPreferredAnimal().setAge(this->ui->clientFormPrefAgeInput->value());
-    client.getPreferredAnimal().setSexString(this->ui->clientFormPrefSexInput->currentText());
-    client.getPreferredAnimal().setWeight(this->ui->clientFormPrefWeightInput->value());
-    client.getPreferredAnimal().setHeight(this->ui->clientFormPrefHeightInput->value());
+//    client.getPreferredAnimal().setTypeString(this->ui->clientFormPrefAnimalTypeInput->currentText());
+//    client.getPreferredAnimal().setBreed(this->ui->clientFormPrefBreedInput->text());
+//    client.getPreferredAnimal().setColor(this->ui->clientFormPrefColorInput->text());
+//    client.getPreferredAnimal().setAge(this->ui->clientFormPrefAgeInput->value());
+//    client.getPreferredAnimal().setSexString(this->ui->clientFormPrefSexInput->currentText());
+//    client.getPreferredAnimal().setWeight(this->ui->clientFormPrefWeightInput->value());
+//    client.getPreferredAnimal().setHeight(this->ui->clientFormPrefHeightInput->value());
 
-    client.getPreferredAnimal().setNPA(0, this->ui->clientFormPrefLibidoInput->value());
-    client.getPreferredAnimal().setNPA(1, this->ui->clientFormPrefAggressivenessInput->value());
-    client.getPreferredAnimal().setNPA(2, this->ui->clientFormPrefExtroversionInput->value());
-    client.getPreferredAnimal().setNPA(3, this->ui->clientFormPrefTemperInput->value());
-    client.getPreferredAnimal().setNPA(4, this->ui->clientFormPrefObedienceInput->value());
-    client.getPreferredAnimal().setNPA(5, this->ui->clientFormPrefEnduranceInput->value());
-    client.getPreferredAnimal().setNPA(6, this->ui->clientFormPrefActivenessInput->value());
-    client.getPreferredAnimal().setNPA(7, this->ui->clientFormPrefImpulsivityInput->value());
-    client.getPreferredAnimal().setNPA(8, this->ui->clientFormPrefDistractibilityInput->value());
-    client.getPreferredAnimal().setNPA(9, this->ui->clientFormPrefAdaptabilityInput->value());
-    client.getPreferredAnimal().setNPA(10, this->ui->clientFormPrefRegularityInput->value());
-    client.getPreferredAnimal().setNPA(11, this->ui->clientFormPrefIntelligenceInput->value());
-    client.getPreferredAnimal().setNPA(12, this->ui->clientFormPrefIndependenceInput->value());
-    client.getPreferredAnimal().setNPA(13, this->ui->clientFormPrefTrainingInput->value());
-    client.getPreferredAnimal().setNPA(14, this->ui->clientFormPrefCostInput->value());
+//    client.getPreferredAnimal().setNPA(0, this->ui->clientFormPrefLibidoInput->value());
+//    client.getPreferredAnimal().setNPA(1, this->ui->clientFormPrefAggressivenessInput->value());
+//    client.getPreferredAnimal().setNPA(2, this->ui->clientFormPrefExtroversionInput->value());
+//    client.getPreferredAnimal().setNPA(3, this->ui->clientFormPrefTemperInput->value());
+//    client.getPreferredAnimal().setNPA(4, this->ui->clientFormPrefObedienceInput->value());
+//    client.getPreferredAnimal().setNPA(5, this->ui->clientFormPrefEnduranceInput->value());
+//    client.getPreferredAnimal().setNPA(6, this->ui->clientFormPrefActivenessInput->value());
+//    client.getPreferredAnimal().setNPA(7, this->ui->clientFormPrefImpulsivityInput->value());
+//    client.getPreferredAnimal().setNPA(8, this->ui->clientFormPrefDistractibilityInput->value());
+//    client.getPreferredAnimal().setNPA(9, this->ui->clientFormPrefAdaptabilityInput->value());
+//    client.getPreferredAnimal().setNPA(10, this->ui->clientFormPrefRegularityInput->value());
+//    client.getPreferredAnimal().setNPA(11, this->ui->clientFormPrefIntelligenceInput->value());
+//    client.getPreferredAnimal().setNPA(12, this->ui->clientFormPrefIndependenceInput->value());
+//    client.getPreferredAnimal().setNPA(13, this->ui->clientFormPrefTrainingInput->value());
+//    client.getPreferredAnimal().setNPA(14, this->ui->clientFormPrefCostInput->value());
 
-    return client;
+//    return client;
 }
 
 void MainWindow::on_loginAsClientButton_clicked()
@@ -355,8 +355,9 @@ void MainWindow::on_loginAsStaffButton_clicked()
 
 void MainWindow::on_addAnimalButton_clicked()
 {
-    this->setAnimalForm();
-    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
+//    this->setAnimalForm();
+//    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
+    appCtrl.manageAnimals(ui, 3, -1);
 }
 
 void MainWindow::on_animalFormCancelButton_clicked()
@@ -367,79 +368,82 @@ void MainWindow::on_animalFormCancelButton_clicked()
 
 void MainWindow::on_animalFormSaveButton_clicked()
 {
-    if (!this->loggedInUser->isStaff()) return;
+//    if (!this->loggedInUser->isStaff()) return;
 
-    Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
-    Animal animal = this->animalFromForm();
-    if (animal.getValid() == false){
-        QMessageBox messageBox;
-        messageBox.critical(0,"Error","Please fill in all fields.");
-        messageBox.setFixedSize(500,1000);
-        return;
-    }
-    // save animal to database
-    if (staff->animal_id_being_edited < 0)
-    {
-        SQLSerializer::addAnimal(animal);
-    }
-    else
-    {
-        animal.setId(staff->animal_id_being_edited);
-        SQLSerializer::saveAnimal(animal);
-    }
-    staff->animal_id_being_edited = -1;
+//    Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
+//    Animal animal = this->animalFromForm();
+//    if (animal.getValid() == false){
+//        QMessageBox messageBox;
+//        messageBox.critical(0,"Error","Please fill in all fields.");
+//        messageBox.setFixedSize(500,1000);
+//        return;
+//    }
+//    // save animal to database
+//    if (staff->animal_id_being_edited < 0)
+//    {
+//        SQLSerializer::addAnimal(animal);
+//    }
+//    else
+//    {
+//        animal.setId(staff->animal_id_being_edited);
+//        SQLSerializer::saveAnimal(animal);
+//    }
+//    staff->animal_id_being_edited = -1;
 
-    // update list from database
-    this->animal_model.setList(SQLSerializer::readAnimals());
-    this->setAnimalForm();
+//    // update list from database
+//    this->animal_model.setList(SQLSerializer::readAnimals());
+//    this->setAnimalForm();
 
-    // reset stacked view to list
-    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
+//    // reset stacked view to list
+//    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalViewPage);
+    appCtrl.manageAnimals(ui, 2, -1);
 }
 
 void MainWindow::on_animalListView_doubleClicked(const QModelIndex &index)
 {
-    if (index.row() < 0 || index.row() >= this->animal_model.getList().size()) return;
+//    if (index.row() < 0 || index.row() >= this->animal_model.getList().size()) return;
 
-    Animal a = this->animal_model.getElement(index.row());
+//    Animal a = this->animal_model.getElement(index.row());
 
-    if (!this->loggedInUser->isStaff())
-    {
-        this->ui->animalFormNameInput->setEnabled(false);
-        this->ui->animalFormTypeInput->setEnabled(false);
-        this->ui->animalFormBreedInput->setEnabled(false);
-        this->ui->animalFormColorInput->setEnabled(false);
-        this->ui->animalFormAgeInput->setEnabled(false);
-        this->ui->animalFormSexInput->setEnabled(false);
-        this->ui->animalFormWeightInput->setEnabled(false);
-        this->ui->animalFormHeightInput->setEnabled(false);
-        this->ui->animalFormHealthInput->setEnabled(false);
-        this->ui->animalFormLibidoInput->setEnabled(false);
-        this->ui->animalFormAggressivenessInput->setEnabled(false);
-        this->ui->animalFormExtroversionInput->setEnabled(false);
-        this->ui->animalFormTemperInput->setEnabled(false);
-        this->ui->animalFormObedienceInput->setEnabled(false);
-        this->ui->animalFormEnduranceInput->setEnabled(false);
-        this->ui->animalFormActivenessInput->setEnabled(false);
-        this->ui->animalFormImpulsionInput->setEnabled(false);
-        this->ui->animalFormDistractibilityInput->setEnabled(false);
-        this->ui->animalFormAdaptabilityInput->setEnabled(false);
-        this->ui->animalFormRegularityInput->setEnabled(false);
-        this->ui->animalFormIntelligenceInput->setEnabled(false);
-        this->ui->animalFormIndependenceInput->setEnabled(false);
-        this->ui->animalFormTrainingInput->setEnabled(false);
-        this->ui->animalFormCostInput->setEnabled(false);
-        this->ui->animalFormSaveButton->setEnabled(false);
-    }
-    else
-    {
-        Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
-        staff->animal_id_being_edited = a.getId();
-    }
+//    if (!this->loggedInUser->isStaff())
+//    {
+//        this->ui->animalFormNameInput->setEnabled(false);
+//        this->ui->animalFormTypeInput->setEnabled(false);
+//        this->ui->animalFormBreedInput->setEnabled(false);
+//        this->ui->animalFormColorInput->setEnabled(false);
+//        this->ui->animalFormAgeInput->setEnabled(false);
+//        this->ui->animalFormSexInput->setEnabled(false);
+//        this->ui->animalFormWeightInput->setEnabled(false);
+//        this->ui->animalFormHeightInput->setEnabled(false);
+//        this->ui->animalFormHealthInput->setEnabled(false);
+//        this->ui->animalFormLibidoInput->setEnabled(false);
+//        this->ui->animalFormAggressivenessInput->setEnabled(false);
+//        this->ui->animalFormExtroversionInput->setEnabled(false);
+//        this->ui->animalFormTemperInput->setEnabled(false);
+//        this->ui->animalFormObedienceInput->setEnabled(false);
+//        this->ui->animalFormEnduranceInput->setEnabled(false);
+//        this->ui->animalFormActivenessInput->setEnabled(false);
+//        this->ui->animalFormImpulsionInput->setEnabled(false);
+//        this->ui->animalFormDistractibilityInput->setEnabled(false);
+//        this->ui->animalFormAdaptabilityInput->setEnabled(false);
+//        this->ui->animalFormRegularityInput->setEnabled(false);
+//        this->ui->animalFormIntelligenceInput->setEnabled(false);
+//        this->ui->animalFormIndependenceInput->setEnabled(false);
+//        this->ui->animalFormTrainingInput->setEnabled(false);
+//        this->ui->animalFormCostInput->setEnabled(false);
+//        this->ui->animalFormSaveButton->setEnabled(false);
+//    }
+//    else
+//    {
+//        Staff *staff = dynamic_cast<Staff *>(this->loggedInUser);
+//        staff->animal_id_being_edited = a.getId();
+//    }
 
-    this->setAnimalForm(a, this->loggedInUser->isStaff());
+//    this->setAnimalForm(a, this->loggedInUser->isStaff());
 
-    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
+//    this->ui->animalsStackedWidget->setCurrentWidget(this->ui->animalFormPage);
+
+    appCtrl.manageAnimals(ui, 1, index.row());
 }
 
 void MainWindow::on_clientListView_doubleClicked(const QModelIndex &index)
@@ -523,7 +527,7 @@ void MainWindow::on_clientBackButton_clicked()
 
 void MainWindow::on_homeViewAnimalsButton_clicked()
 {
-    appCtrl.viewAnimalList(this->ui);
+    appCtrl.manageAnimals(this->ui, 0, -1);
     //this->animal_model.setList(SQLSerializer::readAnimals());
    // this->ui->animalListView->setModel(&this->animal_model);
    // this->ui->mainStackedWidget->setCurrentWidget(this->ui->animalsPage);

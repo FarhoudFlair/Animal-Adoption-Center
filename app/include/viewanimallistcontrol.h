@@ -1,7 +1,6 @@
 #ifndef VIEWANIMALLISTCONTROL_H
 #define VIEWANIMALLISTCONTROL_H
 
-#include "animallistmodel.h"
 #include "include/sqlserializer.h"
 #include "ui_mainwindow.h"
 

@@ -11,7 +11,7 @@ void ViewClientListControl::launchLogin(Ui::MainWindow *ui, ClientListModel *cli
     ui->mainStackedWidget->setCurrentWidget(ui->clientLoginPage);
 }
 
-void ViewClientListControl::launch(Ui::MainWindow *ui, ClientListModel *client_model)
+void ViewClientListControl::launch(Ui::MainWindow *ui)
 {    
     ui->mainStackedWidget->setCurrentWidget(ui->clientsPage);
 }
