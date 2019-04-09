@@ -293,7 +293,7 @@ QList<ACMAlgorithmMatch<Animal, Client>> ACMAlgorithm::launch(QList<Animal> &ani
 
     QList<std::pair<QList<QList<int>>, QList<QList<int>>>> rankings_list;
     auto fourteendim = rankings(animals, clients, dnpa);
-    for (int i = 0; i < 7; ++i)
+    for (int i = 0; i < 13; ++i)
         rankings_list.push_back(fourteendim);
     rankings_list.push_back(rankings(animals, clients, dpa));
     auto dist_funs = nonphysical_attr_funs();

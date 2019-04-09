@@ -58,6 +58,8 @@ public:
 
     bool operator==(const Client &) const;
 
+    QString summaryString() const;
+
 private:
     int id;
 
