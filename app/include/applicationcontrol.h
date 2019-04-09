@@ -13,8 +13,9 @@ class ApplicationControl
 {
 public:
     ApplicationControl();
+    ~ApplicationControl();
     void launch();
-    void clientLogin(Ui::MainWindow *, int, User *);
+    void clientLogin(Ui::MainWindow *, int);
     void staffLogin(Ui::MainWindow *);
     void manageClients(Ui::MainWindow *, int, int);
     void manageAnimals(Ui::MainWindow *, int, int);

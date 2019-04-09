@@ -5,8 +5,12 @@ ApplicationControl::ApplicationControl():loggedInUser(nullptr)
 
 }
 
+ApplicationControl::~ApplicationControl()
+{
+    if (this->loggedInUser != nullptr) delete this->loggedInUser;
+}
 
-void ApplicationControl::clientLogin(Ui::MainWindow *ui, int indexRow, User *loggedInUser)
+void ApplicationControl::clientLogin(Ui::MainWindow *ui, int indexRow)
 {
     ClientListModel *client_model = new ClientListModel(ui->clientListView);
     ui->clientListView->setModel(client_model);

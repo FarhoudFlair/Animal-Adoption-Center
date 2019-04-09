@@ -72,9 +72,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    User *loggedInUser;
-    AnimalListModel animal_model;
-    ClientListModel client_model;
     ApplicationControl appCtrl;
 
 };
