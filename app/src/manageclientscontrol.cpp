@@ -18,7 +18,7 @@ void ManageClientsControl::launch(Ui::MainWindow *ui, int choice, int index, Use
         ViewClientListControl vCLControl;
         vCLControl.launch(ui);
     } else if(choice == 2) {
-        if (index <= 0 || index >= client_model->getList().size()) return;
+        if (index < 0 || index >= client_model->getList().size()) return;
         ViewClientProfileControl vCPControl;
         vCPControl.launch(ui, client_model, index);
     } else if(choice == 3) {
