@@ -1,4 +1,4 @@
-#include "include/saveanimalcontrol.h".h"
+#include "include/saveanimalcontrol.h"
 
 
 SaveAnimalControl::SaveAnimalControl()
