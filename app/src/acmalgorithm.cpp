@@ -302,9 +302,9 @@ QList<ACMAlgorithmMatch<Animal, Client>> ACMAlgorithm::launch(QList<Animal> &ani
 
     std::pair<QList<QList<int>>, QList<QList<int>>> prefs = average_rankings(rankings_list);
 
+    reorder_prefs_for_breed(animals, clients, prefs.second);
     reorder_prefs_for_cost(animals, clients, prefs.second);
     reorder_prefs_for_type(animals, clients, prefs.second);
-    reorder_prefs_for_breed(animals, clients, prefs.second);
     equalize_lists_with_dummies(animals, prefs.first, clients, prefs.second);
 
     GaleShapley<Animal, Client> gs(animals, prefs.first, clients, prefs.second);
