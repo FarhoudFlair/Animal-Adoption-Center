@@ -5,17 +5,21 @@
 #include <QDebug>
 
 #include <utility>
+#include <algorithm>
+#include <functional>
 #include <cmath>
 #include <cassert>
-#include <algorithm>
+#include <cstdarg>
 
+#include "acmalgorithmmatch.h"
 #include "animal.h"
 #include "client.h"
+#include "galeshapley.h"
 
 class ACMAlgorithm
 {
 public:
-    QList<std::pair<Animal, Client>> launch(QList<Animal> &, QList<Client> &);
+    QList<ACMAlgorithmMatch<Animal, Client>> launch(QList<Animal> &, QList<Client> &);
 };
 
 #endif // ACMALGORITHM_H

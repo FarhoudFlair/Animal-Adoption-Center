@@ -1,31 +1,20 @@
 #include "include/acmalgorithm.h"
 
-using namespace std;
-
-double dist (Client &client, Animal &animal) noexcept {
-    double dist = 0;
-    for (int i = 0; i < 14; ++i) {
-        double x = client.getPreferredAnimal().getNPA(i) - animal.getNPA(i);
-        dist += x*x;
-    }
-    return sqrt(dist);
-}
-
 template<typename T>
 QList<std::pair<int, T>> enumerate(const QList<T> &arr) {
-    QList<pair<int, T>> zipped;
+    QList<std::pair<int, T>> zipped;
     for (int i = 0; i < arr.size(); ++i) {
-        zipped.push_back(pair<int, T>(i, arr[i]));
+        zipped.push_back(std::pair<int, T>(i, arr[i]));
     }
     return zipped;
 }
 
 template<typename T>
 QList<int> sorted_indexes(const QList<T> &arr) {
-    QList<pair<int, T>> zipped = enumerate(arr);
+    QList<std::pair<int, T>> zipped = enumerate(arr);
     QList<int> ret;
 
-    sort(zipped.begin(), zipped.end(), [](auto a, auto b) {
+    std::sort(zipped.begin(), zipped.end(), [](auto a, auto b) {
         return a.second < b.second;
     });
 
@@ -40,10 +29,10 @@ template <typename T>
 QList<T> sort_by_indexes(QList<T> &arr, const QList<int> &ind) {
     assert(arr.size() == ind.size());
 
-    QList<pair<int, T>> zipped = enumerate(arr);
+    QList<std::pair<int, T>> zipped = enumerate(arr);
     QList<T> ret;
 
-    sort(zipped.begin(), zipped.end(), [&](auto a, auto b) {
+    std::sort(zipped.begin(), zipped.end(), [&](auto a, auto b) {
         return ind[a.first] < ind[b.first];
     });
 
@@ -52,87 +41,6 @@ QList<T> sort_by_indexes(QList<T> &arr, const QList<int> &ind) {
     }
 
     return ret;
-}
-
-template<typename M, typename W>
-int find_free_man(const QList<pair<M, W>> &pairs, const QList<M> &men) {
-    for (int i = 0; i < men.size(); ++i) {
-        for (auto &pair : pairs) {
-            if (men[i] == pair.first)
-                goto found;
-        }
-        return i;
-
-        found:
-        continue;
-    }
-    return -1;
-}
-
-template<typename M, typename W>
-int woman_paired_index(const QList<pair<M, W>> &pairs, const W &woman) {
-    for (int i = 0; i < pairs.size(); ++i) {
-        if (pairs[i].second == woman)
-            return i;
-    }
-
-    return -1;
-}
-
-template<typename T>
-int simple_indexof(const QList<T> &arr, const T &el) {
-    for (int i = 0; i < arr.size(); ++i) {
-        if (arr[i] == el)
-            return i;
-    }
-    return -1;
-}
-
-template<typename M, typename W>
-QList<pair<M, W>> gale_shapley(QList<M> &men, QList<QList<int>> &men_prefs, QList<W> &women, QList<QList<int>> &women_prefs, QList<QString> *explanation)
-{
-//    QList<QString> &summary = *explanation;
-    (void(explanation));
-
-    assert(men.size() == women.size());
-    for (auto &el: men_prefs) assert(el.size() == women.size());
-    for (auto &el: women_prefs) assert(el.size() == men.size());
-
-    QList<pair<M, W>> pairs;
-    QList<int> next_proposals;
-    for (int i = 0; i < men.size(); ++i) next_proposals.push_back(0);
-
-    int cur_man = -1;
-    while ((cur_man = find_free_man(pairs, men)) != -1) {
-        int next_proposal_for_cur_man = next_proposals[cur_man];
-
-        assert(next_proposal_for_cur_man >= 0);
-        assert(next_proposal_for_cur_man < women.size());
-
-        int next_proposal_ind = men_prefs[cur_man][next_proposal_for_cur_man];
-        W &to_propose = women[next_proposal_ind];
-        int woman_pair_ind = woman_paired_index(pairs, to_propose);
-
-        if (woman_pair_ind < 0) {
-            pairs.push_back(pair<M, W>(men[cur_man], to_propose));
-        } else {
-            QList<int> &to_propose_prefs = women_prefs[next_proposal_ind];
-            int engaged_ind = simple_indexof(men, pairs[woman_pair_ind].first);
-            int engaged_rank = simple_indexof(to_propose_prefs, engaged_ind);
-            int proposed_rank = simple_indexof(to_propose_prefs, cur_man);
-
-            assert(engaged_rank != -1);
-            assert(proposed_rank != -1);
-
-            if (proposed_rank < engaged_rank) {
-                pairs[woman_pair_ind].first = men[cur_man];
-            }
-        }
-
-        next_proposals[cur_man] += 1;
-    }
-
-    return pairs;
 }
 
 Client create_dummy_client() {
@@ -175,9 +83,9 @@ void equalize_lists_with_dummies(QList<Animal> &animals, QList<QList<int>> &anim
     }
 }
 
-void remove_dummies_from_results(QList<std::pair<Animal, Client>> &matches) {
+void remove_dummies_from_results(QList<ACMAlgorithmMatch<Animal, Client>> &matches) {
     for (int i = 0; i < matches.size(); ++i) {
-        if (matches[i].first.getId() < 0 || matches[i].second.getId() < 0) {
+        if (matches[i].getMan().getId() < 0 || matches[i].getWoman().getId() < 0) {
             matches.removeAt(i);
             i -= 1;
         }
@@ -186,9 +94,9 @@ void remove_dummies_from_results(QList<std::pair<Animal, Client>> &matches) {
 
 void reorder_prefs_for_cost(QList<Animal> &animals, QList<Client> &clients, QList<QList<int>> &client_prefs)
 {
-    QList<pair<int, Animal>> animals_zipped = enumerate(animals);
+    QList<std::pair<int, Animal>> animals_zipped = enumerate(animals);
     for (int i = 0; i < clients.size(); ++i) {
-        stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
+        std::stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
             bool ag = animals[a].getNPA(14) < clients[i].getIncome();
             bool bg = animals[b].getNPA(14) < clients[i].getIncome();
             return ag != bg || (static_cast<int>(ag) < static_cast<int>(bg));
@@ -196,9 +104,9 @@ void reorder_prefs_for_cost(QList<Animal> &animals, QList<Client> &clients, QLis
     }
 }
 
-void break_matches_for_cost(QList<std::pair<Animal, Client>> &matches) {
+void break_matches_for_cost(QList<ACMAlgorithmMatch<Animal, Client>> &matches) {
     for (int i = 0; i < matches.size(); ++i) {
-        if (matches[i].first.getNPA(14) > matches[i].second.getIncome()) {
+        if (matches[i].getMan().getNPA(14) > matches[i].getWoman().getIncome()) {
             matches.removeAt(i);
             i -= 1;
         }
@@ -207,9 +115,9 @@ void break_matches_for_cost(QList<std::pair<Animal, Client>> &matches) {
 
 void reorder_prefs_for_type(QList<Animal> &animals, QList<Client> &clients, QList<QList<int>> &client_prefs)
 {
-    QList<pair<int, Animal>> animals_zipped = enumerate(animals);
+    QList<std::pair<int, Animal>> animals_zipped = enumerate(animals);
     for (int i = 0; i < clients.size(); ++i) {
-        stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
+        std::stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
             bool ag = animals[a].getType() == clients[i].getPreferredAnimal().getType();
             bool bg = animals[b].getType() == clients[i].getPreferredAnimal().getType();
             return ag != bg || (static_cast<int>(ag) < static_cast<int>(bg));
@@ -217,39 +125,191 @@ void reorder_prefs_for_type(QList<Animal> &animals, QList<Client> &clients, QLis
     }
 }
 
-void break_matches_for_type(QList<std::pair<Animal, Client>> &matches) {
+void reorder_prefs_for_breed(QList<Animal> &animals, QList<Client> &clients, QList<QList<int>> &client_prefs)
+{
+    QList<std::pair<int, Animal>> animals_zipped = enumerate(animals);
+    for (int i = 0; i < clients.size(); ++i) {
+        std::stable_sort(client_prefs[i].begin(), client_prefs[i].end(), [&](auto a, auto b) {
+            bool ag = animals[a].getBreed() == clients[i].getPreferredAnimal().getBreed();
+            bool bg = animals[b].getBreed() == clients[i].getPreferredAnimal().getBreed();
+            return ag != bg || (static_cast<int>(ag) < static_cast<int>(bg));
+        });
+    }
+}
+
+void break_matches_for_type(QList<ACMAlgorithmMatch<Animal, Client>> &matches) {
     for (int i = 0; i < matches.size(); ++i) {
-        if (matches[i].first.getType() != matches[i].second.getPreferredAnimal().getType()) {
+        if (matches[i].getMan().getType() != matches[i].getWoman().getPreferredAnimal().getType()) {
             matches.removeAt(i);
             i -= 1;
         }
     }
 }
 
-QList<int> rank_clients_by_dist(Animal &animal, QList<Client> &clients) {
+double dist(QList<double> &a, QList<double> &b) {
+    double dist = 0;
+    for (int i = 0; i < a.size(); ++i) {
+        double x = a[i] - b[i];
+        dist += x*x;
+    }
+    return sqrt(dist);
+}
+
+template<typename T, typename U>
+QList<int> rank(T &single, QList<U> &arr, std::function<double(T&, U&)> dist) {
     QList<double> dists;
-    for (auto &el: clients) dists.push_back(dist(el, animal));
+    for (auto &el: arr) dists.push_back(dist(single, el));
     return sorted_indexes(dists);
 }
 
-QList<int> rank_animals_by_dist(Client &client, QList<Animal> &animals) {
-    QList<double> dists;
-    for (auto &el: animals) dists.push_back(dist(client, el));
-    return sorted_indexes(dists);
+template<typename M, typename W>
+std::pair<QList<QList<int>>, QList<QList<int>>> rankings(QList<M> &men, QList<W> &women, std::function<double(M&, W&)> dist)
+{
+    QList<QList<int>> men_prefs;
+    for (auto &el: men) men_prefs.push_back(rank(el, women, dist));
+
+    std::function<double(W&, M&)> op_dist = [&](auto &a, auto &b) { return dist(b, a); };
+    QList<QList<int>> women_prefs;
+    for (auto &el: women) women_prefs.push_back(rank(el, men, op_dist));
+
+    return std::pair<QList<QList<int>>, QList<QList<int>>>(men_prefs, women_prefs);
 }
 
-QList<std::pair<Animal, Client>> ACMAlgorithm::launch(QList<Animal> &animals, QList<Client> &clients) {
-    QList<QList<int>> animal_prefs;
-    for (auto &el: animals) animal_prefs.push_back(rank_clients_by_dist(el, clients));
-    QList<QList<int>> client_prefs;
-    for (auto &el: clients) client_prefs.push_back(rank_animals_by_dist(el, animals));
+double dist_npa(Animal &animal, Client &client) {
+    QList<double> cnpa;
+    for (int i = 0; i < 14; i++) cnpa.push_back(client.getPreferredAnimal().getNPA(i));
+    QList<double> anpa;
+    for (int i = 0; i < 14; i++) anpa.push_back(animal.getNPA(i));
+    return dist(cnpa, anpa);
+}
 
-    reorder_prefs_for_cost(animals, clients, client_prefs);
-    reorder_prefs_for_type(animals, clients, client_prefs);
+double dist_pa(Animal &a, Client &c, QList<double> &maxes) {
+    Animal ca = c.getPreferredAnimal();
+    QList<double> cpa({ca.getAge(), ca.getHeight(), ca.getWeight(), ca.getHealth()});
+    QList<double> apa({a.getAge(), a.getHeight(), a.getWeight(), a.getHealth()});
+    for (int i = 0; i < maxes.size(); ++i) {
+        cpa[i] /= maxes[i];
+        apa[i] /= maxes[i];
+    }
+    return dist(cpa, apa);
+}
 
-    equalize_lists_with_dummies(animals, animal_prefs, clients, client_prefs);
+QList<std::function<double(Animal&, Client&)>> nonphysical_attr_funs() {
+    return QList<std::function<double(Animal&, Client&)>>({
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(0) - (1/2)*(c.getPatience() + c.getExperience()));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(1) - (1/4)*(c.getPatience() + c.getExperience() + c.getActiveness() + (5/118)*(118-c.getAge())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(2) - (1/4)*(c.getPatience() + c.getExperience() + c.getActiveness() + (5/118)*(100-c.getAge())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(3) - (1/3)*(c.getPatience() + c.getExperience() + (5/118)*(100-c.getAge())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(4) - (1/3)*((4-c.getPatience()) + (4-c.getExperience()) + (4-c.getActiveness())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(5) - (1/1)*((5/500000)*(500000-c.getIncome())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(6) - (1/1)*(c.getActiveness()));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(7) - (1/2)*(c.getActiveness() + c.getExperience()));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(8) - (1/2)*(c.getPatience() + (5/118)*(118-c.getAge())));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(9) - (1/1)*(4-c.getPatience()));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(10) - (1/1)*(c.getRegularity()));
+        },
+        [](auto a, auto c) {
+            return std::abs(a.getNPA(13) - (1/1)*(c.getExperience()));
+        },
+    });
+}
 
-    auto matches = gale_shapley(animals, animal_prefs, clients, client_prefs, nullptr);
+std::pair<QList<QList<int>>, QList<QList<int>>> average_rankings(QList<std::pair<QList<QList<int>>, QList<QList<int>>>> rankings)
+{
+    assert(rankings.size() > 0);
+
+    std::pair<QList<QList<int>>, QList<QList<int>>> ret;
+    std::pair<QList<QList<double>>, QList<QList<double>>> average;
+
+    for (auto &el: rankings.first().first) {
+        average.first.push_back(QList<double>());
+        for (int i = 0; i < el.size(); ++i)
+            average.first.last().push_back(0);
+    }
+    for (auto &el: rankings.first().second) {
+        average.second.push_back(QList<double>());
+        for (int i = 0; i < el.size(); ++i)
+            average.second.last().push_back(0);
+    }
+
+    for (auto &el: rankings) {
+        for (int i = 0; i < el.first.size(); ++i) {
+            for (int j = 0; j < el.first[i].size(); ++j) {
+                int pos = simple_indexof(el.first[i], j);
+
+                assert(pos >= 0);
+                
+                average.first[i][j] += pos;
+            }
+        }
+        for (int i = 0; i < el.second.size(); ++i) {
+            for (int j = 0; j < el.second[i].size(); ++j) {
+                int pos = simple_indexof(el.second[i], j);
+
+                assert(pos >= 0);
+                
+                average.second[i][j] += pos;
+            }
+        }
+    }
+
+    for (int i = 0; i < average.first.size(); ++i) {
+        ret.first.push_back(sorted_indexes(average.first[i]));
+    }
+    for (int i = 0; i < average.second.size(); ++i) {
+        ret.second.push_back(sorted_indexes(average.second[i]));
+    }
+
+    return ret;
+}
+
+QList<ACMAlgorithmMatch<Animal, Client>> ACMAlgorithm::launch(QList<Animal> &animals, QList<Client> &clients) {
+    std::function<double(Animal &, Client &)> dnpa = dist_npa;
+    std::function<double(Animal &, Client &)> dpa = [](auto a, auto b) {
+        auto m = QList<double>({100, 500, 500, 4});
+        return dist_pa(a, b, m);
+    };
+
+    QList<std::pair<QList<QList<int>>, QList<QList<int>>>> rankings_list;
+    auto fourteendim = rankings(animals, clients, dnpa);
+    for (int i = 0; i < 7; ++i)
+        rankings_list.push_back(fourteendim);
+    rankings_list.push_back(rankings(animals, clients, dpa));
+    auto dist_funs = nonphysical_attr_funs();
+    for (auto & fun: dist_funs)
+        rankings_list.push_back(rankings(animals, clients, fun));
+
+    std::pair<QList<QList<int>>, QList<QList<int>>> prefs = average_rankings(rankings_list);
+
+    reorder_prefs_for_cost(animals, clients, prefs.second);
+    reorder_prefs_for_type(animals, clients, prefs.second);
+    reorder_prefs_for_breed(animals, clients, prefs.second);
+    equalize_lists_with_dummies(animals, prefs.first, clients, prefs.second);
+
+    GaleShapley<Animal, Client> gs(animals, prefs.first, clients, prefs.second);
+    gs.launch();
+    QList<ACMAlgorithmMatch<Animal, Client>> matches = gs.fetch_matches();
 
     remove_dummies_from_results(matches);
     break_matches_for_cost(matches);

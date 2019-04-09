@@ -48,6 +48,8 @@ SOURCES += \
     src/viewmatchdetailscontrol.cpp \
     src/acmalgorithm.cpp \
     src/algorithmlistmodel.cpp \
+    src/acmalgorithmmatch.cpp \
+    src/galeshapley.cpp \
     src/saveclientcontrol.cpp
 
 HEADERS += \
@@ -84,6 +86,8 @@ HEADERS += \
     include/viewownprofilecontrol.h \
     include/acmalgorithm.h \
     include/algorithmlistmodel.h \
+    include/acmalgorithmmatch.h \
+    include/galeshapley.h \
     include/saveclientcontrol.h
 
 FORMS += \

@@ -553,3 +553,13 @@ void MainWindow::on_algorithmLaunchAlgorithmButton_clicked()
     auto clients = SQLSerializer::readClients();
     algoControl.launch(animals, clients, this->ui);
 }
+
+void MainWindow::on_algorithmDetailedButton_clicked()
+{
+
+}
+
+void MainWindow::on_algorithmSummaryListView_doubleClicked(const QModelIndex &index)
+{
+
+}
