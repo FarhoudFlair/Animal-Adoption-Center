@@ -287,6 +287,12 @@ QPushButton:disabled {
              <layout class="QHBoxLayout" name="horizontalLayout_8">
               <item alignment="Qt::AlignLeft">
                <widget class="QPushButton" name="animalBackButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>50</width>
@@ -1185,7 +1191,7 @@ QPushButton:disabled {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>614</width>
+                 <width>390</width>
                  <height>1116</height>
                 </rect>
                </property>
