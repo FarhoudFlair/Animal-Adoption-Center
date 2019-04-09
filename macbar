@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./build_mac.sh && ./run_mac.sh
