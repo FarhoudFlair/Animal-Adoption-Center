@@ -35,9 +35,7 @@ SOURCES += \
     src/viewanimallistcontrol.cpp \
     src/applicationcontrol.cpp \
     src/viewownprofilecontrol.cpp \
-    src/editclientprofilecontrol.cpp \
     src/addanimalcontrol.cpp \
-    src/editanimalprofilecontrol.cpp \
     src/viewclientlistcontrol.cpp \
     src/viewclientprofilecontrol.cpp \
     src/addclientcontrol.cpp \
@@ -72,8 +70,6 @@ HEADERS += \
     include/applicationcontrol.h \
     include/client.h \
     include/clientlistmodel.h \
-    include/editanimalprofilecontrol.h \
-    include/editclientprofilecontrol.h \
     include/launchalgorithmcontrol.h \
     include/manageanimalscontrol.h \
     include/manageclientscontrol.h \
