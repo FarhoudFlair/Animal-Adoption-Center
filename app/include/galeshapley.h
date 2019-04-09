@@ -5,6 +5,8 @@
 #include <QString>
 #include <QDebug>
 
+#include <cassert>
+
 #include "acmalgorithmmatch.h"
 
 template<typename M, typename W>
