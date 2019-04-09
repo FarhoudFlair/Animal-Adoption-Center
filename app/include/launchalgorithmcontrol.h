@@ -7,6 +7,7 @@
 #include "include/animallistmodel.h"
 #include "include/clientlistmodel.h"
 #include "include/algorithmlistmodel.h"
+#include "include/acmalgorithmmatch.h"
 
 #include "ui_mainwindow.h"
 

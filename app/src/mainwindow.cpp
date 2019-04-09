@@ -557,3 +557,19 @@ void MainWindow::on_algorithmLaunchAlgorithmButton_clicked()
     auto clients = SQLSerializer::readClients();
     algoControl.launch(animals, clients, this->ui);
 }
+
+void MainWindow::on_algorithmDetailedButton_clicked()
+{
+    this->ui->algorithmStackedWidget->setCurrentWidget(this->ui->algorithmSummaryViewPage);
+}
+
+void MainWindow::on_algorithmSummaryListView_doubleClicked(const QModelIndex &index)
+{
+    if (!index.isValid()) return;
+
+    AlgorithmListModel *model = dynamic_cast<AlgorithmListModel *>(this->ui->algorithmSummaryListView->model());
+    const QString & details = model->getElement(index.row()).getDetails();
+    this->ui->algorithmDetailedTextBrowser->setText(details);
+
+    this->ui->algorithmStackedWidget->setCurrentWidget(this->ui->algorithmDetailedViewPage);
+}

@@ -47,1040 +47,1040 @@ CREATE TABLE IF NOT EXISTS client (
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (0, 'Bianca', 'Hamster', 'Winter White', 'Yellow', 28.766703400889785, 'Female', 150.9195393729102, 117.79816002323392, 4, 0, 1, 2, 3, 0, 3, 1, 3, 4, 0, 4, 2, 2, 2, 798.3253857520955);
+    (0, 'Tink', 'Fish', 'Siamese Fighting Fish', 'Brown', 25.34432884792699, 'Male', 77.22060837172216, 58.57607098905096, 2, 2, 1, 2, 3, 1, 2, 0, 3, 1, 3, 2, 2, 3, 0, 6069.9905942542355);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (1, 'Skip', 'Dog', 'German Shepard', 'Gray', 6.66237311316027, 'Female', 67.22265186020081, 5.482048582024605, 3, 1, 4, 1, 2, 1, 3, 0, 1, 3, 4, 0, 4, 4, 1, 4168.933978660932);
+    (1, 'Stitch', 'Cat', 'Scottish Fold', 'Black', 20.07149345567178, 'Female', 103.29987289449036, 42.41707418650959, 2, 4, 2, 1, 1, 3, 4, 3, 0, 1, 2, 0, 1, 3, 1, 6520.258588198393);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (2, 'Giblet', 'Horse', 'Barb', 'Brown', 10.534482799878832, 'Female', 113.78148326258841, 186.77924913393653, 4, 2, 0, 2, 0, 3, 4, 3, 2, 1, 1, 1, 2, 0, 2, 3938.4739476821924);
+    (2, 'Ike', 'Fish', 'Green Swordtail', 'Blue', 23.48622085257937, 'Female', 36.94942373350621, 161.9653461933702, 4, 1, 1, 4, 0, 3, 1, 3, 1, 3, 4, 0, 4, 4, 1, 653.7432243754365);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (3, 'Strsky', 'Cat', 'Ragdoll', 'Spotted', 23.89871573747693, 'Female', 78.43802450818079, 198.93597055225487, 4, 0, 1, 1, 4, 2, 4, 3, 2, 0, 1, 2, 4, 1, 2, 777.8080074954024);
+    (3, 'Fibre', 'Dog', 'Labrador', 'Red', 10.490377386564306, 'Female', 71.75887790342536, 86.13813346352251, 1, 3, 4, 3, 3, 0, 1, 4, 2, 3, 1, 4, 4, 2, 0, 3024.5592291834273);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (4, 'Ramona', 'Rabbit', 'Britannia Petite', 'Yellow', 25.697580057442327, 'Female', 98.71656300556947, 68.59229172677684, 3, 4, 4, 4, 2, 1, 1, 2, 0, 4, 0, 1, 3, 4, 0, 332.0119302534734);
+    (4, 'Phoenix', 'Cat', 'Persian', 'Brown', 3.0633133016079603, 'Male', 79.06396265529338, 187.4722210219456, 3, 0, 3, 3, 4, 0, 1, 4, 2, 0, 3, 4, 0, 1, 0, 4600.7853534374335);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (5, 'Elwood', 'Horse', 'Trakehner', 'Red', 27.136593284477154, 'Female', 58.59991607879007, 43.824622481465056, 3, 1, 0, 1, 0, 0, 3, 2, 3, 0, 3, 3, 1, 4, 0, 8271.333781509236);
+    (5, 'Maggie', 'Dog', 'Husky', 'Spotted', 19.53395064036772, 'Female', 42.5976876362649, 73.58923452811533, 1, 3, 4, 2, 3, 0, 1, 4, 3, 0, 1, 0, 2, 2, 2, 8228.239004215278);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (6, 'Tucke', 'Dog', 'Labrador', 'Spotted', 11.10830567006628, 'Male', 66.05302265312758, 87.71497486464884, 2, 1, 3, 0, 2, 2, 2, 1, 3, 4, 3, 3, 4, 2, 1, 495.4355269223705);
+    (6, 'Kai', 'Cat', 'Munchkin', 'Green', 15.431954916831144, 'Male', 186.97376379649367, 172.76906899181134, 4, 0, 2, 0, 4, 2, 3, 3, 4, 4, 1, 0, 1, 0, 1, 741.468995908785);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (7, 'Asia', 'Horse', 'Thoroughbred', 'Gray', 12.038171555309773, 'Female', 95.41246704359416, 104.34830600525626, 0, 4, 0, 4, 1, 1, 3, 1, 3, 0, 1, 3, 2, 1, 0, 9507.053610648805);
+    (7, 'Strsky', 'Cat', 'Munchkin', 'White', 1.378640573491228, 'Female', 44.36694289661384, 62.209098043318285, 1, 2, 3, 2, 1, 1, 0, 2, 3, 3, 0, 1, 4, 3, 1, 1431.2887570961748);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (8, 'Dallas', 'Horse', 'Trakehner', 'White', 0.6123347113721641, 'Female', 82.0244332425108, 105.69025841341137, 1, 1, 2, 4, 0, 3, 4, 3, 0, 4, 2, 4, 4, 2, 2, 301.0212358342996);
+    (8, 'Stitch', 'Horse', 'Paso Fino', 'Gray', 29.337831624567368, 'Female', 109.67187683895789, 177.18557578532844, 3, 2, 2, 2, 1, 3, 1, 3, 0, 3, 0, 2, 3, 3, 2, 9124.605201210981);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (9, 'Jasmine', 'Fish', 'Goldfish', 'Brown', 25.960680716676677, 'Male', 106.60883809665387, 101.49332121688666, 2, 3, 2, 4, 2, 2, 1, 2, 3, 4, 2, 1, 2, 4, 0, 5724.584567620284);
+    (9, 'Sophie', 'Cat', 'Scottish Fold', 'Yellow', 20.509216175786975, 'Female', 197.43752609441978, 61.83537309532352, 1, 4, 1, 1, 4, 2, 0, 3, 1, 0, 2, 2, 0, 1, 1, 9394.273505151934);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (10, 'Beck', 'Fish', 'Green Swordtail', 'Green', 9.520943094813973, 'Female', 92.83785716710658, 135.3816550279585, 3, 2, 0, 0, 4, 4, 1, 2, 1, 2, 0, 1, 0, 3, 0, 8441.184645376143);
+    (10, 'Merry', 'Hamster', 'Syrian', 'Red', 8.02353280868454, 'Female', 181.10363330163997, 57.40936570495179, 2, 2, 0, 3, 1, 1, 2, 2, 2, 0, 1, 3, 2, 4, 2, 4165.481160006632);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (11, 'Monet', 'Dog', 'German Shepard', 'White', 16.879123205667646, 'Female', 178.8351337488232, 122.03562992765086, 2, 1, 2, 0, 4, 4, 2, 3, 0, 1, 0, 2, 4, 2, 0, 7380.725265498964);
+    (11, 'Dallas', 'Hamster', 'Robo', 'Green', 11.121133853288557, 'Female', 121.71314217894205, 26.40618213795496, 0, 2, 4, 4, 0, 4, 3, 2, 4, 1, 0, 1, 1, 4, 0, 5680.094745010234);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (12, 'Maggie', 'Cat', 'Ragdoll', 'Blue', 11.068073062463867, 'Male', 28.12977909895848, 131.04055224120762, 4, 0, 4, 3, 0, 2, 3, 2, 1, 3, 4, 3, 1, 0, 2, 2436.493519471328);
+    (12, 'Charlie', 'Bird', 'Cockatiels', 'Brown', 29.474739896060974, 'Male', 31.202860457725247, 196.60781798626024, 0, 2, 3, 0, 3, 3, 0, 1, 2, 1, 0, 1, 4, 3, 2, 3161.204642822061);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (13, 'Buffy', 'Horse', 'Trakehner', 'White', 8.01458609717202, 'Female', 145.76787395323527, 152.53610330487106, 1, 4, 3, 3, 3, 0, 0, 4, 1, 4, 3, 1, 0, 3, 1, 5295.753125413621);
+    (13, 'Ramona', 'Hamster', 'Winter White', 'Blue', 19.733118482303563, 'Female', 42.077254161148154, 179.2204543948854, 0, 2, 3, 3, 2, 0, 3, 2, 3, 2, 2, 2, 1, 3, 2, 4972.832590975194);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (14, 'Tallulah', 'Rabbit', 'Dutch', 'White', 8.069265433704533, 'Female', 190.11223335558805, 41.766098930541474, 3, 2, 4, 4, 3, 2, 3, 1, 0, 4, 2, 4, 1, 4, 0, 5383.827405167813);
+    (14, 'Lola', 'Hamster', 'Robo', 'Yellow', 16.43850537511312, 'Male', 185.44935712348178, 18.65114081898921, 2, 1, 4, 3, 2, 0, 4, 4, 4, 0, 1, 0, 4, 1, 1, 9994.335282112097);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (15, 'Asia', 'Bird', 'Budgerigars', 'White', 20.98664176468563, 'Male', 7.391315952498461, 101.39601787679742, 1, 4, 3, 1, 2, 1, 1, 4, 3, 0, 2, 3, 1, 3, 2, 9432.955134029682);
+    (15, 'Mitzi', 'Cat', 'Scottish Fold', 'Brown', 25.324951431865195, 'Female', 116.93888294879851, 171.87070246250667, 2, 2, 3, 0, 0, 0, 4, 3, 4, 3, 4, 0, 4, 3, 2, 99.37681948859924);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (16, 'Luke', 'Dog', 'Labrador', 'Black', 11.232100516129652, 'Male', 154.4632236745663, 108.51148448259227, 3, 4, 1, 0, 2, 3, 3, 0, 1, 4, 2, 2, 3, 4, 1, 2108.7887481395123);
+    (16, 'Midnight', 'Dog', 'Husky', 'Brown', 4.341867209793069, 'Female', 15.032245899859747, 74.22358786640267, 2, 1, 2, 4, 3, 1, 0, 4, 1, 3, 2, 2, 1, 1, 1, 6851.93343663711);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (17, 'Biloxi', 'Cat', 'Ragdoll', 'Gray', 6.498578576649727, 'Female', 159.48555554327586, 9.102551864485726, 2, 3, 0, 3, 4, 2, 1, 1, 1, 2, 0, 0, 2, 1, 2, 9111.360715027704);
+    (17, 'Zach', 'Fish', 'Siamese Fighting Fish', 'Brown', 28.85186294944224, 'Male', 171.251000563578, 172.39468669209796, 4, 1, 0, 1, 1, 1, 0, 3, 1, 0, 4, 2, 4, 2, 2, 2804.1791532491206);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (18, 'Greystoke', 'Bird', 'Cockatoos', 'Black', 9.940090293619248, 'Female', 112.84372115945358, 193.06334813249444, 2, 3, 0, 2, 4, 0, 0, 0, 2, 1, 2, 1, 1, 2, 2, 5504.604887921875);
+    (18, 'Bruin', 'Fish', 'Goldfish', 'Spotted', 2.918013513485181, 'Male', 132.20368747571052, 101.13185377443908, 3, 3, 4, 1, 4, 1, 0, 3, 2, 2, 3, 1, 0, 1, 0, 8417.397561449363);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (19, 'Arya', 'Hamster', 'Syrian', 'Spotted', 20.566081151002024, 'Female', 188.77037453392782, 130.75511804364834, 1, 4, 1, 3, 0, 2, 1, 0, 0, 0, 4, 1, 2, 1, 2, 3804.879152890308);
+    (19, 'Marti', 'Dog', 'Husky', 'Gray', 5.0837592474855535, 'Male', 10.453133389486863, 155.0259377419228, 2, 4, 1, 2, 0, 3, 1, 3, 0, 3, 4, 2, 4, 2, 2, 1374.1109332510666);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (20, 'Meadow', 'Bird', 'Cockatiels', 'Yellow', 21.136545287833076, 'Female', 130.22928255704255, 34.01163336334953, 2, 1, 3, 4, 1, 4, 3, 0, 3, 2, 1, 3, 3, 3, 1, 8795.111206368234);
+    (20, 'Shaq', 'Horse', 'Trakehner', 'Spotted', 27.986845091190517, 'Male', 84.16289434021344, 109.69163441305622, 2, 3, 0, 0, 4, 4, 4, 0, 1, 3, 2, 2, 0, 1, 1, 5734.8553911323415);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (21, 'Samsung', 'Horse', 'Paso Fino', 'Brown', 22.655679097271655, 'Female', 148.7459615225189, 185.07940404076285, 4, 3, 2, 1, 4, 4, 4, 3, 2, 1, 3, 3, 3, 1, 0, 4346.711166147682);
+    (21, 'Picasso', 'Dog', 'Husky', 'Yellow', 6.552689198662617, 'Female', 184.5689613618048, 84.23480187204366, 2, 2, 0, 4, 4, 2, 0, 3, 2, 3, 4, 1, 4, 1, 1, 4944.010144242758);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (22, 'Gibson', 'Dog', 'Husky', 'Brown', 27.519974709401687, 'Female', 164.9250607854429, 17.339407285813643, 4, 2, 4, 4, 0, 4, 2, 4, 4, 4, 0, 2, 0, 2, 1, 8647.49704687628);
+    (22, 'Olive', 'Dog', 'Husky', 'Black', 27.787708219362784, 'Male', 43.25271199293869, 81.6190910947211, 1, 3, 1, 3, 4, 2, 0, 1, 4, 3, 3, 0, 0, 1, 1, 3684.6882698654767);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (23, 'Peanut', 'Bird', 'Cockatoos', 'White', 13.415625945124217, 'Male', 166.26910948704105, 125.60899734319196, 4, 0, 1, 2, 3, 2, 0, 0, 3, 4, 0, 1, 3, 2, 1, 7499.440010023255);
+    (23, 'Jack', 'Horse', 'Barb', 'Gray', 18.807373257406322, 'Male', 24.520833785150327, 70.16158628157157, 4, 2, 0, 4, 3, 0, 0, 1, 2, 1, 4, 0, 2, 1, 0, 8850.37858435075);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (24, 'Ike', 'Dog', 'Labrador', 'Green', 8.661026132948662, 'Female', 24.33003915615231, 53.991003927399554, 0, 1, 1, 4, 2, 0, 3, 3, 4, 1, 4, 0, 1, 3, 1, 7127.437725658302);
+    (24, 'Iris', 'Bird', 'Cockatiels', 'White', 8.982785186789256, 'Female', 95.6997953036045, 84.56417100538, 3, 3, 0, 0, 4, 2, 4, 4, 0, 1, 2, 1, 0, 1, 2, 4369.5766793846615);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (25, 'Brandy', 'Cat', 'Munchkin', 'Red', 27.435482996575256, 'Female', 119.36652583502824, 9.776205000335787, 3, 1, 3, 1, 1, 4, 1, 3, 4, 1, 3, 0, 3, 4, 2, 1890.267648049638);
+    (25, 'Lola', 'Cat', 'Munchkin', 'White', 15.82527824294325, 'Male', 9.044688671723513, 81.023088066071, 0, 0, 3, 0, 3, 0, 4, 3, 0, 4, 2, 3, 3, 0, 1, 3550.3970398810084);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (26, 'Dallas', 'Hamster', 'Chinese', 'White', 12.353276772225858, 'Female', 7.8171260044381565, 66.70104431683403, 0, 4, 4, 1, 1, 4, 2, 4, 1, 4, 1, 1, 0, 1, 0, 9417.431932326053);
+    (26, 'Delilah', 'Bird', 'Cockatiels', 'Spotted', 9.624221494593652, 'Female', 162.507459247738, 192.95822313961898, 1, 0, 3, 3, 3, 1, 1, 0, 1, 0, 1, 3, 0, 0, 1, 325.37886746777065);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (27, 'Ron', 'Cat', 'Ragdoll', 'Gray', 2.648568142379486, 'Male', 120.84828962623833, 51.783720438085275, 2, 4, 4, 3, 0, 0, 0, 2, 1, 3, 3, 2, 0, 3, 1, 65.26343970088958);
+    (27, 'Pablo', 'Horse', 'Paso Fino', 'Spotted', 9.675931374151272, 'Female', 24.519194243069926, 152.53325424698318, 4, 3, 3, 3, 1, 3, 2, 0, 0, 4, 0, 4, 3, 0, 0, 1949.2283811873656);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (28, 'Peaches', 'Horse', 'Barb', 'Black', 17.2122606944347, 'Female', 32.909684291497754, 128.47862047411917, 1, 2, 4, 2, 2, 0, 0, 0, 2, 0, 1, 0, 3, 1, 2, 1572.8463296906918);
+    (28, 'Maya', 'Dog', 'Labrador', 'Green', 26.63564805799978, 'Male', 65.57364999212555, 123.15597981788342, 4, 2, 2, 2, 1, 4, 4, 1, 4, 1, 2, 1, 2, 3, 0, 4207.829962337065);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (29, 'Bren', 'Horse', 'Thoroughbred', 'Brown', 27.978062310476126, 'Male', 109.01298656096093, 40.01363314810186, 3, 1, 2, 3, 3, 3, 1, 2, 3, 3, 1, 2, 1, 4, 2, 1375.252184003657);
+    (29, 'Lilypie', 'Fish', 'Goldfish', 'Black', 20.03881590420156, 'Female', 117.4258074092626, 184.48423589724703, 2, 2, 3, 1, 1, 2, 0, 3, 4, 3, 3, 2, 2, 1, 1, 8903.393805736876);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (30, 'Jenna', 'Cat', 'Ragdoll', 'Brown', 27.110686991863723, 'Female', 174.5918168143368, 14.261449424422013, 3, 3, 2, 2, 2, 4, 4, 4, 3, 2, 4, 3, 0, 2, 2, 3678.158179527978);
+    (30, 'Scotty', 'Bird', 'Budgerigars', 'Yellow', 22.194236962304345, 'Male', 111.26285387061648, 28.77473335589285, 3, 0, 3, 3, 1, 3, 0, 2, 4, 3, 3, 2, 0, 3, 2, 3136.449360508607);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (31, 'Wednesday', 'Horse', 'Paso Fino', 'Red', 8.417386678186949, 'Male', 63.01852249958153, 161.67330057005964, 0, 4, 2, 4, 0, 3, 0, 4, 0, 4, 1, 0, 1, 0, 0, 4273.244563501923);
+    (31, 'Luke', 'Dog', 'German Shepard', 'Red', 20.883456193763898, 'Female', 107.98500146680428, 84.01401617397589, 0, 1, 3, 0, 4, 4, 2, 4, 4, 3, 2, 4, 4, 0, 0, 6166.619272886975);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (32, 'Brandy', 'Dog', 'Husky', 'Gray', 10.923358191975055, 'Female', 141.5721797886676, 92.31880808263749, 1, 3, 3, 1, 0, 1, 3, 2, 1, 4, 0, 4, 2, 1, 0, 5171.053534439889);
+    (32, 'Daphne', 'Hamster', 'Chinese', 'Yellow', 16.974467571882233, 'Male', 170.47136606082708, 159.03033805672894, 1, 2, 4, 4, 0, 1, 2, 2, 4, 2, 0, 1, 4, 1, 0, 9719.004755372307);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (33, 'Farhoud', 'Hamster', 'Robo', 'Blue', 17.537289173574692, 'Male', 156.88138028692407, 109.36352494539628, 3, 0, 1, 3, 2, 0, 0, 3, 4, 4, 1, 2, 4, 4, 1, 2048.6639655992494);
+    (33, 'Zeke', 'Horse', 'Paso Fino', 'Green', 17.52066945388972, 'Female', 107.7863076476605, 144.49921550090647, 4, 3, 3, 0, 0, 2, 4, 4, 1, 2, 2, 3, 3, 0, 1, 371.44407090257874);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (34, 'Honey', 'Bird', 'Budgerigars', 'Gray', 1.159203858513429, 'Male', 79.15248161777777, 92.091108404371, 4, 2, 4, 4, 3, 1, 3, 0, 4, 0, 2, 1, 4, 2, 0, 6514.381117980263);
+    (34, 'Maya', 'Bird', 'Cockatoos', 'Brown', 14.834318224354044, 'Male', 160.6233058080215, 36.136525310453266, 4, 4, 0, 2, 3, 1, 3, 2, 2, 4, 4, 1, 0, 2, 2, 7285.9193219195095);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (35, 'Lola', 'Horse', 'Barb', 'White', 5.616231512068973, 'Female', 180.82327998572836, 81.1843445969264, 1, 3, 2, 2, 3, 0, 2, 4, 3, 2, 3, 3, 4, 0, 1, 8296.403638691545);
+    (35, 'Balou', 'Bird', 'African Grey Parrots', 'Green', 20.78338723779884, 'Female', 143.28276644871397, 15.09526737279315, 3, 0, 1, 2, 1, 4, 3, 4, 0, 4, 4, 3, 1, 0, 0, 75.55221146048322);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (36, 'Ebony', 'Hamster', 'Robo', 'Black', 16.470681716062508, 'Female', 27.08874652381465, 24.556144493405288, 2, 1, 2, 0, 3, 3, 0, 4, 2, 0, 0, 4, 0, 3, 1, 224.55164913441698);
+    (36, 'Tank', 'Rabbit', 'Dwarf Hotot', 'Blue', 20.945907956369478, 'Male', 188.26076355301402, 17.53856739086559, 2, 1, 1, 1, 1, 0, 3, 0, 0, 3, 0, 2, 3, 2, 1, 665.6982859069842);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (37, 'Skyler', 'Rabbit', 'American Fuzzy Lop', 'Green', 8.694939615874711, 'Female', 61.399446188644355, 77.26093538151365, 3, 0, 1, 4, 1, 3, 4, 1, 3, 4, 2, 2, 3, 3, 1, 8624.186955465173);
+    (37, 'Koby', 'Fish', 'Siamese Fighting Fish', 'Gray', 28.232088309044975, 'Female', 42.531398353575874, 10.655252997645498, 1, 3, 3, 2, 4, 2, 2, 1, 0, 0, 1, 2, 0, 4, 0, 5766.515626326184);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (38, 'Silas', 'Horse', 'Thoroughbred', 'Black', 3.192955212757565, 'Male', 19.659734285585394, 97.69325304910112, 0, 2, 1, 1, 1, 3, 4, 1, 4, 1, 1, 4, 2, 4, 0, 1699.8434403328386);
+    (38, 'Max', 'Bird', 'African Grey Parrots', 'Green', 6.326297100896147, 'Female', 117.28726564143655, 50.802375337139466, 2, 2, 3, 2, 4, 3, 3, 3, 4, 2, 4, 4, 4, 1, 2, 1755.0319146758338);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (39, 'Mister Tiggywinkles', 'Fish', 'Green Swordtail', 'Gray', 14.208402722948362, 'Female', 48.715631521157036, 178.11690971168102, 3, 4, 1, 2, 0, 0, 0, 1, 0, 2, 1, 1, 1, 4, 2, 1603.1453502664272);
+    (39, 'Ed', 'Fish', 'Siamese Fighting Fish', 'Spotted', 4.5893737861240975, 'Male', 66.45317071473411, 183.15754815706302, 0, 3, 4, 3, 3, 0, 2, 0, 2, 4, 4, 2, 1, 0, 0, 3408.724333612227);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (40, 'Sugar', 'Cat', 'Scottish Fold', 'Red', 7.576621507752695, 'Male', 31.034904175683113, 12.471809857470827, 0, 3, 2, 0, 1, 4, 2, 4, 0, 4, 1, 2, 1, 1, 2, 8687.692318104691);
+    (40, 'Daphne', 'Cat', 'Munchkin', 'Black', 8.112489061072157, 'Female', 104.98991099088784, 196.12392080864004, 1, 0, 3, 0, 0, 1, 2, 3, 1, 4, 3, 2, 1, 4, 1, 7691.447973600636);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (41, 'Pinot', 'Hamster', 'Syrian', 'White', 27.11582277173008, 'Male', 158.52564775943642, 148.54299862097469, 3, 2, 4, 2, 0, 0, 1, 2, 3, 4, 2, 4, 0, 3, 2, 7090.073392344204);
+    (41, 'Winnie', 'Hamster', 'Robo', 'Gray', 28.270973618121744, 'Female', 85.84072403577431, 196.69526417766653, 1, 4, 4, 0, 2, 0, 0, 3, 3, 2, 3, 1, 3, 3, 2, 6067.92356665495);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (42, 'Fuse', 'Dog', 'Husky', 'Black', 18.04873638584813, 'Female', 193.27151485170774, 191.95312783682184, 3, 2, 3, 2, 0, 2, 2, 2, 0, 4, 4, 3, 2, 2, 0, 8230.21479338278);
+    (42, 'Milan', 'Fish', 'Goldfish', 'Blue', 15.914794840189504, 'Female', 27.17157348382505, 86.48565231520291, 1, 3, 0, 3, 3, 0, 4, 4, 1, 4, 3, 0, 4, 0, 2, 1674.1344839502804);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (43, 'Lucy', 'Dog', 'Husky', 'Green', 6.094240936400886, 'Male', 139.52182850616046, 117.27790214941126, 3, 1, 3, 2, 3, 4, 0, 0, 2, 3, 0, 2, 0, 4, 2, 4585.209028797953);
+    (43, 'Asia', 'Horse', 'Thoroughbred', 'Yellow', 15.625324671169155, 'Female', 93.32521201262269, 173.86410796226068, 3, 1, 1, 0, 1, 2, 1, 0, 2, 1, 2, 4, 3, 4, 2, 2886.0664975145805);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (44, 'Pumba', 'Fish', 'Green Swordtail', 'Gray', 10.158672484510365, 'Female', 163.4089989122079, 64.72616922708983, 0, 4, 0, 1, 3, 3, 1, 3, 1, 1, 4, 1, 2, 4, 2, 6722.812537907213);
+    (44, 'Paisley', 'Dog', 'German Shepard', 'Blue', 18.8527114722096, 'Female', 165.34027720822877, 172.64091709905918, 2, 4, 2, 3, 4, 4, 3, 3, 4, 0, 4, 3, 3, 0, 2, 4921.827134984376);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (45, 'Sophie', 'Rabbit', 'Florida White', 'Black', 7.844347329488087, 'Female', 8.873521432648172, 108.13962592710605, 2, 3, 1, 0, 1, 0, 4, 1, 0, 2, 0, 0, 4, 0, 2, 4542.04086721307);
+    (45, 'Chaucer', 'Rabbit', 'Britannia Petite', 'Gray', 9.410036603162618, 'Female', 130.08435817917683, 27.046301953985353, 4, 2, 0, 2, 3, 2, 2, 3, 3, 0, 4, 1, 0, 4, 1, 7601.90987920595);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (46, 'Porche', 'Hamster', 'Syrian', 'Spotted', 28.655669859171176, 'Male', 160.0792238420675, 148.4135865607936, 3, 3, 1, 2, 1, 1, 0, 3, 1, 0, 4, 3, 4, 0, 1, 8887.829671864967);
+    (46, 'Dallas', 'Rabbit', 'Dwarf Hotot', 'Green', 17.390103953263864, 'Male', 65.82498842306084, 179.41515142493247, 3, 2, 0, 4, 4, 0, 4, 0, 0, 3, 4, 0, 3, 4, 1, 3228.09199834836);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (47, 'Winnie', 'Fish', 'Goldfish', 'Gray', 5.60859942653792, 'Female', 160.64259487656858, 108.98633965006513, 1, 0, 0, 2, 4, 1, 4, 1, 1, 2, 2, 0, 0, 0, 2, 9421.599441156033);
+    (47, 'Roxie', 'Fish', 'Green Swordtail', 'Yellow', 10.10506751489668, 'Female', 149.72019510153928, 187.6590900738484, 4, 0, 1, 4, 2, 0, 0, 3, 3, 1, 2, 0, 1, 4, 1, 9794.937742528993);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (48, 'Emma', 'Cat', 'Persian', 'White', 23.087484111428633, 'Female', 188.19080380916822, 105.26284571101891, 0, 3, 4, 1, 0, 4, 0, 1, 4, 1, 1, 3, 0, 0, 0, 8406.292776853328);
+    (48, 'Bobbafett', 'Rabbit', 'Florida White', 'Brown', 10.116425920984895, 'Female', 36.39385599266038, 182.4013003023942, 3, 2, 0, 1, 4, 4, 4, 4, 1, 3, 1, 2, 3, 4, 2, 4598.3020719581045);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (49, 'Vegas', 'Cat', 'Scottish Fold', 'Green', 28.080758753317074, 'Male', 97.32873510126169, 18.97635239144058, 0, 2, 3, 2, 3, 0, 4, 0, 4, 4, 1, 3, 1, 0, 2, 5646.230069335183);
+    (49, 'Buddy', 'Fish', 'Siamese Fighting Fish', 'Spotted', 25.217220707269906, 'Male', 170.18237267522792, 155.679830235812, 2, 2, 4, 2, 3, 1, 1, 0, 2, 2, 1, 4, 3, 3, 2, 6069.289606336121);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (50, 'Claire', 'Fish', 'Goldfish', 'Brown', 9.23490030132464, 'Female', 82.560889860144, 26.2989630563958, 3, 2, 1, 0, 4, 1, 2, 1, 0, 3, 3, 0, 3, 4, 0, 6544.279295707133);
+    (50, 'Molly', 'Bird', 'African Grey Parrots', 'Spotted', 1.3276201102421274, 'Male', 32.650885070711546, 134.06286837969134, 2, 2, 0, 4, 2, 1, 4, 2, 4, 0, 2, 4, 0, 0, 2, 3781.280040755157);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (51, 'Skip', 'Rabbit', 'American Fuzzy Lop', 'Green', 24.141578687942538, 'Male', 16.9527845014144, 36.92662930769374, 4, 3, 2, 0, 1, 1, 1, 0, 3, 1, 4, 4, 4, 2, 1, 4583.235507582086);
+    (51, 'Domino', 'Bird', 'Cockatoos', 'Brown', 11.337305324743808, 'Male', 137.5264636646446, 7.999986597692331, 3, 4, 1, 2, 3, 0, 3, 4, 4, 0, 4, 1, 0, 4, 0, 8012.216725335205);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (52, 'Maggie', 'Rabbit', 'Britannia Petite', 'White', 10.793461102877313, 'Female', 166.86032726431137, 134.48347523265264, 0, 1, 3, 0, 1, 1, 2, 4, 2, 0, 3, 0, 3, 2, 0, 547.4374758263159);
+    (52, 'Mister Tiggywinkles', 'Horse', 'Barb', 'Gray', 9.51082369658891, 'Male', 36.12524988214665, 57.11131888301541, 4, 0, 3, 0, 2, 1, 4, 1, 4, 0, 1, 4, 0, 0, 2, 1690.5081160943637);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (53, 'Nugget', 'Cat', 'Persian', 'White', 1.64527675235776, 'Female', 78.32989164089486, 158.7302438652561, 2, 0, 0, 2, 0, 1, 1, 0, 1, 3, 3, 1, 3, 3, 2, 5083.586512316522);
+    (53, 'Picasso', 'Fish', 'Green Swordtail', 'Black', 22.813634095691683, 'Female', 104.00091506711823, 148.8143963758282, 2, 4, 1, 0, 4, 2, 0, 0, 2, 0, 4, 4, 4, 1, 2, 1351.0756075737377);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (54, 'Tangerine', 'Horse', 'Barb', 'White', 8.70553139827464, 'Male', 59.38689585492733, 59.03796147294178, 4, 0, 4, 2, 0, 1, 4, 0, 2, 0, 4, 3, 1, 1, 0, 6327.81483045994);
+    (54, 'Felix', 'Horse', 'Trakehner', 'Black', 28.20747400242718, 'Female', 169.75101724243947, 162.4038250636024, 0, 3, 0, 0, 0, 3, 3, 2, 3, 2, 2, 0, 4, 2, 2, 5708.917875953833);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (55, 'Sookie', 'Cat', 'Siamese', 'Spotted', 16.06750373471136, 'Female', 152.59581276761295, 81.0270748061555, 0, 4, 0, 3, 0, 3, 1, 2, 0, 3, 3, 0, 4, 0, 2, 8153.0613233974);
+    (55, 'Ozzie', 'Horse', 'Barb', 'Spotted', 4.643347826760184, 'Male', 160.00266320475077, 69.938465748959, 4, 2, 4, 0, 3, 2, 4, 1, 0, 2, 1, 0, 0, 3, 2, 2905.2873454463393);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (56, 'Kona', 'Fish', 'Siamese Fighting Fish', 'Red', 12.477455316797784, 'Female', 169.834043844478, 188.59259024148494, 2, 3, 3, 1, 0, 0, 3, 1, 3, 1, 3, 4, 0, 0, 2, 9311.600266377636);
+    (56, 'Midori', 'Cat', 'Siamese', 'Green', 12.149761633374418, 'Female', 28.150037912496675, 96.19409616863612, 3, 1, 0, 2, 1, 1, 3, 0, 3, 0, 0, 0, 1, 1, 2, 7818.704770348698);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (57, 'Malibu', 'Bird', 'Budgerigars', 'White', 4.242306991270052, 'Male', 51.52097198959351, 167.85999714612336, 0, 0, 3, 3, 4, 1, 2, 1, 3, 3, 1, 1, 3, 2, 0, 3042.689606108904);
+    (57, 'Balou', 'Cat', 'Siamese', 'Blue', 12.09474991037682, 'Male', 19.0446935273184, 60.16292765311465, 0, 2, 1, 4, 0, 4, 1, 3, 1, 3, 0, 4, 1, 3, 0, 7802.515183124566);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (58, 'Hutch', 'Cat', 'Scottish Fold', 'Blue', 10.447398904948798, 'Male', 178.34566900513087, 44.780959692362124, 3, 3, 1, 0, 1, 1, 0, 2, 4, 2, 0, 3, 2, 0, 1, 8360.069320740251);
+    (58, 'Pearl', 'Bird', 'African Grey Parrots', 'Gray', 26.137198563888578, 'Male', 124.58710317296952, 101.39237756998187, 4, 4, 4, 1, 3, 3, 2, 4, 1, 1, 2, 4, 4, 0, 1, 391.93451152331005);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (59, 'Keanna', 'Fish', 'Siamese Fighting Fish', 'Red', 16.55232894120269, 'Female', 16.088360441032837, 77.84630177472046, 1, 2, 1, 3, 2, 2, 3, 0, 3, 2, 2, 1, 3, 3, 2, 4235.976911261812);
+    (59, 'Barney', 'Cat', 'Scottish Fold', 'Red', 22.07186886787523, 'Male', 71.00191591012916, 184.13681276473156, 3, 2, 3, 1, 1, 4, 1, 4, 0, 2, 4, 2, 0, 3, 0, 6811.8659718185945);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (60, 'Toffee', 'Rabbit', 'Florida White', 'Brown', 25.01876542862951, 'Female', 146.24596473919658, 177.7421169229399, 4, 2, 3, 0, 2, 3, 2, 4, 4, 0, 1, 4, 4, 3, 2, 2056.816173134116);
+    (60, 'Balou', 'Bird', 'Cockatoos', 'Brown', 21.65106461272088, 'Female', 8.507674853966414, 99.61882449287636, 1, 4, 0, 4, 0, 4, 1, 2, 2, 2, 3, 0, 2, 2, 2, 8777.773111003504);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (61, 'Wolfie', 'Cat', 'Persian', 'Spotted', 4.277353478554803, 'Female', 156.63942742658304, 94.23291072324935, 3, 3, 1, 4, 3, 0, 2, 3, 2, 0, 3, 2, 3, 1, 0, 1154.814178447729);
+    (61, 'Skitty', 'Hamster', 'Robo', 'Black', 29.35419670152417, 'Female', 116.60400246243748, 68.25965593702672, 4, 2, 0, 3, 2, 3, 3, 2, 2, 3, 0, 4, 4, 3, 0, 5725.250449531306);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (62, 'Kalua', 'Hamster', 'Winter White', 'Yellow', 22.91611200951119, 'Female', 198.09017882106653, 197.5793934477343, 2, 2, 4, 3, 1, 2, 1, 3, 4, 0, 2, 3, 3, 0, 0, 8827.073603370234);
+    (62, 'Donna', 'Hamster', 'Syrian', 'Gray', 10.702954671356077, 'Male', 145.17002299423086, 182.1751074681069, 2, 4, 1, 2, 0, 2, 3, 3, 1, 1, 3, 3, 1, 2, 0, 8181.193487630162);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (63, 'Linus', 'Cat', 'Munchkin', 'Gray', 15.037185643150952, 'Male', 84.94709397222188, 196.4961153721504, 3, 3, 4, 2, 1, 0, 2, 4, 4, 0, 1, 4, 2, 2, 0, 2690.018333362552);
+    (63, 'Paul', 'Cat', 'Ragdoll', 'White', 4.046370912304385, 'Male', 82.4220833703773, 141.29809706178574, 2, 2, 4, 3, 3, 1, 2, 1, 1, 1, 3, 0, 3, 3, 1, 8133.485566731537);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (64, 'Jazzy', 'Cat', 'Persian', 'White', 16.078139167088832, 'Male', 199.7033524567257, 70.74552554153814, 0, 2, 1, 2, 3, 3, 1, 0, 0, 1, 4, 4, 2, 0, 2, 9485.867502811936);
+    (64, 'Burt', 'Fish', 'Siamese Fighting Fish', 'Gray', 12.37445012969579, 'Female', 150.169368402092, 178.50827397332884, 0, 2, 3, 1, 4, 0, 2, 2, 0, 3, 3, 2, 4, 4, 2, 1093.7727819969814);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (65, 'Rusty', 'Horse', 'Paso Fino', 'Spotted', 11.076619343853432, 'Female', 183.13868862309693, 10.851882540826686, 4, 3, 2, 3, 0, 1, 1, 0, 3, 2, 4, 4, 4, 0, 1, 3903.4664581911748);
+    (65, 'Bronco', 'Rabbit', 'Dutch', 'Red', 12.162605449840772, 'Female', 199.72661297768883, 78.20806452410058, 4, 4, 1, 2, 2, 1, 1, 2, 2, 0, 3, 0, 1, 2, 1, 5926.112865834086);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (66, 'Ramona', 'Hamster', 'Winter White', 'Green', 7.210094793997789, 'Female', 48.41087955395222, 25.301069309485282, 4, 0, 3, 3, 0, 3, 1, 0, 0, 4, 3, 3, 1, 1, 2, 6009.101370239996);
+    (66, 'Potter', 'Horse', 'Trakehner', 'Red', 18.922925256859525, 'Male', 111.62808398164547, 144.0834706902178, 4, 3, 3, 1, 1, 4, 0, 2, 1, 3, 1, 0, 4, 4, 1, 1241.221048338761);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (67, 'Zach', 'Hamster', 'Syrian', 'White', 21.294304697226238, 'Male', 98.79881983966294, 178.92191105066607, 3, 3, 2, 0, 1, 2, 3, 2, 0, 1, 3, 1, 4, 0, 1, 646.229267977252);
+    (67, 'Gibson', 'Hamster', 'Chinese', 'White', 11.968054981229248, 'Female', 165.94363910157435, 97.2354578365746, 0, 3, 0, 3, 4, 2, 1, 2, 4, 3, 1, 3, 0, 3, 0, 5359.64451045065);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (68, 'Wednesday', 'Rabbit', 'Florida White', 'Red', 10.366826976655037, 'Female', 89.41476350956508, 103.1753478838534, 4, 1, 3, 4, 3, 4, 1, 3, 3, 2, 0, 1, 0, 0, 0, 7792.301292779231);
+    (68, 'Biscuit', 'Fish', 'Goldfish', 'Yellow', 23.92626544018129, 'Female', 91.23630855402563, 91.91419547324178, 0, 4, 1, 2, 3, 1, 0, 0, 2, 2, 1, 0, 0, 1, 1, 9107.832391719363);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (69, 'Carter', 'Cat', 'Munchkin', 'Blue', 10.696308559928397, 'Male', 165.61957407256904, 106.13663817145887, 4, 3, 1, 1, 3, 4, 0, 0, 2, 1, 4, 2, 4, 2, 1, 1300.4472557189965);
+    (69, 'Bear', 'Cat', 'Ragdoll', 'Gray', 27.043720556392852, 'Male', 73.09675406252015, 74.21477073597787, 0, 3, 3, 4, 3, 4, 4, 1, 4, 2, 0, 3, 2, 2, 2, 4992.749064228911);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (70, 'Tangerine', 'Bird', 'Budgerigars', 'Gray', 18.03272192343475, 'Male', 134.76727091416632, 133.9539097871103, 0, 0, 4, 4, 1, 4, 1, 3, 3, 2, 3, 3, 4, 3, 0, 1341.7711975055263);
+    (70, 'Tanner', 'Fish', 'Siamese Fighting Fish', 'Green', 23.545697842076112, 'Male', 168.43612354984572, 48.259432606810726, 1, 2, 4, 3, 2, 1, 3, 4, 1, 4, 3, 0, 1, 1, 1, 1807.6193578413263);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (71, 'Rusty', 'Rabbit', 'American Fuzzy Lop', 'Green', 7.550482084843422, 'Female', 93.11700486980307, 112.57281344576884, 4, 2, 1, 2, 3, 3, 2, 3, 3, 0, 4, 2, 2, 4, 0, 1496.1568401400284);
+    (71, 'Jenne', 'Hamster', 'Winter White', 'Yellow', 23.05714953352583, 'Male', 26.917010432385307, 147.8432903658553, 0, 1, 3, 2, 3, 4, 1, 3, 0, 2, 0, 3, 3, 4, 0, 2475.6083555359737);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (72, 'Cleopatra', 'Cat', 'Munchkin', 'Gray', 27.04666539708801, 'Female', 105.86340952315548, 98.04899266911364, 4, 0, 2, 4, 2, 4, 4, 4, 0, 4, 3, 3, 1, 1, 2, 6475.522556161039);
+    (72, 'Domino', 'Bird', 'Budgerigars', 'Yellow', 26.51113449932064, 'Male', 75.04454295711145, 52.32749349824401, 4, 1, 3, 0, 3, 3, 1, 2, 0, 1, 4, 0, 4, 0, 2, 4307.17937856613);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (73, 'Winnie', 'Bird', 'African Grey Parrots', 'Yellow', 26.677645978826067, 'Female', 144.13945669414397, 76.59505774111037, 4, 2, 2, 0, 2, 2, 2, 0, 3, 3, 2, 0, 2, 2, 1, 5634.192386003703);
+    (73, 'Jasper', 'Horse', 'Thoroughbred', 'Red', 11.963827787589441, 'Female', 105.10135637079152, 146.54719558413834, 2, 4, 4, 4, 1, 3, 4, 3, 0, 1, 3, 4, 2, 3, 2, 5319.809009734765);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (74, 'Strsky', 'Horse', 'Barb', 'Green', 19.122635988052245, 'Female', 142.37669347716331, 67.10987762087663, 4, 2, 4, 2, 0, 2, 1, 3, 3, 4, 2, 0, 0, 1, 2, 4611.355169281693);
+    (74, 'Keiko', 'Dog', 'German Shepard', 'White', 26.84225627493167, 'Male', 30.98993146390444, 178.69161444869232, 2, 2, 3, 1, 0, 4, 0, 2, 0, 4, 2, 2, 1, 3, 1, 6608.145611669103);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (75, 'Wilbur', 'Dog', 'Labrador', 'Gray', 7.240561924930236, 'Female', 173.16795015073546, 195.85024359917134, 0, 3, 0, 2, 1, 3, 4, 1, 2, 4, 3, 1, 1, 0, 0, 7455.759867715532);
+    (75, 'Blanca', 'Hamster', 'Syrian', 'Yellow', 26.46371371433983, 'Female', 14.48228930846499, 101.66079993576672, 2, 1, 1, 4, 0, 1, 1, 1, 0, 4, 0, 1, 1, 3, 0, 7403.671901977399);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (76, 'Fiona', 'Horse', 'Thoroughbred', 'Green', 3.2908214385715904, 'Female', 94.69653432163095, 16.316394521531144, 3, 0, 3, 4, 1, 2, 2, 3, 1, 1, 3, 1, 1, 3, 1, 7673.81626726435);
+    (76, 'Lilbit', 'Bird', 'Cockatiels', 'White', 9.86246278196463, 'Male', 148.50481020047565, 191.9267193728119, 0, 2, 2, 4, 2, 0, 1, 2, 4, 3, 1, 3, 1, 2, 1, 6677.167975474899);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (77, 'Giblet', 'Dog', 'Husky', 'Gray', 18.426060536534816, 'Male', 69.8239019759469, 14.293060719624815, 2, 0, 3, 0, 3, 2, 3, 4, 3, 2, 0, 4, 4, 4, 1, 405.9849493092992);
+    (77, 'Max', 'Bird', 'Cockatoos', 'White', 5.002171907691789, 'Female', 8.190855542372145, 156.48957605775337, 4, 1, 3, 0, 2, 3, 2, 1, 2, 3, 3, 1, 4, 2, 1, 8149.488842194139);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (78, 'Carter', 'Fish', 'Siamese Fighting Fish', 'Gray', 6.152720546043708, 'Male', 168.27028764534663, 16.684240065715283, 2, 0, 0, 2, 2, 2, 4, 2, 3, 2, 1, 1, 3, 4, 2, 9123.773522438047);
+    (78, 'Skitty', 'Rabbit', 'Florida White', 'Yellow', 8.374331377320647, 'Male', 192.56119918667383, 113.28132190897011, 4, 0, 0, 0, 0, 2, 3, 4, 0, 1, 2, 0, 2, 2, 2, 4142.797854254787);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (79, 'Chevy', 'Horse', 'Paso Fino', 'Green', 19.588398039742785, 'Male', 102.15419424463212, 44.55839122442828, 3, 4, 1, 0, 0, 2, 2, 4, 4, 1, 2, 3, 4, 1, 2, 6763.8260896203365);
+    (79, 'Hermione', 'Hamster', 'Syrian', 'Black', 25.40821349005178, 'Female', 172.7927807181311, 63.90912448130337, 3, 2, 2, 1, 2, 3, 0, 3, 3, 2, 3, 1, 1, 0, 2, 6210.897351605653);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (80, 'Timber', 'Hamster', 'Winter White', 'Blue', 15.019025094974758, 'Female', 36.689537373968534, 181.9073316172102, 4, 4, 4, 1, 2, 0, 1, 3, 1, 2, 1, 0, 0, 2, 1, 4512.0997843734895);
+    (80, 'Paul', 'Fish', 'Green Swordtail', 'White', 14.117223056879492, 'Male', 101.05726794285873, 90.46478827841649, 4, 4, 3, 1, 4, 2, 2, 1, 0, 4, 2, 4, 1, 1, 2, 6669.384498148435);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (81, 'Choochoo', 'Dog', 'German Shepard', 'Black', 27.3499711183138, 'Male', 176.70502673342006, 126.81209148440291, 3, 4, 0, 4, 3, 2, 3, 0, 1, 0, 4, 4, 4, 2, 0, 1284.77143327286);
+    (81, 'Wednesday', 'Horse', 'Trakehner', 'Yellow', 22.067120684397544, 'Male', 180.21110720848523, 130.61062171001564, 1, 4, 2, 2, 1, 1, 0, 4, 2, 2, 2, 4, 3, 0, 1, 6082.11863623124);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (82, 'Doc', 'Rabbit', 'Dutch', 'Black', 11.279827227625779, 'Male', 54.269151529395955, 17.073075630177684, 1, 2, 4, 1, 1, 4, 1, 0, 0, 1, 2, 1, 0, 2, 1, 237.90234255753552);
+    (82, 'Olive', 'Rabbit', 'Dwarf Hotot', 'Yellow', 10.054923870553784, 'Male', 35.09352193412595, 19.939065161667628, 3, 2, 1, 4, 4, 4, 3, 4, 2, 0, 0, 3, 2, 4, 1, 6008.290327294306);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (83, 'Zara', 'Bird', 'Budgerigars', 'Red', 6.49779919617171, 'Male', 104.45452369160232, 51.34106297860272, 0, 3, 4, 1, 4, 1, 0, 0, 3, 0, 2, 0, 1, 0, 2, 7173.549238454688);
+    (83, 'Snoopy', 'Rabbit', 'Britannia Petite', 'Yellow', 0.6651503155531806, 'Female', 7.863139547327341, 47.75434735062295, 2, 0, 2, 3, 4, 2, 1, 0, 3, 4, 4, 1, 4, 0, 1, 4888.763542816212);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (84, 'Peaches', 'Bird', 'Cockatoos', 'White', 1.1500462108314666, 'Female', 115.46783281651555, 9.686704854683537, 1, 2, 1, 2, 2, 1, 1, 3, 1, 0, 0, 3, 3, 3, 0, 7191.725673947032);
+    (84, 'Ron', 'Cat', 'Munchkin', 'Spotted', 3.226787787157766, 'Male', 43.236762292277604, 149.99216563881652, 4, 3, 1, 3, 4, 3, 4, 4, 3, 0, 2, 4, 0, 1, 1, 5406.741675817136);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (85, 'ZsaZsa', 'Rabbit', 'Dwarf Hotot', 'Red', 1.352583757880863, 'Male', 160.0155525266108, 101.2269004112423, 2, 1, 2, 2, 0, 2, 0, 1, 4, 4, 1, 4, 4, 3, 0, 9674.926064738906);
+    (85, 'Kiefer', 'Horse', 'Barb', 'Brown', 18.41961739392554, 'Female', 99.8708907747052, 52.83618153604787, 2, 3, 0, 1, 0, 2, 1, 4, 0, 3, 3, 2, 0, 3, 2, 8403.860519419046);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (86, 'Samsung', 'Hamster', 'Winter White', 'Yellow', 19.307095622007495, 'Female', 99.04034488905212, 89.0943277444785, 1, 1, 3, 4, 0, 3, 2, 0, 1, 2, 3, 4, 4, 1, 0, 3150.9279283246015);
+    (86, 'Harry', 'Rabbit', 'Dwarf Hotot', 'Yellow', 20.06241549177941, 'Female', 156.4805622054056, 39.45504058642303, 2, 1, 4, 1, 1, 3, 4, 3, 4, 2, 0, 1, 0, 3, 0, 3853.3912863895894);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (87, 'Mooshie', 'Dog', 'Husky', 'Yellow', 10.773018532517979, 'Male', 81.5807776959974, 154.36152078867636, 4, 2, 3, 0, 4, 1, 4, 3, 3, 2, 2, 0, 2, 2, 1, 1267.4509695299575);
+    (87, 'Sadie', 'Rabbit', 'Dutch', 'White', 14.13937952939495, 'Male', 17.336501556204386, 80.547872657076, 4, 4, 3, 3, 4, 2, 2, 3, 1, 4, 3, 3, 2, 4, 1, 4223.683216252294);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (88, 'Potter', 'Hamster', 'Chinese', 'Green', 21.18488674274262, 'Male', 158.2298473449112, 195.55254632415304, 2, 1, 3, 1, 1, 0, 3, 4, 2, 0, 0, 0, 3, 2, 1, 5222.46734379435);
+    (88, 'Sheba', 'Dog', 'Husky', 'Brown', 26.67049342119416, 'Female', 148.38050638117184, 172.411364799302, 0, 2, 0, 3, 1, 0, 2, 4, 0, 0, 0, 3, 4, 4, 2, 5330.910687271769);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (89, 'Sushi', 'Hamster', 'Syrian', 'White', 7.749684311201722, 'Female', 13.792882299493844, 108.79419294967681, 3, 4, 4, 4, 1, 2, 3, 4, 2, 0, 3, 2, 4, 4, 0, 7118.37007712182);
+    (89, 'Mira', 'Bird', 'Cockatiels', 'Spotted', 26.714394942598464, 'Female', 28.721590654527294, 32.97976472771636, 1, 2, 1, 3, 0, 0, 0, 2, 4, 3, 0, 4, 1, 4, 0, 1529.2895135096237);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (90, 'Mika', 'Horse', 'Trakehner', 'Yellow', 26.56979306206911, 'Male', 23.89527169373452, 184.9385456912011, 0, 2, 3, 0, 2, 4, 4, 0, 4, 3, 2, 3, 0, 2, 2, 6425.782208705393);
+    (90, 'Wednesday', 'Rabbit', 'Dwarf Hotot', 'Blue', 9.729786150305031, 'Male', 67.29238230799206, 36.651331615193186, 1, 2, 0, 4, 2, 0, 2, 1, 1, 1, 4, 3, 2, 1, 0, 4239.08018919464);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (91, 'Sheba', 'Hamster', 'Chinese', 'Green', 20.05101553084212, 'Male', 157.4485307903859, 173.37400527165053, 3, 4, 3, 3, 3, 0, 0, 1, 0, 2, 1, 4, 0, 0, 1, 7730.03564295293);
+    (91, 'Daisy', 'Bird', 'Cockatoos', 'Gray', 14.141944464423686, 'Female', 157.6757506698822, 180.7011238470789, 2, 4, 0, 2, 3, 0, 0, 3, 1, 4, 2, 1, 0, 2, 2, 8934.74157310346);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (92, 'Zeppelin', 'Rabbit', 'Dwarf Hotot', 'Blue', 28.817452201905184, 'Male', 75.148544324214, 151.42269104144648, 0, 2, 0, 2, 2, 0, 0, 2, 0, 2, 0, 3, 0, 0, 0, 214.0620586238319);
+    (92, 'ZsaZsa', 'Fish', 'Goldfish', 'Spotted', 24.373198560402177, 'Female', 92.09173876010382, 8.531810243533297, 3, 4, 2, 1, 3, 0, 1, 0, 4, 2, 3, 3, 0, 2, 2, 5621.382193638123);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (93, 'Paisley', 'Fish', 'Siamese Fighting Fish', 'White', 7.578562394473442, 'Male', 148.4073477018607, 197.62772666795695, 1, 2, 1, 4, 2, 3, 1, 4, 0, 1, 3, 4, 2, 4, 2, 337.737848677489);
+    (93, 'Meadow', 'Hamster', 'Winter White', 'Blue', 6.712939787315895, 'Male', 148.27631462452842, 57.42741026567738, 2, 1, 4, 0, 4, 3, 3, 2, 4, 1, 2, 4, 1, 1, 0, 4950.079271152715);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (94, 'Jon Snow', 'Hamster', 'Chinese', 'Spotted', 8.982589569560608, 'Male', 92.588468682191, 168.09135422871466, 2, 0, 2, 3, 4, 0, 2, 2, 0, 4, 0, 4, 1, 1, 2, 96.24783578559975);
+    (94, 'Felix', 'Hamster', 'Chinese', 'Gray', 8.65763039659076, 'Female', 62.51125570114522, 136.42971648858313, 3, 3, 3, 0, 4, 2, 1, 2, 2, 1, 2, 2, 4, 4, 1, 2233.830074983019);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (95, 'Paris', 'Dog', 'Labrador', 'Blue', 0.5206625188835833, 'Female', 170.36712889560576, 18.023908421809576, 4, 2, 4, 1, 1, 0, 0, 3, 3, 0, 0, 1, 0, 3, 0, 5220.023646656127);
+    (95, 'Marshmellow', 'Horse', 'Trakehner', 'Black', 28.220200288000317, 'Male', 73.78273154990035, 42.77675713768949, 1, 4, 2, 2, 2, 0, 2, 1, 0, 2, 2, 0, 4, 0, 2, 9349.47538821963);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (96, 'Margo', 'Fish', 'Siamese Fighting Fish', 'Blue', 10.505450942140106, 'Male', 189.7323411592835, 77.09407102929997, 0, 3, 1, 3, 2, 1, 3, 2, 1, 3, 3, 1, 4, 3, 1, 3964.4633577204922);
+    (96, 'Nell', 'Rabbit', 'Florida White', 'Spotted', 12.87591265711672, 'Female', 7.633122521269566, 180.41110251828425, 2, 3, 4, 4, 4, 1, 2, 0, 0, 3, 0, 3, 2, 2, 1, 369.6661246210273);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (97, 'RobinHood', 'Hamster', 'Syrian', 'Red', 12.019717227880639, 'Male', 195.24596500862654, 68.4795786545621, 4, 0, 2, 0, 2, 0, 3, 3, 1, 2, 1, 1, 0, 3, 0, 528.7268263074145);
+    (97, 'China', 'Hamster', 'Syrian', 'Spotted', 28.160111089327902, 'Female', 106.02606152309647, 186.3994341658953, 1, 4, 2, 0, 4, 0, 4, 3, 4, 4, 0, 0, 1, 2, 0, 6482.475442316043);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (98, 'Cupcake', 'Cat', 'Scottish Fold', 'Spotted', 2.449698658994804, 'Female', 123.59305407497911, 182.69356431076721, 1, 0, 4, 4, 1, 4, 4, 4, 4, 4, 4, 2, 4, 1, 0, 5878.744404725918);
+    (98, 'Peaches', 'Dog', 'Husky', 'Spotted', 0.8767647231102453, 'Female', 59.07027068463063, 127.79174020787448, 0, 3, 0, 2, 0, 4, 0, 3, 3, 4, 1, 3, 2, 4, 2, 2062.948337217509);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (99, 'Sweetpea', 'Cat', 'Ragdoll', 'Red', 29.54821831539139, 'Male', 165.2781262395524, 196.6930995595665, 1, 2, 1, 4, 3, 4, 1, 4, 4, 0, 4, 0, 2, 0, 2, 3384.277315922654);
+    (99, 'Graysen', 'Dog', 'Labrador', 'Gray', 13.814673709982362, 'Male', 92.96883310036449, 102.64294802395605, 2, 2, 2, 1, 0, 1, 0, 1, 2, 1, 2, 1, 0, 1, 0, 7995.877941636067);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (100, 'MrBig', 'Rabbit', 'Dwarf Hotot', 'Red', 9.77018000204433, 'Female', 88.5018096097509, 160.2159914817211, 1, 3, 3, 0, 1, 3, 0, 3, 2, 2, 2, 0, 1, 1, 2, 5196.326592549406);
+    (100, 'Honey', 'Horse', 'Paso Fino', 'Spotted', 18.073965291973124, 'Male', 34.94058168220853, 8.675857116156562, 3, 4, 1, 2, 2, 0, 1, 0, 1, 1, 1, 1, 1, 4, 2, 8957.006448467724);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Lexi Giblet', '447-273-9521', '12 32nd St, Cornwall, ON, Canada', 'lexi_giblet_alvin@gmail.com', 3, 2, 1, 41.04754414975082, 191335.4577767857, 100);
+    ('Tanner Jenna', '298-752-388', '50 Woodridge St, Cornwall, ON, Canada', 'tanner_jenna@gmail.com', 2, 2, 0, 30.459298574406574, 271915.51618246, 100);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (101, 'Sophie', 'Cat', 'Persian', 'Spotted', 11.237166198995064, 'Male', 173.91230708884956, 151.40913220053343, 1, 2, 1, 4, 3, 2, 4, 0, 2, 2, 4, 0, 3, 3, 0, 1977.9804089426998);
+    (101, 'Laguna', 'Bird', 'Budgerigars', 'Black', 28.584561372474177, 'Male', 27.636018146732244, 153.53049761395744, 3, 3, 0, 4, 2, 1, 0, 1, 2, 3, 3, 2, 4, 0, 1, 6764.498446269885);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Keanna Emma', '385-702-5242', '19 Woodridge Ave, Nepean, ON, Canada', 'keanna_emma_koby@gmail.com', 1, 0, 0, 37.92964573819909, 185445.02177928798, 101);
+    ('Pesci Romeo', '464-975-7488', '27 Paterson Ave, Nepean, ON, Canada', 'pesci_romeo@gmail.com', 4, 3, 4, 36.5378475102249, 364538.699378675, 101);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (102, 'Chaucer', 'Rabbit', 'Dutch', 'Spotted', 14.729389649550996, 'Male', 146.91037777587297, 81.25679377084487, 2, 1, 0, 1, 2, 2, 4, 2, 2, 0, 4, 1, 1, 1, 0, 7640.089214295753);
+    (102, 'Chaucer', 'Hamster', 'Chinese', 'Green', 0.747019188158645, 'Female', 185.53687744769135, 136.40358609033152, 2, 4, 3, 1, 3, 3, 0, 0, 1, 1, 4, 1, 0, 0, 2, 5861.395583657672);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Felix Snooky', '776-274-7760', '35 Queen Cres, Ottawa, ON, Canada', 'felix_snooky_lilbit@gmail.com', 2, 2, 1, 77.0251471148855, 388747.2162844569, 102);
+    ('Bordeaux Shane', '908-114-635', '44 54th Rd, Ottawa, ON, Canada', 'bordeaux_shane@gmail.com', 4, 0, 2, 47.65363450244993, 42905.18713451414, 102);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (103, 'Strsky', 'Fish', 'Goldfish', 'Blue', 3.6039013231873116, 'Male', 176.8967336988862, 89.88251500075191, 4, 1, 1, 2, 2, 2, 2, 3, 4, 3, 0, 3, 2, 1, 0, 7505.980549882172);
+    (103, 'Keiko', 'Cat', 'Persian', 'White', 2.8379158601725014, 'Female', 135.90272860929363, 179.96449563130489, 2, 2, 4, 0, 3, 2, 2, 0, 3, 2, 3, 3, 2, 4, 0, 6727.850437007983);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('China Midnight', '758-773-5320', '8 5th Ave, Toronto, ON, Canada', 'china_midnight_keesha@gmail.com', 0, 0, 1, 78.10106702668926, 41197.00194854774, 103);
+    ('Snoopy Koby', '939-881-7169', '14 Bank Rd, Ottawa, ON, Canada', 'snoopy_koby@gmail.com', 2, 0, 3, 28.33171420248224, 440344.6708231683, 103);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (104, 'Timber', 'Horse', 'Barb', 'Yellow', 20.292055918353633, 'Male', 177.61160620081532, 35.99616835940837, 2, 1, 1, 2, 3, 0, 3, 0, 3, 3, 1, 1, 3, 2, 1, 1900.192324115566);
+    (104, 'Robert', 'Fish', 'Siamese Fighting Fish', 'Green', 18.597123864661334, 'Male', 128.0695662021766, 109.12150298488206, 1, 3, 0, 0, 1, 3, 1, 4, 0, 4, 4, 2, 4, 4, 2, 6398.603318854859);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Koby Wednesday', '402-124-8460', '17 Queen Ave, Montreal, ON, Canada', 'koby_wednesday_lefty@gmail.com', 2, 0, 4, 26.935012065293257, 479024.2813507855, 104);
+    ('Jon Snow Pazzo', '587-834-5586', '24 5th Rd, Cornwall, ON, Canada', 'jon_snow_pazzo@gmail.com', 0, 2, 4, 33.42546376176404, 306147.479097884, 104);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (105, 'Beck', 'Hamster', 'Syrian', 'White', 5.045176028708421, 'Male', 78.54122565436747, 95.13592784856948, 1, 4, 4, 2, 1, 0, 1, 4, 2, 4, 0, 3, 1, 4, 0, 6968.176964099062);
+    (105, 'Bordeaux', 'Rabbit', 'Dwarf Hotot', 'Black', 22.30670923721807, 'Male', 158.24053432137953, 8.21522789651511, 0, 0, 2, 3, 0, 1, 0, 1, 3, 2, 0, 1, 0, 2, 2, 6206.909694038225);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Jon Snow Burt', '930-972-3069', '27 54th Rd, Montreal, ON, Canada', 'jon_snow_burt_gingi@gmail.com', 0, 4, 0, 68.51791907641417, 149357.7807120086, 105);
+    ('Willow Fiona', '590-906-8179', '18 Paterson Cres, Toronto, ON, Canada', 'willow_fiona@gmail.com', 0, 1, 0, 26.694786592861902, 58795.07590056513, 105);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (106, 'Landon', 'Horse', 'Barb', 'Blue', 27.91630665024485, 'Male', 11.974963023884367, 108.35660841208654, 0, 2, 0, 3, 4, 1, 4, 0, 1, 0, 1, 1, 1, 0, 1, 4775.349475939268);
+    (106, 'Alvin', 'Rabbit', 'American Fuzzy Lop', 'Gray', 23.158003533100434, 'Male', 70.61143872856643, 165.93949931429162, 3, 4, 0, 4, 2, 2, 4, 3, 3, 4, 2, 1, 3, 1, 0, 5945.40930648924);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Samsung Birdie', '670-738-8404', '4 Woodridge Cres, Toronto, ON, Canada', 'samsung_birdie_quattro@gmail.com', 0, 1, 0, 70.27109600090407, 287065.7164905356, 106);
+    ('Ernie Malibu', '480-555-2578', '48 Paterson Cres, Nepean, ON, Canada', 'ernie_malibu@gmail.com', 0, 0, 2, 35.79592697775174, 294157.6157815954, 106);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (107, 'Malibu', 'Bird', 'Cockatiels', 'Brown', 7.00099453152536, 'Female', 108.35322158050833, 168.9997692634651, 1, 3, 4, 4, 2, 3, 0, 3, 2, 0, 3, 1, 4, 4, 1, 9373.751033518374);
+    (107, 'Dallas', 'Hamster', 'Syrian', 'Brown', 16.58370832031438, 'Male', 139.0036174740476, 80.35429121066389, 4, 3, 2, 1, 2, 2, 4, 3, 2, 3, 1, 0, 1, 2, 0, 700.6909996107579);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Cece Keiko', '771-653-6485', '43 32nd Ave, Ottawa, ON, Canada', 'cece_keiko_cupcake@gmail.com', 4, 1, 4, 34.491729007541, 82849.65197836483, 107);
+    ('Bailey Biloxi', '890-215-8232', '50 5th Rd, Cornwall, ON, Canada', 'bailey_biloxi@gmail.com', 1, 3, 4, 33.21796722778164, 386848.3996130982, 107);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (108, 'Doc', 'Fish', 'Goldfish', 'Green', 20.127612821716227, 'Female', 163.9244382657962, 89.08040779340277, 3, 1, 0, 1, 1, 1, 3, 0, 2, 2, 4, 2, 0, 1, 1, 2632.82215288893);
+    (108, 'Ivory', 'Rabbit', 'Dwarf Hotot', 'Green', 27.43133383378005, 'Male', 132.76091217489954, 53.09404377043353, 4, 2, 4, 3, 1, 0, 2, 1, 4, 4, 4, 2, 3, 1, 2, 8150.7454525542835);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Harry Nell', '910-393-1402', '2 Bank Rd, Toronto, ON, Canada', 'harry_nell_honey@gmail.com', 2, 2, 4, 76.47792913631073, 387128.1795669319, 108);
+    ('Dulus Domino', '370-850-974', '36 54th Cres, Cornwall, ON, Canada', 'dulus_domino@gmail.com', 2, 2, 1, 29.64226384181964, 421997.8654832199, 108);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (109, 'Wednesday', 'Rabbit', 'American Fuzzy Lop', 'Black', 8.916321728063387, 'Female', 31.144948661212457, 74.31094609991227, 0, 4, 2, 0, 2, 3, 1, 4, 0, 4, 4, 0, 1, 2, 0, 6726.9973215967375);
+    (109, 'Milan', 'Rabbit', 'Dutch', 'Red', 20.046151538887006, 'Male', 74.42363227844653, 146.16176495496714, 2, 0, 0, 0, 1, 0, 4, 4, 3, 4, 0, 4, 3, 4, 0, 9075.369498683383);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Kona Malibu', '849-300-1714', '36 5th St, Nepean, ON, Canada', 'kona_malibu_owen@gmail.com', 1, 1, 2, 60.51677867225329, 120638.24627170015, 109);
+    ('Kalua Rocky', '623-534-974', '44 32nd Cres, Cornwall, ON, Canada', 'kalua_rocky@gmail.com', 1, 1, 0, 76.88734395668544, 455691.4517132468, 109);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (110, 'Daisy', 'Rabbit', 'American Fuzzy Lop', 'Blue', 4.275758996157855, 'Male', 140.5932013140269, 194.04731473567045, 2, 4, 3, 1, 0, 4, 4, 1, 2, 4, 4, 2, 4, 2, 1, 6741.874462519483);
+    (110, 'Gibson', 'Rabbit', 'Dwarf Hotot', 'Green', 23.054666327845062, 'Male', 164.72985253496753, 56.02371835077502, 3, 0, 0, 3, 1, 0, 0, 3, 4, 1, 2, 1, 1, 2, 2, 2842.6162069321967);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Koby Monkey', '788-822-5561', '27 32nd Ave, Montreal, ON, Canada', 'koby_monkey_kassie@gmail.com', 4, 1, 4, 61.4250761920539, 469380.1073011692, 110);
+    ('Quattro Mochi', '502-182-3950', '24 Paterson St, Cornwall, ON, Canada', 'quattro_mochi@gmail.com', 3, 2, 2, 37.568990986570014, 268387.4134802135, 110);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (111, 'Candy', 'Bird', 'Cockatiels', 'Gray', 12.054661201780837, 'Male', 180.09289341812283, 32.91013935405891, 0, 1, 1, 3, 1, 1, 4, 3, 3, 0, 3, 0, 0, 3, 2, 6152.410438428384);
+    (111, 'Tallulah', 'Cat', 'Ragdoll', 'Spotted', 3.1125793913576443, 'Female', 133.21247574711043, 119.14067420558106, 3, 1, 4, 0, 3, 1, 4, 2, 2, 0, 0, 2, 0, 0, 2, 6861.720324378774);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Pumba Gingi', '607-677-3443', '30 Queen St, Ottawa, ON, Canada', 'pumba_gingi_chloe alice@gmail.com', 1, 2, 2, 71.53905645914277, 20486.460743221855, 111);
+    ('Chloe Alice Graysen', '473-370-3792', '49 Bank Ave, Nepean, ON, Canada', 'chloe_alice_graysen@gmail.com', 4, 2, 0, 71.76349388120113, 114194.72610797021, 111);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (112, 'Burt', 'Hamster', 'Syrian', 'Yellow', 28.89066693501908, 'Female', 63.133182313756365, 169.12938527901466, 2, 1, 1, 2, 3, 4, 2, 0, 1, 3, 0, 1, 1, 2, 1, 6580.375747966561);
+    (112, 'Madonna', 'Horse', 'Trakehner', 'Black', 14.933566835365333, 'Male', 190.81157470154614, 96.64910130442098, 3, 2, 0, 3, 1, 4, 2, 3, 1, 4, 1, 3, 2, 2, 0, 6643.564805972512);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Rocco Tucke', '280-149-2313', '2 5th Cres, Toronto, ON, Canada', 'rocco_tucke_robinhood@gmail.com', 1, 0, 4, 29.044833190611445, 487763.89801343385, 112);
+    ('Buffy Monkey', '444-121-3116', '7 Paterson Rd, Toronto, ON, Canada', 'buffy_monkey@gmail.com', 2, 3, 0, 36.45698279589321, 236358.80698016874, 112);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (113, 'Guinness', 'Cat', 'Siamese', 'Spotted', 11.85956529774946, 'Female', 178.98306132656558, 73.26542818863136, 3, 4, 4, 0, 2, 1, 1, 0, 3, 0, 2, 4, 1, 3, 0, 612.2255429920776);
+    (113, 'Meadow', 'Rabbit', 'Britannia Petite', 'Red', 18.697324306597956, 'Female', 155.36963805769582, 58.18223761344568, 1, 0, 0, 0, 1, 0, 1, 2, 4, 2, 3, 3, 3, 4, 2, 8936.652764647622);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Diva Mercedes', '986-388-8714', '2 Queen Ave, Ottawa, ON, Canada', 'diva_mercedes_maggie@gmail.com', 3, 2, 1, 39.247217673337545, 53817.219968444406, 113);
+    ('Bren Shadow', '801-603-8975', '20 32nd Ave, Ottawa, ON, Canada', 'bren_shadow@gmail.com', 1, 1, 4, 60.78833975905682, 159595.13150609488, 113);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (114, 'Summer', 'Bird', 'Cockatiels', 'Gray', 29.982426662159114, 'Male', 159.8189726035944, 100.44528755737491, 0, 0, 2, 3, 4, 2, 4, 2, 2, 0, 0, 2, 2, 2, 2, 5823.760015899783);
+    (114, 'Phoenix', 'Rabbit', 'Dutch', 'Blue', 26.8688903186083, 'Female', 139.21974418661986, 58.91417335889891, 0, 4, 4, 3, 3, 2, 2, 3, 2, 4, 2, 4, 0, 1, 2, 3744.9196051527624);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('RobinHood Bubbles', '998-388-1355', '23 54th St, Toronto, ON, Canada', 'robinhood_bubbles_kai@gmail.com', 3, 4, 0, 23.55712609548208, 325145.8222595577, 114);
+    ('Biloxi Carter', '477-613-8708', '7 Bank Cres, Montreal, ON, Canada', 'biloxi_carter@gmail.com', 4, 4, 0, 41.762643418589796, 157724.28636689798, 114);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (115, 'Bobbafett', 'Dog', 'Husky', 'Blue', 26.929375221159866, 'Female', 114.1994537229171, 98.11517624780679, 1, 1, 4, 2, 2, 0, 1, 3, 3, 2, 1, 4, 1, 2, 0, 943.7435833960849);
+    (115, 'Domino', 'Horse', 'Paso Fino', 'Yellow', 14.815709511481323, 'Male', 39.02486012842057, 152.5871206056623, 4, 2, 4, 0, 4, 1, 2, 2, 1, 0, 4, 1, 4, 3, 0, 3571.031587713742);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Fiona Laguna', '246-801-7255', '34 Paterson Cres, Toronto, ON, Canada', 'fiona_laguna_kingston@gmail.com', 4, 2, 2, 36.49881923361066, 23057.355970177457, 115);
+    ('Arnold Toffee', '219-354-4001', '34 Queen Rd, Ottawa, ON, Canada', 'arnold_toffee@gmail.com', 0, 4, 1, 18.074327340513534, 323176.80448956694, 115);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (116, 'Candy', 'Fish', 'Green Swordtail', 'Yellow', 28.43096975162881, 'Female', 88.81433919103759, 165.89257272367897, 4, 2, 4, 1, 4, 2, 1, 2, 2, 4, 0, 1, 1, 1, 2, 4522.040448872178);
+    (116, 'Mira', 'Bird', 'Budgerigars', 'Blue', 16.31230054100067, 'Female', 25.95895834189645, 149.1622320260804, 4, 3, 1, 4, 2, 4, 0, 4, 3, 2, 3, 0, 0, 0, 2, 7493.546917376651);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Mochi Ernie', '696-426-4931', '5 5th Cres, Nepean, ON, Canada', 'mochi_ernie_spark@gmail.com', 4, 0, 1, 50.70681408530497, 52317.36154054382, 116);
+    ('Sookie Nico', '246-555-7178', '4 32nd Ave, Nepean, ON, Canada', 'sookie_nico@gmail.com', 1, 1, 2, 63.37152201774672, 98323.6326615845, 116);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (117, 'Willow', 'Horse', 'Thoroughbred', 'Gray', 22.39671108536319, 'Male', 36.96600392102145, 133.69444517909446, 1, 3, 3, 2, 0, 1, 0, 1, 1, 0, 2, 2, 2, 1, 2, 4600.168209678495);
+    (117, 'Mia', 'Cat', 'Ragdoll', 'Spotted', 11.446142404269853, 'Male', 146.35686326540664, 70.82243082942117, 2, 0, 0, 0, 3, 3, 2, 3, 0, 2, 0, 4, 3, 1, 1, 407.0247745105768);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Paris Hermione', '372-557-3905', '2 54th Rd, Cornwall, ON, Canada', 'paris_hermione_graysen@gmail.com', 4, 4, 3, 23.044066939567145, 241493.420362847, 117);
+    ('Peaches Hershey', '878-525-8392', '50 Paterson Cres, Ottawa, ON, Canada', 'peaches_hershey@gmail.com', 1, 2, 4, 76.38617123953696, 462443.94804690644, 117);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (118, 'Wednesday', 'Horse', 'Trakehner', 'White', 7.444445019353728, 'Female', 95.4014668431004, 176.3860433464697, 2, 1, 4, 2, 1, 0, 3, 1, 2, 2, 0, 1, 0, 1, 0, 9590.100019222837);
+    (118, 'Max', 'Bird', 'Cockatiels', 'Blue', 26.93778020123555, 'Male', 131.35938475267105, 135.96798381013818, 1, 3, 0, 4, 3, 3, 2, 1, 0, 4, 3, 3, 2, 4, 2, 5251.277723571841);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Emma Ebony', '847-207-8765', '4 54th Ave, Ottawa, ON, Canada', 'emma_ebony_guinness@gmail.com', 0, 3, 3, 47.82653406102489, 39045.0301449517, 118);
+    ('Koby Mister Tiggywinkles', '762-350-9460', '33 Paterson Rd, Ottawa, ON, Canada', 'koby_mister_tiggywinkles@gmail.com', 2, 4, 3, 35.47769945172092, 242259.65925151185, 118);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (119, 'Balou', 'Horse', 'Thoroughbred', 'Brown', 3.1974453564750402, 'Male', 36.389754854917754, 155.154453980658, 4, 3, 0, 3, 1, 3, 2, 2, 1, 4, 3, 4, 4, 1, 1, 4795.289923955123);
+    (119, 'Silas', 'Fish', 'Goldfish', 'Green', 24.49006854417671, 'Female', 11.67402175609158, 109.20036811783453, 3, 2, 0, 3, 3, 0, 0, 4, 1, 3, 2, 0, 0, 2, 1, 1012.0668641544611);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Mylo Jeeves', '311-650-4933', '25 Queen Rd, Montreal, ON, Canada', 'mylo_jeeves_huckfinn@gmail.com', 3, 4, 4, 22.544196553099816, 488900.7776845642, 119);
+    ('Biscuit Monkey', '200-159-1549', '45 Paterson Cres, Toronto, ON, Canada', 'biscuit_monkey@gmail.com', 3, 4, 3, 34.89289561934794, 159243.2575041926, 119);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (120, 'Winnie', 'Hamster', 'Robo', 'Blue', 28.810429705539452, 'Male', 47.757830794512515, 76.86340710018912, 2, 1, 4, 0, 1, 2, 4, 0, 2, 2, 0, 1, 3, 0, 2, 3138.2233666190155);
+    (120, 'Rocky', 'Hamster', 'Syrian', 'Yellow', 14.055075570337266, 'Female', 181.24934514834578, 189.4376988227122, 3, 3, 1, 0, 2, 2, 4, 1, 0, 0, 4, 0, 3, 2, 0, 4257.021284651123);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Dutch Gingi', '245-200-4832', '5 5th Rd, Toronto, ON, Canada', 'dutch_gingi_spark@gmail.com', 3, 1, 1, 70.97394195204853, 357978.6625650996, 120);
+    ('Logan Shane', '900-512-6990', '42 54th St, Ottawa, ON, Canada', 'logan_shane@gmail.com', 0, 0, 1, 21.522243721029817, 79549.07688424559, 120);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (121, 'Elwood', 'Dog', 'Husky', 'Red', 28.936492109607638, 'Female', 59.00867530310053, 157.23253952700122, 4, 2, 0, 1, 1, 1, 4, 0, 3, 1, 2, 1, 2, 3, 0, 2907.8040282822535);
+    (121, 'Fig', 'Rabbit', 'Florida White', 'White', 7.181529895751971, 'Female', 199.34844297874778, 70.10188547232724, 3, 0, 4, 0, 3, 3, 0, 4, 3, 3, 0, 1, 1, 2, 0, 9923.815161938372);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Jade Simone', '560-594-5327', '48 Bank St, Ottawa, ON, Canada', 'jade_simone_lefty@gmail.com', 4, 2, 2, 22.078344782952545, 182378.5950910247, 121);
+    ('Foxy Milan', '176-482-4599', '39 Woodridge Cres, Cornwall, ON, Canada', 'foxy_milan@gmail.com', 2, 3, 1, 49.31131533015921, 429970.13560680783, 121);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (122, 'Candy', 'Cat', 'Persian', 'Green', 1.7217124186384571, 'Female', 169.44871618385648, 151.55579679273197, 2, 1, 1, 0, 0, 0, 2, 2, 1, 1, 2, 1, 1, 1, 0, 4444.526985548591);
+    (122, 'Foxy', 'Rabbit', 'Dutch', 'Spotted', 10.375327285421239, 'Male', 107.76723523082471, 43.5595396779831, 3, 0, 3, 4, 0, 3, 2, 4, 0, 2, 0, 0, 2, 3, 1, 5778.836653701957);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Mister Tiggywinkles Donna', '709-505-3081', '12 Paterson Rd, Montreal, ON, Canada', 'mister_tiggywinkles_donna_domino@gmail.com', 4, 0, 0, 77.84515046796514, 445009.0602729416, 122);
+    ('Mozart Smitty', '426-560-6877', '48 Woodridge Ave, Toronto, ON, Canada', 'mozart_smitty@gmail.com', 3, 2, 4, 20.3209936388243, 185280.63764552702, 122);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (123, 'Bodie', 'Dog', 'Husky', 'Green', 7.830577366871166, 'Female', 140.94709969996705, 150.35632639514523, 4, 0, 3, 0, 0, 1, 1, 2, 2, 2, 4, 4, 2, 0, 0, 3392.1678056124642);
+    (123, 'Dutch', 'Cat', 'Munchkin', 'Green', 29.84515467939559, 'Male', 107.24120513734245, 88.61743315309207, 2, 0, 1, 2, 4, 2, 0, 4, 3, 1, 2, 0, 1, 0, 1, 2671.9631860471013);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Jack Cleopatra', '421-570-2162', '38 54th St, Montreal, ON, Canada', 'jack_cleopatra_kona@gmail.com', 2, 1, 0, 77.99479201987594, 28429.33293764677, 123);
+    ('Sunny Nico', '822-195-3215', '31 32nd Ave, Nepean, ON, Canada', 'sunny_nico@gmail.com', 1, 3, 1, 50.33932388951219, 114925.43611984061, 123);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (124, 'Spot', 'Hamster', 'Robo', 'Spotted', 5.266455677526147, 'Male', 85.79338976049965, 59.04525919650775, 2, 4, 3, 1, 3, 0, 1, 0, 3, 1, 4, 1, 1, 4, 0, 787.3229398208927);
+    (124, 'Syrah', 'Rabbit', 'Florida White', 'White', 12.845244892809706, 'Male', 37.58749837537792, 8.878286582851148, 4, 4, 2, 4, 4, 0, 1, 4, 4, 2, 3, 4, 3, 2, 2, 814.9258955120127);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Burt Cessa', '633-598-4298', '42 32nd Ave, Montreal, ON, Canada', 'burt_cessa_paddington@gmail.com', 2, 4, 3, 32.89345123818359, 256537.758923196, 124);
+    ('Crosby Cessa', '673-196-2948', '24 Paterson Ave, Montreal, ON, Canada', 'crosby_cessa@gmail.com', 1, 1, 0, 72.40567495252733, 419013.56733877666, 124);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (125, 'Madonna', 'Rabbit', 'Dwarf Hotot', 'Black', 19.82183713997259, 'Male', 130.30962250091895, 189.811118568658, 1, 4, 0, 3, 2, 1, 1, 3, 4, 4, 4, 0, 2, 3, 1, 2600.3280749206874);
+    (125, 'Bobbafett', 'Fish', 'Green Swordtail', 'Green', 21.253994840565532, 'Male', 62.19259482403253, 118.81498401502827, 3, 3, 3, 0, 0, 2, 4, 0, 3, 1, 4, 0, 4, 1, 1, 1342.1939260918316);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Winnie Persia', '447-911-4442', '10 Paterson Rd, Cornwall, ON, Canada', 'winnie_persia_bob@gmail.com', 0, 3, 2, 43.706332538381815, 87855.138750431, 125);
+    ('Cupcake Caustic', '494-664-8119', '6 Queen Ave, Cornwall, ON, Canada', 'cupcake_caustic@gmail.com', 3, 3, 4, 42.442120466198375, 121313.82847608434, 125);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (126, 'Redford', 'Fish', 'Green Swordtail', 'Blue', 28.191703685550618, 'Male', 195.4690511686854, 63.165328066571966, 3, 4, 1, 4, 0, 2, 1, 0, 0, 4, 0, 3, 0, 2, 1, 6481.310233597163);
+    (126, 'RobinHood', 'Rabbit', 'American Fuzzy Lop', 'Gray', 25.919674535755625, 'Male', 89.2952070070448, 100.18581260228417, 2, 4, 2, 3, 2, 2, 1, 0, 1, 3, 4, 1, 3, 4, 0, 911.7997024129147);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('HuckFinn Gibson', '359-137-9281', '36 5th Cres, Ottawa, ON, Canada', 'huckfinn_gibson_hershey@gmail.com', 2, 2, 0, 24.446532247740674, 397359.00785463804, 126);
+    ('Mira Nell', '921-750-4020', '19 Paterson St, Ottawa, ON, Canada', 'mira_nell@gmail.com', 4, 0, 2, 31.157224416757415, 338213.734174204, 126);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (127, 'Parker', 'Cat', 'Ragdoll', 'Black', 28.499523246431796, 'Male', 45.66657589901866, 7.130774643150016, 4, 3, 4, 1, 0, 1, 4, 1, 4, 0, 1, 3, 4, 4, 2, 9034.58544108017);
+    (127, 'Hunter', 'Bird', 'Budgerigars', 'Red', 0.6835757248204242, 'Female', 134.0391664386663, 41.32555414995451, 4, 2, 4, 2, 3, 3, 2, 3, 0, 3, 4, 3, 1, 2, 0, 383.0867734315346);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Midori Buddy', '377-444-6745', '41 32nd Cres, Toronto, ON, Canada', 'midori_buddy_mulligan@gmail.com', 1, 2, 4, 50.91249292936261, 381867.9130832547, 127);
+    ('Carter Pablo', '141-810-9462', '21 Paterson St, Montreal, ON, Canada', 'carter_pablo@gmail.com', 4, 3, 2, 22.83954194469778, 425422.4567985972, 127);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (128, 'Pesci', 'Fish', 'Green Swordtail', 'Yellow', 7.509944014165801, 'Female', 103.0511258244668, 97.26623883707815, 0, 2, 0, 1, 2, 4, 4, 2, 3, 2, 1, 4, 0, 0, 1, 834.427460150736);
+    (128, 'Clooney', 'Dog', 'Labrador', 'Spotted', 4.607262413319092, 'Female', 32.50187439279408, 97.99411349150904, 3, 4, 1, 0, 2, 3, 2, 4, 1, 1, 4, 4, 1, 1, 1, 2344.7652260407076);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Strsky Jenne', '276-669-8120', '24 Bank Cres, Ottawa, ON, Canada', 'strsky_jenne_skip@gmail.com', 2, 4, 2, 60.972686637515494, 455148.06747428695, 128);
+    ('Paul Sunny', '377-657-6527', '22 32nd St, Nepean, ON, Canada', 'paul_sunny@gmail.com', 4, 4, 3, 41.24492762236625, 46093.951623734814, 128);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (129, 'Doc', 'Fish', 'Green Swordtail', 'Red', 7.407954287504449, 'Male', 58.91494742360434, 194.64046721474173, 4, 0, 4, 2, 2, 0, 2, 1, 0, 2, 0, 3, 1, 4, 1, 7459.778930518959);
+    (129, 'Monet', 'Rabbit', 'American Fuzzy Lop', 'Gray', 1.5194292120502808, 'Female', 31.463780213558163, 136.26268363877602, 2, 3, 3, 2, 2, 4, 4, 1, 4, 0, 1, 4, 2, 1, 2, 420.24010804435665);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Felix Zeppelin', '230-452-5323', '44 5th Rd, Toronto, ON, Canada', 'felix_zeppelin_gingi@gmail.com', 1, 4, 2, 77.93063405008621, 185386.75185422017, 129);
+    ('Brandy Snoopy', '990-927-6137', '28 Queen Rd, Montreal, ON, Canada', 'brandy_snoopy@gmail.com', 3, 3, 0, 39.01991861295549, 405897.0786413129, 129);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (130, 'Sookie', 'Fish', 'Siamese Fighting Fish', 'White', 10.683220567364403, 'Male', 167.911207883745, 139.4847871074455, 4, 0, 2, 2, 0, 3, 3, 4, 2, 0, 2, 4, 2, 2, 1, 7705.985430440453);
+    (130, 'Picasso', 'Bird', 'Cockatoos', 'White', 4.2556750960384, 'Female', 48.96053351533872, 50.19937037463531, 3, 3, 2, 3, 3, 0, 3, 4, 4, 1, 0, 0, 3, 4, 0, 6574.750667824014);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Kai RobinHood', '475-875-8350', '48 5th Ave, Montreal, ON, Canada', 'kai_robinhood_mozart@gmail.com', 0, 4, 4, 54.34562780000051, 126029.4223177775, 130);
+    ('Zara Elton', '440-124-7058', '20 Bank Cres, Cornwall, ON, Canada', 'zara_elton@gmail.com', 3, 2, 1, 36.33489334006387, 182417.92080513007, 130);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (131, 'Pazzo', 'Fish', 'Green Swordtail', 'Gray', 23.23781316849111, 'Male', 61.83191584305185, 194.16618720943214, 4, 4, 0, 0, 1, 2, 0, 1, 0, 4, 4, 0, 3, 3, 2, 5697.031645864066);
+    (131, 'Ike', 'Bird', 'African Grey Parrots', 'White', 0.8327667174490982, 'Female', 193.3990146133411, 168.3050113826939, 0, 4, 4, 0, 1, 2, 3, 0, 2, 0, 3, 0, 2, 2, 1, 4505.482959528875);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Pesci Sophie', '411-279-7925', '19 Queen Ave, Ottawa, ON, Canada', 'pesci_sophie_hermione@gmail.com', 0, 0, 4, 43.46345056390811, 441843.0972449215, 131);
+    ('Asia Peaches', '744-531-5137', '35 Paterson Ave, Toronto, ON, Canada', 'asia_peaches@gmail.com', 2, 1, 1, 58.00025410187477, 301066.9214130441, 131);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (132, 'Potter', 'Cat', 'Scottish Fold', 'Green', 7.557913338964704, 'Male', 103.1124784989823, 102.91885620483012, 4, 4, 4, 1, 0, 0, 3, 3, 1, 4, 3, 2, 3, 4, 2, 5109.1602692625265);
+    (132, 'Tallulah', 'Fish', 'Goldfish', 'White', 22.294107945429804, 'Female', 150.8574274450056, 182.91626403741674, 4, 3, 2, 3, 1, 0, 0, 3, 1, 2, 4, 0, 1, 4, 1, 2524.210843708927);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bianca Domino', '479-476-7139', '23 Queen Rd, Toronto, ON, Canada', 'bianca_domino_graysen@gmail.com', 2, 2, 1, 20.030747966799755, 228616.76428085583, 132);
+    ('Tank Blanca', '582-199-5180', '47 54th Cres, Toronto, ON, Canada', 'tank_blanca@gmail.com', 3, 2, 4, 72.16696416779737, 104969.88480974824, 132);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (133, 'Simone', 'Bird', 'Cockatoos', 'Yellow', 16.747319549668653, 'Female', 51.742746759846185, 28.131794247814163, 3, 3, 3, 1, 2, 1, 1, 1, 1, 1, 1, 4, 0, 2, 2, 6107.206891352457);
+    (133, 'Onyx', 'Fish', 'Green Swordtail', 'Brown', 16.26999668827136, 'Male', 70.44283184911973, 148.34234183368508, 3, 0, 1, 0, 0, 4, 1, 3, 4, 2, 3, 4, 1, 2, 2, 4643.851417310079);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Luke Goofy', '162-256-7489', '37 32nd St, Toronto, ON, Canada', 'luke_goofy_zara@gmail.com', 2, 2, 1, 52.301876786151624, 475276.39339440025, 133);
+    ('Hunter Paisley', '817-993-6567', '30 Woodridge St, Montreal, ON, Canada', 'hunter_paisley@gmail.com', 0, 0, 0, 48.07037142166564, 437024.576814898, 133);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (134, 'Sugar', 'Cat', 'Persian', 'Black', 7.1618963527047175, 'Female', 195.6400041122044, 180.16675071905533, 1, 4, 3, 3, 3, 4, 3, 1, 4, 3, 2, 2, 4, 3, 0, 4496.652550476061);
+    (134, 'Bootsie', 'Hamster', 'Robo', 'Spotted', 16.028987512990874, 'Female', 160.98537984986007, 161.04555998714827, 3, 0, 3, 0, 4, 4, 1, 0, 0, 3, 0, 4, 1, 1, 2, 4304.478906824772);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Vegas Stitch', '357-119-5360', '13 Bank Rd, Ottawa, ON, Canada', 'vegas_stitch_connor@gmail.com', 4, 3, 3, 57.98433895422559, 439722.0718547145, 134);
+    ('Robert Hutch', '798-794-4409', '17 54th St, Cornwall, ON, Canada', 'robert_hutch@gmail.com', 4, 0, 1, 69.84104652083528, 405522.00795616733, 134);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (135, 'Iris', 'Hamster', 'Winter White', 'White', 22.219331566769597, 'Male', 173.50469714641648, 124.92811044680167, 3, 0, 0, 1, 0, 2, 0, 3, 4, 0, 1, 0, 4, 4, 0, 9989.75953510329);
+    (135, 'Coco', 'Horse', 'Barb', 'Green', 8.347608941622848, 'Male', 111.1040067374377, 124.3201327543223, 2, 4, 1, 0, 4, 1, 0, 0, 3, 0, 4, 2, 3, 0, 0, 5564.245851551725);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Dutch Redford', '827-560-2018', '19 5th St, Cornwall, ON, Canada', 'dutch_redford_apple@gmail.com', 4, 0, 4, 40.7319339783044, 163534.29844302597, 135);
+    ('Snooky Hermione', '949-806-257', '39 5th Cres, Nepean, ON, Canada', 'snooky_hermione@gmail.com', 1, 0, 2, 53.430777679436, 412722.12491902104, 135);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (136, 'Pesci', 'Cat', 'Scottish Fold', 'Red', 1.9226246660169086, 'Male', 31.111221450685914, 116.0071030792807, 2, 0, 3, 0, 2, 2, 3, 3, 4, 4, 4, 0, 4, 1, 2, 4449.059912945737);
+    (136, 'Elwood', 'Bird', 'Budgerigars', 'Yellow', 26.361032286142162, 'Male', 5.58979089365846, 45.93400033288036, 3, 1, 4, 4, 3, 3, 3, 0, 4, 0, 3, 0, 4, 3, 2, 9417.807455256216);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Monet Marshmellow', '910-164-2951', '13 Bank Cres, Nepean, ON, Canada', 'monet_marshmellow_dulus@gmail.com', 1, 2, 3, 67.8568843093098, 378896.23546907085, 136);
+    ('Bronco Timber', '609-579-8388', '44 5th Rd, Ottawa, ON, Canada', 'bronco_timber@gmail.com', 0, 1, 2, 18.54898225832486, 489452.8196123741, 136);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (137, 'Scout', 'Cat', 'Ragdoll', 'Spotted', 14.613585504869102, 'Male', 89.43290996515867, 83.8303246451978, 0, 1, 2, 0, 2, 1, 1, 2, 0, 4, 4, 0, 4, 3, 1, 8398.388520146273);
+    (137, 'Choochoo', 'Fish', 'Siamese Fighting Fish', 'Brown', 8.57816935690538, 'Male', 15.128878779799841, 38.31861077633044, 1, 1, 3, 1, 4, 1, 3, 0, 0, 3, 1, 2, 3, 0, 1, 881.7622563428945);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Madonna Otis', '344-246-7855', '8 54th Rd, Montreal, ON, Canada', 'madonna_otis_max@gmail.com', 0, 4, 4, 50.448916000317375, 166011.77759123046, 137);
+    ('Owen Cleopatra', '456-489-1040', '10 5th Cres, Toronto, ON, Canada', 'owen_cleopatra@gmail.com', 2, 3, 4, 72.10914128665304, 369849.2428383952, 137);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (138, 'Scout', 'Bird', 'Budgerigars', 'Gray', 17.286583713389685, 'Female', 194.1206981545709, 11.468068108618741, 3, 4, 3, 2, 2, 4, 1, 2, 4, 3, 3, 3, 0, 0, 2, 8999.933740965425);
+    (138, 'Keiko', 'Dog', 'Husky', 'Black', 24.392389952451158, 'Male', 49.638226908809756, 118.58827902012555, 1, 3, 4, 0, 3, 2, 4, 0, 4, 3, 4, 0, 0, 0, 1, 9613.367779621563);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('ZsaZsa Lilypie', '553-489-5338', '49 Queen Rd, Cornwall, ON, Canada', 'zsazsa_lilypie_bono@gmail.com', 0, 4, 2, 34.34831451633878, 137749.8434728611, 138);
+    ('Bellatrix Holly', '913-667-9130', '27 Paterson Ave, Toronto, ON, Canada', 'bellatrix_holly@gmail.com', 1, 1, 4, 55.72777092622352, 308645.2265341592, 138);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (139, 'Skitty', 'Bird', 'Cockatoos', 'Blue', 27.58158266354622, 'Female', 47.739938323207454, 129.02165821118444, 4, 4, 0, 4, 4, 1, 2, 3, 1, 2, 0, 3, 0, 4, 1, 4403.955751665773);
+    (139, 'Malble', 'Horse', 'Thoroughbred', 'Blue', 24.7641599313637, 'Male', 129.92860110504887, 145.84141855194838, 1, 2, 4, 1, 0, 3, 1, 3, 2, 4, 2, 0, 0, 4, 2, 9116.854877712325);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Niana Arnold', '600-110-2895', '49 54th Cres, Toronto, ON, Canada', 'niana_arnold_bobbafett@gmail.com', 4, 4, 1, 35.72313863298386, 65148.18019269528, 139);
+    ('Acorn Fig', '912-709-359', '8 Queen St, Montreal, ON, Canada', 'acorn_fig@gmail.com', 1, 3, 4, 38.918484312654854, 485378.9611217244, 139);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (140, 'Mister Tiggywinkles', 'Horse', 'Paso Fino', 'Spotted', 11.728607348272, 'Female', 154.53617333578893, 138.38492156410595, 1, 0, 0, 0, 3, 2, 1, 3, 0, 3, 0, 0, 3, 1, 2, 5710.240537385222);
+    (140, 'Sushi', 'Cat', 'Persian', 'Gray', 9.697495361482137, 'Female', 181.34235797125814, 69.95200736225345, 2, 2, 1, 1, 1, 1, 2, 2, 0, 3, 4, 0, 0, 0, 1, 9228.66225273818);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Fritz Tangerine', '326-480-5946', '45 Woodridge Rd, Ottawa, ON, Canada', 'fritz_tangerine_linus@gmail.com', 1, 0, 3, 72.05545883155787, 498298.15653576405, 140);
+    ('Rocky Gingi', '850-100-5010', '35 Woodridge Ave, Toronto, ON, Canada', 'rocky_gingi@gmail.com', 0, 1, 0, 18.271242215643248, 31539.938383693843, 140);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (141, 'Gibson', 'Hamster', 'Chinese', 'Yellow', 23.06773338468006, 'Female', 71.38213315900023, 144.07887812069114, 2, 2, 0, 1, 1, 3, 1, 0, 2, 1, 4, 4, 2, 0, 0, 8969.057396024828);
+    (141, 'Phoenix', 'Hamster', 'Syrian', 'Green', 10.059901081230397, 'Female', 171.4441785399585, 64.46634840537936, 3, 2, 3, 0, 3, 2, 3, 0, 3, 0, 1, 4, 1, 3, 0, 7752.4163291149025);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Wolfie Cleopatra', '674-800-000', '41 Queen Rd, Montreal, ON, Canada', 'wolfie_cleopatra_mika@gmail.com', 3, 3, 3, 72.0609460429246, 117942.77009072827, 141);
+    ('Tanner Choochoo', '788-829-2803', '45 Bank St, Nepean, ON, Canada', 'tanner_choochoo@gmail.com', 0, 2, 4, 77.3029665941757, 426600.2800411118, 141);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (142, 'Koby', 'Hamster', 'Winter White', 'Gray', 11.384255992726928, 'Male', 165.88179014942176, 18.69501979423815, 1, 0, 3, 2, 3, 2, 0, 3, 2, 1, 0, 1, 0, 4, 2, 2788.340921122617);
+    (142, 'Zeke', 'Rabbit', 'Dwarf Hotot', 'Yellow', 29.201468050636525, 'Male', 171.22360354342524, 76.2705032526823, 4, 0, 1, 3, 4, 4, 3, 1, 0, 4, 2, 4, 1, 0, 0, 3624.7708059097454);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bellatrix Ernie', '511-776-4792', '42 Bank Ave, Montreal, ON, Canada', 'bellatrix_ernie_daisy@gmail.com', 2, 1, 0, 40.3198095728616, 466862.2150963831, 142);
+    ('Olive Owen', '564-370-7503', '47 54th Ave, Ottawa, ON, Canada', 'olive_owen@gmail.com', 0, 0, 3, 20.510596868719585, 365385.92482033814, 142);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (143, 'Leia', 'Rabbit', 'Florida White', 'Spotted', 6.51848685194953, 'Female', 127.57799279856063, 21.743086433390623, 1, 2, 3, 0, 3, 1, 4, 4, 2, 2, 3, 1, 1, 0, 1, 3571.3158585444944);
+    (143, 'Mika', 'Fish', 'Siamese Fighting Fish', 'Green', 25.054269818184256, 'Female', 152.77580334558428, 79.32856581424447, 1, 2, 1, 4, 1, 0, 1, 0, 1, 2, 4, 2, 2, 2, 0, 2001.1409540359011);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Elton Tonka', '193-116-1648', '6 Woodridge Ave, Toronto, ON, Canada', 'elton_tonka_skyler@gmail.com', 3, 2, 0, 26.051466569974025, 161271.97367653606, 143);
+    ('Ed Shaq', '854-374-5696', '41 54th Ave, Montreal, ON, Canada', 'ed_shaq@gmail.com', 0, 2, 4, 78.89886192803311, 207987.68350502054, 143);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (144, 'Nell', 'Rabbit', 'American Fuzzy Lop', 'White', 28.852315930248583, 'Male', 185.29216541196968, 111.20092296168123, 1, 2, 2, 2, 2, 1, 4, 3, 4, 2, 0, 1, 2, 4, 0, 6102.829143544439);
+    (144, 'Bubbles', 'Dog', 'Labrador', 'Gray', 29.896840016633277, 'Female', 175.7081914033458, 10.484978097557704, 0, 1, 4, 0, 1, 1, 4, 3, 4, 2, 1, 4, 2, 4, 2, 3170.360382095459);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Calvin Sprite', '223-640-3835', '4 Paterson Cres, Cornwall, ON, Canada', 'calvin_sprite_marti@gmail.com', 0, 0, 4, 61.17501257582382, 167550.2867495755, 144);
+    ('Owen Nico', '364-529-2487', '20 5th Rd, Nepean, ON, Canada', 'owen_nico@gmail.com', 0, 4, 4, 45.867875308038165, 183259.31384266043, 144);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (145, 'Bob', 'Horse', 'Thoroughbred', 'Green', 27.54172222829305, 'Female', 50.62355678821147, 193.37557579753206, 1, 0, 4, 3, 0, 4, 4, 3, 2, 3, 4, 4, 2, 2, 1, 5149.7463219013325);
+    (145, 'Mia', 'Horse', 'Paso Fino', 'Yellow', 26.745221877891968, 'Female', 87.74579809502856, 79.64515637779715, 4, 4, 0, 4, 4, 4, 0, 4, 3, 3, 1, 4, 4, 4, 1, 5256.678865487738);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bronco Kaya', '576-750-9164', '43 Woodridge Rd, Montreal, ON, Canada', 'bronco_kaya_mischa@gmail.com', 2, 1, 0, 25.806803923367543, 162331.0530506895, 145);
+    ('Ramona Willow', '953-405-3543', '24 5th Rd, Toronto, ON, Canada', 'ramona_willow@gmail.com', 3, 0, 4, 42.35961595298537, 129009.66385522335, 145);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (146, 'Elwood', 'Dog', 'German Shepard', 'Black', 5.346716580704285, 'Male', 34.745580427576385, 153.98930575605735, 1, 4, 2, 3, 1, 0, 1, 4, 4, 3, 0, 3, 4, 4, 1, 3877.91696814896);
+    (146, 'Arnold', 'Horse', 'Barb', 'Brown', 21.700343285387977, 'Male', 33.17049133876602, 159.93120330673406, 2, 2, 2, 2, 1, 4, 1, 0, 2, 3, 2, 1, 4, 2, 2, 7021.012474018934);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Olive Nanda', '543-900-7389', '14 Bank Rd, Montreal, ON, Canada', 'olive_nanda_crosby@gmail.com', 3, 3, 0, 50.80630500415955, 41401.27417235519, 146);
+    ('Maggie Peanut', '520-575-9499', '44 32nd Ave, Toronto, ON, Canada', 'maggie_peanut@gmail.com', 4, 2, 3, 79.2955998447884, 263734.53190404864, 146);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (147, 'Keesha', 'Horse', 'Paso Fino', 'Red', 25.50275628487393, 'Male', 159.119359047921, 34.58023814662954, 0, 0, 0, 0, 0, 4, 4, 2, 3, 1, 0, 2, 4, 3, 1, 2340.028313722941);
+    (147, 'Holly', 'Hamster', 'Chinese', 'Green', 22.51411171840216, 'Female', 77.5148067076204, 31.474447210334315, 3, 0, 3, 4, 1, 3, 2, 1, 1, 3, 3, 1, 1, 0, 0, 9343.991439945858);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Rocky Stitch', '890-167-9232', '1 Bank Ave, Nepean, ON, Canada', 'rocky_stitch_keanna@gmail.com', 3, 1, 0, 44.42301038075898, 261573.0292433676, 147);
+    ('Duke Phoenix', '260-348-250', '45 54th Rd, Nepean, ON, Canada', 'duke_phoenix@gmail.com', 1, 3, 2, 22.722393280539077, 259118.58500223656, 147);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (148, 'Lola', 'Bird', 'Budgerigars', 'Spotted', 18.205558835097865, 'Male', 175.56962006607483, 136.7688822289628, 2, 0, 4, 3, 4, 2, 0, 0, 0, 4, 2, 4, 4, 2, 2, 3926.57674715486);
+    (148, 'Diva', 'Fish', 'Green Swordtail', 'Spotted', 24.427241759736656, 'Female', 179.4708407960627, 168.4890457881497, 3, 1, 1, 1, 3, 2, 1, 0, 0, 0, 4, 3, 3, 0, 0, 7402.51703225543);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Hermione Bono', '582-272-2943', '18 32nd Ave, Cornwall, ON, Canada', 'hermione_bono_hunter@gmail.com', 4, 3, 0, 29.225720063427385, 444034.29230350506, 148);
+    ('Robert Candy', '863-694-3325', '27 32nd St, Montreal, ON, Canada', 'robert_candy@gmail.com', 1, 2, 4, 65.22660197147464, 405395.63604160317, 148);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (149, 'Gingi', 'Horse', 'Paso Fino', 'Gray', 6.728058620834486, 'Male', 164.25270393630188, 199.67406629999417, 1, 4, 4, 0, 2, 3, 3, 0, 2, 0, 4, 0, 4, 0, 0, 6136.025114005834);
+    (149, 'Bob', 'Horse', 'Trakehner', 'Black', 16.861729573706356, 'Female', 120.50543702016608, 137.55803885100514, 1, 3, 3, 0, 0, 1, 2, 3, 4, 0, 4, 4, 1, 0, 1, 4988.83392580072);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Tanner Apple', '454-688-3500', '13 Queen Cres, Montreal, ON, Canada', 'tanner_apple_mooshie@gmail.com', 4, 3, 3, 75.92612218344925, 405131.539298671, 149);
+    ('Mister Tiggywinkles Doc', '398-112-1255', '10 5th Ave, Toronto, ON, Canada', 'mister_tiggywinkles_doc@gmail.com', 4, 2, 2, 37.76955548910405, 478530.35396344255, 149);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (150, 'Zara', 'Bird', 'Cockatoos', 'Black', 10.641072451403588, 'Male', 177.83466785044763, 76.5369471298083, 3, 2, 2, 1, 3, 3, 0, 0, 0, 2, 2, 1, 1, 2, 0, 1535.8388852805726);
+    (150, 'Tallulah', 'Cat', 'Munchkin', 'Red', 2.6601094589747762, 'Male', 23.43849339018078, 197.41458031700844, 2, 3, 1, 4, 0, 2, 0, 3, 4, 1, 1, 3, 0, 2, 1, 3958.6747273631936);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Faya Malibu', '222-620-2848', '39 Queen Rd, Nepean, ON, Canada', 'faya_malibu_landon@gmail.com', 1, 0, 4, 61.73730163695226, 148544.51786870693, 150);
+    ('Rico Lexi', '362-690-6695', '50 Paterson Ave, Nepean, ON, Canada', 'rico_lexi@gmail.com', 4, 1, 2, 24.61887200535054, 428131.524342864, 150);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (151, 'Tink', 'Rabbit', 'Britannia Petite', 'Green', 8.419334816340914, 'Male', 32.44034298414055, 52.40676584816574, 4, 3, 2, 2, 4, 0, 3, 1, 1, 0, 2, 3, 4, 0, 2, 1698.8179970627473);
+    (151, 'Dallas', 'Horse', 'Barb', 'Brown', 7.179418781320607, 'Female', 46.814027299675914, 68.36755135059721, 1, 3, 1, 1, 1, 2, 2, 4, 4, 4, 1, 2, 1, 4, 2, 9334.078782760065);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Carter Clooney', '917-309-2781', '9 Queen St, Toronto, ON, Canada', 'carter_clooney_butler@gmail.com', 2, 3, 1, 74.0739486905555, 88656.1614325355, 151);
+    ('Hunter Pearl', '405-765-1844', '41 Paterson Cres, Montreal, ON, Canada', 'hunter_pearl@gmail.com', 0, 4, 3, 57.00874311581381, 324917.47075943486, 151);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (152, 'Pumba', 'Bird', 'Budgerigars', 'Blue', 13.925361608934496, 'Male', 41.446819059058825, 65.39851757281608, 3, 4, 3, 0, 0, 0, 3, 1, 2, 4, 0, 4, 4, 4, 2, 5904.478478087669);
+    (152, 'Elwood', 'Cat', 'Scottish Fold', 'Red', 23.20675415565255, 'Female', 65.52698445845537, 114.56795024911303, 1, 3, 0, 0, 0, 2, 1, 4, 1, 0, 4, 4, 1, 2, 2, 1646.1044680714945);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Moby Jasper', '616-841-6627', '1 5th St, Ottawa, ON, Canada', 'moby_jasper_wednesday@gmail.com', 2, 3, 1, 45.85177232684818, 97345.96374130691, 152);
+    ('Jazzy Shaq', '986-495-8219', '28 Woodridge St, Nepean, ON, Canada', 'jazzy_shaq@gmail.com', 3, 4, 3, 47.491373773364785, 277782.85432954406, 152);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (153, 'Joy', 'Bird', 'Cockatoos', 'Green', 26.596620806357578, 'Female', 71.52350729747702, 61.767263236506935, 3, 2, 4, 4, 1, 1, 2, 1, 4, 1, 4, 1, 0, 4, 0, 8263.88948838257);
+    (153, 'Lilbit', 'Hamster', 'Syrian', 'Blue', 10.18216903474234, 'Female', 12.178163733922391, 172.31659425399704, 4, 2, 1, 0, 0, 0, 4, 1, 2, 4, 2, 0, 0, 1, 2, 8418.921980538342);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Sprite Pinot', '647-200-9502', '18 5th St, Ottawa, ON, Canada', 'sprite_pinot_nell@gmail.com', 1, 4, 1, 50.9038713616973, 226917.23710073714, 153);
+    ('Pepper Balou', '674-760-2020', '20 Paterson Cres, Toronto, ON, Canada', 'pepper_balou@gmail.com', 2, 0, 3, 29.2123365857417, 428731.30399622396, 153);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (154, 'Summer', 'Dog', 'Husky', 'Yellow', 4.694932364773162, 'Male', 5.446953996403695, 133.29829166109798, 0, 0, 1, 1, 1, 2, 1, 3, 1, 4, 2, 2, 0, 3, 2, 8846.510349522314);
+    (154, 'Donovan', 'Bird', 'Cockatoos', 'Yellow', 6.973061997944693, 'Female', 132.70957278122933, 82.30296027387291, 1, 2, 0, 0, 1, 1, 3, 0, 3, 2, 2, 3, 0, 4, 2, 8883.771139081364);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Keanna Snoopy', '802-258-8156', '48 Queen Cres, Toronto, ON, Canada', 'keanna_snoopy_muggles@gmail.com', 0, 2, 4, 66.72978344632301, 210460.63346457077, 154);
+    ('Yoshiko Buddy', '839-420-3304', '30 Paterson Ave, Nepean, ON, Canada', 'yoshiko_buddy@gmail.com', 1, 3, 1, 75.2500821666249, 374742.0886978691, 154);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (155, 'Porche', 'Horse', 'Barb', 'White', 1.073225305659729, 'Female', 192.52274116988633, 14.319370987070634, 0, 4, 0, 1, 0, 3, 0, 0, 1, 4, 2, 4, 0, 1, 2, 6903.443677075408);
+    (155, 'Ozzie', 'Bird', 'Cockatiels', 'Yellow', 4.663159584680836, 'Female', 168.34447980750588, 122.75862889344147, 2, 4, 1, 1, 4, 2, 4, 2, 2, 4, 3, 1, 0, 1, 1, 8615.376948247489);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Ernie Pepper', '154-990-7716', '43 32nd Cres, Cornwall, ON, Canada', 'ernie_pepper_monet@gmail.com', 4, 4, 3, 68.3540225889441, 327313.4976440008, 155);
+    ('Muggles Hutch', '319-650-5250', '1 54th St, Ottawa, ON, Canada', 'muggles_hutch@gmail.com', 4, 2, 0, 55.90775905367507, 70989.24511261898, 155);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (156, 'Pesci', 'Hamster', 'Winter White', 'Black', 2.0918187883954014, 'Female', 26.783566005351357, 96.10469483427067, 2, 2, 3, 0, 2, 1, 0, 4, 0, 3, 1, 2, 1, 2, 0, 1167.597333408718);
+    (156, 'Strsky', 'Hamster', 'Chinese', 'Black', 19.600503251914258, 'Female', 13.020357153763962, 110.3996024608927, 0, 4, 1, 4, 4, 3, 1, 4, 3, 3, 0, 3, 1, 2, 0, 6112.843755495399);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Doc Carter', '551-546-2939', '33 Queen Cres, Cornwall, ON, Canada', 'doc_carter_ed@gmail.com', 0, 0, 2, 34.72829890758924, 235290.94406381194, 156);
+    ('Lilbit Arnold', '434-491-6385', '26 Bank St, Cornwall, ON, Canada', 'lilbit_arnold@gmail.com', 4, 0, 2, 52.68984835960255, 439963.8708223463, 156);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (157, 'Candy', 'Rabbit', 'Britannia Petite', 'Green', 26.674944831170965, 'Male', 44.946296336818676, 148.38142112557614, 3, 1, 1, 4, 1, 4, 4, 3, 2, 4, 1, 2, 0, 1, 1, 8089.41346907525);
+    (157, 'Candy', 'Hamster', 'Chinese', 'Red', 21.023601232769295, 'Female', 87.23989909227299, 145.91860719416277, 2, 2, 1, 4, 1, 3, 3, 1, 1, 3, 4, 4, 4, 0, 1, 8657.27584875892);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bobbafett Peanut', '840-438-330', '5 32nd Cres, Montreal, ON, Canada', 'bobbafett_peanut_chaucer@gmail.com', 3, 2, 0, 51.868149670616894, 280447.4671730193, 157);
+    ('Yoshiko Kalua', '509-938-2539', '3 Bank Rd, Toronto, ON, Canada', 'yoshiko_kalua@gmail.com', 4, 4, 0, 55.61193212449621, 334570.05648816243, 157);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (158, 'Mochi', 'Cat', 'Siamese', 'Spotted', 12.18697638517592, 'Male', 164.3387114238557, 70.10726885935807, 2, 1, 4, 4, 3, 2, 1, 3, 0, 3, 3, 0, 3, 4, 1, 2165.342312287878);
+    (158, 'Milan', 'Horse', 'Paso Fino', 'Black', 16.22609148750071, 'Male', 163.8381099622045, 66.47615556454522, 3, 3, 0, 2, 3, 1, 2, 1, 2, 3, 3, 3, 2, 4, 1, 5080.954328777203);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Burt Choochoo', '210-840-2884', '36 Queen Cres, Montreal, ON, Canada', 'burt_choochoo_greystoke@gmail.com', 4, 2, 3, 62.85973731094781, 374852.7378296403, 158);
+    ('Buddy Cece', '749-660-8879', '45 5th Ave, Montreal, ON, Canada', 'buddy_cece@gmail.com', 4, 3, 0, 68.41081626753805, 315241.1430743429, 158);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (159, 'Cooper', 'Bird', 'African Grey Parrots', 'Green', 6.761998831314437, 'Male', 191.25595741138164, 183.4718032187917, 2, 1, 3, 3, 3, 3, 2, 4, 1, 1, 2, 4, 0, 4, 1, 4010.6347833858235);
+    (159, 'Mercedes', 'Cat', 'Ragdoll', 'Brown', 17.813623487790114, 'Male', 174.11113874987817, 192.11519812167867, 4, 0, 4, 4, 2, 1, 3, 4, 2, 3, 1, 1, 4, 2, 1, 6815.762123103627);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Jasper Foxy', '441-968-1420', '11 Paterson St, Nepean, ON, Canada', 'jasper_foxy_carter@gmail.com', 4, 3, 0, 31.63942405491734, 347272.8461172542, 159);
+    ('Timber Picasso', '937-247-747', '37 Paterson Rd, Toronto, ON, Canada', 'timber_picasso@gmail.com', 3, 1, 2, 37.78047094547601, 239020.7372358765, 159);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (160, 'Mira', 'Bird', 'Cockatoos', 'Blue', 8.13177116643033, 'Male', 174.2255410901631, 77.61088777418053, 2, 2, 2, 1, 1, 1, 3, 0, 3, 3, 2, 4, 1, 4, 0, 9729.567558961011);
+    (160, 'Reece', 'Cat', 'Siamese', 'Gray', 11.38244683859623, 'Female', 35.35607812463341, 166.6314673176886, 3, 0, 0, 2, 3, 3, 3, 4, 4, 0, 2, 1, 1, 2, 1, 936.8544528308029);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Graysen Fiona', '403-937-1268', '16 Paterson Rd, Cornwall, ON, Canada', 'graysen_fiona_fritz@gmail.com', 1, 2, 2, 22.93828473602835, 198429.02143213034, 160);
+    ('Biscuit Foxy', '876-104-8316', '35 32nd St, Cornwall, ON, Canada', 'biscuit_foxy@gmail.com', 2, 4, 1, 26.540223768542447, 200443.92689462175, 160);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (161, 'Keesha', 'Hamster', 'Chinese', 'Spotted', 2.368437292376145, 'Female', 169.26919329141796, 10.714987713674141, 1, 4, 0, 1, 2, 0, 0, 3, 4, 4, 2, 2, 3, 4, 1, 9467.58656442987);
+    (161, 'Duke', 'Fish', 'Green Swordtail', 'Brown', 26.091724173056804, 'Male', 100.95833248683154, 191.72338690767762, 3, 3, 0, 2, 1, 0, 2, 0, 0, 2, 3, 2, 4, 2, 2, 9666.336897787407);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bellatrix Jon Snow', '977-482-2225', '25 5th Cres, Ottawa, ON, Canada', 'bellatrix_jon_snow_lucy@gmail.com', 3, 4, 1, 22.530192248675235, 415980.43310572923, 161);
+    ('Nate Sansa', '301-341-9564', '9 Bank Ave, Toronto, ON, Canada', 'nate_sansa@gmail.com', 3, 3, 3, 18.02152862669527, 202080.23308693554, 161);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (162, 'Peanut', 'Hamster', 'Chinese', 'Brown', 24.78826232131436, 'Female', 11.842356939453797, 98.43353341230981, 4, 0, 2, 2, 2, 0, 0, 4, 3, 2, 3, 1, 3, 2, 1, 9551.181917663971);
+    (162, 'Duke', 'Fish', 'Green Swordtail', 'Green', 26.643443507236327, 'Male', 49.17389862447863, 192.03301007664254, 2, 2, 1, 3, 2, 0, 0, 0, 3, 3, 3, 0, 2, 4, 0, 5182.093028556302);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Buddy Mulder', '894-375-4962', '22 54th St, Toronto, ON, Canada', 'buddy_mulder_jenne@gmail.com', 1, 3, 2, 26.52529676434687, 82784.28969721087, 162);
+    ('Butler Dutch', '608-596-7654', '11 Bank St, Ottawa, ON, Canada', 'butler_dutch@gmail.com', 3, 4, 3, 56.411444745528236, 323648.27591137984, 162);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (163, 'Cece', 'Fish', 'Siamese Fighting Fish', 'Brown', 27.6142650475049, 'Male', 116.67845558023923, 73.37252229728581, 3, 0, 0, 4, 0, 2, 2, 0, 1, 4, 2, 4, 2, 1, 1, 873.707017435283);
+    (163, 'Merry', 'Rabbit', 'Dwarf Hotot', 'Black', 9.780124999585961, 'Male', 57.17997374699469, 149.10633151871923, 2, 1, 0, 4, 1, 4, 1, 1, 3, 1, 1, 0, 3, 4, 2, 866.1347214476962);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Koby Kai', '955-294-3561', '1 Paterson Ave, Montreal, ON, Canada', 'koby_kai_duke@gmail.com', 1, 0, 4, 70.71430266255452, 359902.70831772423, 163);
+    ('Jade Mulligan', '920-313-3750', '45 54th St, Nepean, ON, Canada', 'jade_mulligan@gmail.com', 3, 4, 2, 38.67986409044907, 389074.5410836372, 163);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (164, 'Bruin', 'Fish', 'Goldfish', 'Green', 25.869890793959836, 'Male', 41.758929993061734, 150.69054354721794, 1, 1, 1, 1, 2, 4, 1, 2, 3, 4, 0, 2, 3, 4, 1, 6608.0792920878675);
+    (164, 'Balou', 'Bird', 'African Grey Parrots', 'Brown', 23.77784464362366, 'Female', 77.2824858008515, 90.12004924182447, 4, 4, 4, 1, 2, 4, 3, 3, 2, 3, 3, 2, 2, 0, 0, 8917.184361772403);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Max Milan', '984-867-7227', '37 54th Ave, Nepean, ON, Canada', 'max_milan_tango@gmail.com', 2, 2, 4, 68.79393058775976, 458581.57632402773, 164);
+    ('Daphne Buffy', '926-473-8882', '22 5th St, Cornwall, ON, Canada', 'daphne_buffy@gmail.com', 2, 4, 4, 43.85625235041408, 48994.571188171874, 164);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (165, 'Ramona', 'Hamster', 'Winter White', 'Gray', 27.907497039329247, 'Female', 21.845658871552498, 20.34079470426441, 4, 2, 0, 0, 3, 1, 2, 3, 0, 0, 1, 0, 1, 0, 1, 1616.220344814182);
+    (165, 'Tallulah', 'Fish', 'Green Swordtail', 'Green', 29.476411215832407, 'Female', 73.03358910424, 141.03306172313026, 2, 3, 2, 2, 1, 3, 3, 0, 1, 0, 3, 3, 1, 4, 0, 7717.928568255818);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Gibson Jasper', '981-818-2240', '8 Paterson Cres, Montreal, ON, Canada', 'gibson_jasper_parker@gmail.com', 4, 2, 3, 63.13052016285167, 224291.0128438312, 165);
+    ('Porche Barney', '457-620-1485', '44 Bank St, Nepean, ON, Canada', 'porche_barney@gmail.com', 2, 4, 2, 75.80831326396589, 227655.4713110136, 165);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (166, 'Felix', 'Horse', 'Trakehner', 'Blue', 28.949341931943803, 'Female', 55.06254771014882, 15.775875089788212, 2, 2, 4, 1, 2, 2, 4, 0, 4, 1, 1, 2, 2, 3, 0, 1711.0968952103417);
+    (166, 'Daisy', 'Rabbit', 'Dwarf Hotot', 'Spotted', 21.394642209562466, 'Male', 129.13852242223982, 147.977758923985, 3, 1, 4, 4, 3, 4, 3, 0, 2, 4, 4, 0, 3, 3, 2, 8334.88070985654);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Joy Lefty', '358-457-2177', '2 Bank Cres, Cornwall, ON, Canada', 'joy_lefty_owen@gmail.com', 0, 1, 3, 59.40054338191738, 361580.4923916047, 166);
+    ('Bobbafett Diva', '218-873-3292', '7 5th Rd, Ottawa, ON, Canada', 'bobbafett_diva@gmail.com', 3, 1, 3, 24.93156252341084, 311153.1061247369, 166);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (167, 'Sophie', 'Horse', 'Barb', 'Black', 17.382705879222826, 'Female', 67.55558727994946, 89.122995983634, 2, 3, 3, 4, 3, 0, 0, 4, 3, 4, 2, 1, 0, 1, 1, 2364.133146024769);
+    (167, 'Lefty', 'Bird', 'Cockatiels', 'Yellow', 3.8626399590749747, 'Female', 9.335227958321521, 171.04244079792338, 0, 2, 0, 3, 3, 2, 3, 0, 0, 1, 4, 4, 3, 1, 1, 3888.553459059865);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Faya Luca', '453-740-8605', '4 Bank Rd, Montreal, ON, Canada', 'faya_luca_faya@gmail.com', 1, 0, 4, 54.36369676069006, 54428.768175373516, 167);
+    ('Acorn RobinHood', '820-758-3508', '23 Woodridge Rd, Cornwall, ON, Canada', 'acorn_robinhood@gmail.com', 4, 2, 2, 76.31250354864872, 410274.6998011779, 167);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (168, 'Scout', 'Dog', 'Labrador', 'Green', 23.606898623869604, 'Female', 73.6655870735495, 60.185522858925054, 0, 2, 0, 4, 0, 0, 3, 0, 0, 3, 1, 1, 2, 1, 0, 7605.144559552636);
+    (168, 'Timber', 'Bird', 'Cockatiels', 'Spotted', 11.610648201627422, 'Female', 159.4432046711652, 32.38632542813295, 3, 3, 0, 1, 4, 0, 3, 1, 3, 2, 1, 0, 1, 0, 1, 4806.291008856683);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Button Goofy', '860-772-9360', '50 Paterson Ave, Nepean, ON, Canada', 'button_goofy_otis@gmail.com', 0, 1, 0, 45.97895750517439, 205502.21582539234, 168);
+    ('Barclay Vegas', '899-165-4328', '46 Queen Cres, Montreal, ON, Canada', 'barclay_vegas@gmail.com', 1, 2, 2, 30.328863049927577, 165771.74125355404, 168);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (169, 'Charlie', 'Hamster', 'Syrian', 'Brown', 2.1733402822011274, 'Female', 101.35929238366542, 192.95050954032254, 4, 4, 2, 1, 2, 1, 4, 0, 2, 0, 4, 1, 3, 2, 0, 1126.3634141992816);
+    (169, 'Rusty', 'Fish', 'Goldfish', 'Green', 6.9656687165065, 'Male', 93.05344704531701, 179.04262481912892, 0, 1, 0, 0, 4, 3, 3, 2, 0, 0, 4, 2, 2, 1, 2, 7026.481110063354);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Ramona Alvin', '303-353-6573', '6 5th Ave, Ottawa, ON, Canada', 'ramona_alvin_cosmo@gmail.com', 4, 1, 0, 52.49089926936019, 200644.58420767574, 169);
+    ('Cupcake Tink', '620-674-3548', '12 Paterson St, Cornwall, ON, Canada', 'cupcake_tink@gmail.com', 4, 2, 1, 55.09387544251779, 236785.82000227534, 169);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (170, 'Sophie', 'Cat', 'Ragdoll', 'Spotted', 27.00765653086621, 'Female', 97.34341539973323, 85.56727318294752, 2, 4, 4, 4, 0, 2, 3, 1, 0, 0, 4, 0, 1, 1, 0, 8993.819419530659);
+    (170, 'Mira', 'Dog', 'German Shepard', 'Yellow', 1.4717917020675215, 'Female', 69.87219024072905, 157.2782574250732, 0, 3, 2, 1, 0, 0, 2, 4, 0, 1, 0, 2, 2, 0, 2, 7355.683040342879);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Winnie Bordeaux', '263-656-3352', '27 Woodridge Rd, Ottawa, ON, Canada', 'winnie_bordeaux_midnight@gmail.com', 2, 3, 3, 71.63725387389186, 136765.9947029185, 170);
+    ('Sophie Kassie', '361-523-320', '36 54th Cres, Nepean, ON, Canada', 'sophie_kassie@gmail.com', 3, 0, 0, 18.232951390915314, 456203.84919177013, 170);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (171, 'Tango', 'Fish', 'Siamese Fighting Fish', 'Spotted', 4.556096356828296, 'Female', 15.736717829608683, 172.770962921088, 2, 0, 4, 1, 0, 3, 1, 4, 3, 0, 1, 1, 0, 4, 1, 5152.5147124623945);
+    (171, 'Faya', 'Rabbit', 'Florida White', 'White', 9.286895672416868, 'Male', 173.7209228372885, 102.05080207666664, 4, 2, 0, 4, 2, 1, 2, 2, 0, 3, 3, 4, 3, 3, 2, 4200.927053124439);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Strsky Shadow', '822-520-8514', '42 54th Rd, Montreal, ON, Canada', 'strsky_shadow_phoenix@gmail.com', 0, 0, 0, 53.01566099840887, 224271.71739030542, 171);
+    ('Max Pablo', '645-275-8887', '44 5th Cres, Cornwall, ON, Canada', 'max_pablo@gmail.com', 4, 2, 4, 73.65912868720888, 367998.85766169976, 171);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (172, 'Donovan', 'Rabbit', 'American Fuzzy Lop', 'White', 18.90653863629291, 'Male', 7.149225491068424, 105.54055482868768, 1, 0, 4, 3, 1, 1, 0, 2, 3, 3, 3, 2, 3, 1, 1, 1234.8684917685273);
+    (172, 'Faith', 'Horse', 'Paso Fino', 'White', 3.1263007788704074, 'Male', 197.823686428477, 73.04582787558951, 3, 4, 3, 2, 3, 1, 1, 2, 2, 2, 4, 0, 2, 1, 2, 4125.37598716117);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Bellatrix Toffee', '277-327-5094', '27 Paterson St, Toronto, ON, Canada', 'bellatrix_toffee_nico@gmail.com', 1, 0, 2, 40.68146314306652, 305615.57187691133, 172);
+    ('Bailey Luke', '759-873-6157', '20 Woodridge Ave, Nepean, ON, Canada', 'bailey_luke@gmail.com', 2, 3, 3, 31.87743667770023, 134470.2159820385, 172);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (173, 'Hunter', 'Rabbit', 'Dwarf Hotot', 'Yellow', 29.353533723986505, 'Female', 61.276154027943434, 33.0912049612281, 3, 2, 2, 0, 0, 1, 3, 4, 4, 4, 2, 1, 3, 4, 1, 5946.892259369813);
+    (173, 'Theo', 'Hamster', 'Chinese', 'Blue', 2.427845269005801, 'Male', 20.363757749277887, 94.76717233870784, 0, 1, 0, 4, 0, 1, 4, 4, 1, 3, 2, 1, 2, 2, 0, 2720.119467497831);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Nanda Nico', '325-933-4636', '48 54th Ave, Cornwall, ON, Canada', 'nanda_nico_domino@gmail.com', 3, 1, 0, 62.17012774123333, 342777.12484087265, 173);
+    ('Pazzo Bootsie', '348-559-2108', '22 5th Cres, Nepean, ON, Canada', 'pazzo_bootsie@gmail.com', 1, 0, 3, 78.36808178148331, 456364.02667478693, 173);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (174, 'Tank', 'Dog', 'Husky', 'Spotted', 8.066909228214612, 'Female', 166.44697392140063, 92.95130763257768, 0, 1, 2, 0, 4, 4, 0, 0, 0, 3, 3, 0, 0, 2, 2, 5272.302022286738);
+    (174, 'Sophie', 'Hamster', 'Winter White', 'Red', 1.2385594021339492, 'Female', 166.27606428515526, 7.227671577546927, 2, 1, 1, 1, 3, 4, 4, 1, 2, 0, 1, 4, 2, 2, 2, 9533.507286578595);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Zeppelin Pinot', '368-276-4781', '32 Queen Cres, Cornwall, ON, Canada', 'zeppelin_pinot_chloe alice@gmail.com', 3, 0, 1, 77.17494986124521, 498711.0478591145, 174);
+    ('Bailey Luke', '603-100-9112', '17 5th Cres, Nepean, ON, Canada', 'bailey_luke@gmail.com', 4, 2, 3, 52.664368462269856, 216911.28617600192, 174);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (175, 'Madonna', 'Fish', 'Green Swordtail', 'Blue', 13.395124269542267, 'Female', 117.18393999054658, 108.35980357231664, 3, 4, 4, 1, 0, 0, 1, 4, 0, 1, 4, 4, 1, 1, 2, 8487.303206865608);
+    (175, 'Mia', 'Horse', 'Trakehner', 'Red', 5.791806140553135, 'Male', 81.39899492023488, 124.16820548205011, 0, 0, 1, 1, 3, 2, 3, 0, 3, 1, 3, 2, 1, 2, 1, 6865.927341914637);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Robert Larissa', '830-126-6409', '22 Bank St, Montreal, ON, Canada', 'robert_larissa_shadow@gmail.com', 1, 1, 2, 69.7392481411376, 251835.10053083132, 175);
+    ('Lola Madonna', '508-518-2007', '46 Woodridge Cres, Toronto, ON, Canada', 'lola_madonna@gmail.com', 2, 1, 3, 53.427559440460506, 223621.67409928277, 175);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (176, 'Luke', 'Cat', 'Scottish Fold', 'Spotted', 8.780317182484735, 'Female', 143.27706434355412, 34.19101323846645, 3, 2, 4, 2, 2, 0, 1, 0, 1, 4, 0, 2, 0, 4, 2, 1713.9225233043387);
+    (176, 'Doc', 'Hamster', 'Chinese', 'Green', 10.279000037269473, 'Female', 134.86529280018036, 167.00132723201438, 4, 2, 4, 4, 4, 3, 2, 3, 0, 2, 4, 1, 1, 4, 2, 4262.353619915243);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Iris Shane', '782-975-8314', '13 Woodridge St, Ottawa, ON, Canada', 'iris_shane_potter@gmail.com', 4, 1, 4, 49.67937585658174, 491167.65879133047, 176);
+    ('Cisco Owen', '540-150-9795', '46 Bank Cres, Cornwall, ON, Canada', 'cisco_owen@gmail.com', 2, 3, 1, 59.870148395272025, 271456.445796106, 176);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (177, 'Rufus', 'Cat', 'Ragdoll', 'Red', 17.825927622979474, 'Male', 42.296089369827016, 63.194804813769146, 1, 4, 4, 3, 4, 3, 3, 0, 1, 2, 3, 2, 3, 0, 2, 2707.726957724004);
+    (177, 'Malibu', 'Fish', 'Green Swordtail', 'White', 21.725611684308525, 'Male', 74.5615056403341, 114.39027317835216, 2, 4, 2, 0, 1, 2, 2, 4, 0, 0, 4, 3, 2, 4, 2, 4682.6134725966485);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Cece Peaches', '146-742-5643', '11 Bank Rd, Montreal, ON, Canada', 'cece_peaches_wednesday@gmail.com', 2, 2, 0, 48.186319077529745, 240494.94575396032, 177);
+    ('Farhoud Graysen', '558-890-1343', '47 54th Cres, Ottawa, ON, Canada', 'farhoud_graysen@gmail.com', 2, 4, 0, 72.40847621121013, 423101.078776627, 177);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (178, 'Toffee', 'Dog', 'Labrador', 'Spotted', 8.497906575008066, 'Male', 137.563263032396, 127.49524483119517, 4, 3, 4, 2, 2, 3, 2, 1, 3, 1, 3, 2, 0, 0, 1, 9829.171307865114);
+    (178, 'Sprite', 'Fish', 'Siamese Fighting Fish', 'White', 2.3826624209394334, 'Female', 93.58883646292625, 126.89572719652011, 1, 0, 0, 0, 4, 4, 3, 1, 1, 2, 4, 1, 0, 4, 2, 4429.847846529528);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Owen Ed', '722-238-3388', '40 Paterson Cres, Cornwall, ON, Canada', 'owen_ed_noodle@gmail.com', 2, 2, 0, 63.99879787847375, 100234.61297478343, 178);
+    ('Coco Barney', '784-179-9972', '35 5th Rd, Ottawa, ON, Canada', 'coco_barney@gmail.com', 1, 2, 4, 72.71991651745327, 448492.28487404506, 178);
 INSERT OR IGNORE INTO animal
     (id, name, type, breed, color, age, sex, weight, height, health, libido, aggressiveness, extroversion, temper, obedience, endurance, activeness, impulsivity, distractibility, adaptability, regularity, intelligence, independence, training, cost)
 VALUES
-    (179, 'Summer', 'Bird', 'Budgerigars', 'Blue', 12.889774466168628, 'Female', 23.60083881172475, 97.33526723694601, 3, 3, 1, 0, 3, 2, 0, 0, 2, 3, 4, 1, 2, 1, 0, 7754.148257500731);
+    (179, 'Fritz', 'Cat', 'Siamese', 'Blue', 4.5516763620647644, 'Male', 115.43547992957551, 32.672102249046986, 3, 2, 1, 1, 3, 3, 0, 0, 0, 3, 2, 4, 0, 4, 2, 9415.20313710804);
 INSERT OR IGNORE INTO client
     (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)
 VALUES
-    ('Midori Midori', '997-100-8258', '42 Queen Rd, Montreal, ON, Canada', 'midori_midori_cessa@gmail.com', 3, 4, 3, 30.86319532075216, 298163.95539701893, 179);
+    ('Mercedes Goofy', '385-693-456', '35 54th Ave, Montreal, ON, Canada', 'mercedes_goofy@gmail.com', 3, 3, 2, 76.30023164829763, 311453.2357430704, 179);

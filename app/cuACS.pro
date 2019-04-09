@@ -51,6 +51,8 @@ SOURCES += \
     src/saveclientcontrol.cpp \
     src/viewanimalprofilecontrol.cpp \
     src/saveanimalcontrol.cpp
+    src/acmalgorithmmatch.cpp \
+    src/galeshapley.cpp \
 
 HEADERS += \
     include/animal.h \
@@ -89,6 +91,8 @@ HEADERS += \
     include/saveclientcontrol.h \
     include/viewanimalprofilecontrol.h \
     include/saveanimalcontrol.h
+    include/acmalgorithmmatch.h \
+    include/galeshapley.h \
 
 FORMS += \
     mainwindow.ui

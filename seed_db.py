@@ -50,11 +50,11 @@ def insert_client(f, aid):
     print('INSERT OR IGNORE INTO client', file=f)
     print('    (name, phone_number, address, email, patience, experience, activeness, age, income, preferred_animal)', file=f)
     print('VALUES', file=f)
-    print("    ('{}', '{:0<3}-{:0<3}-{:0<3}', '{} {} {}, {}, ON, Canada', '{}_{}@gmail.com', {}, {}, {}, {}, {}, {});".format(
+    print("    ('{}', '{:0<3}-{:0<3}-{:0<3}', '{} {} {}, {}, ON, Canada', '{}@gmail.com', {}, {}, {}, {}, {}, {});".format(
         name,
         randint(0, 999), randint(0, 999), randint(0, 9999),
         randint(1, 50), choice(places), choice(place_types), choice(cities),
-        name.replace(' ', '_').lower(), choice(names).lower(),
+        name.replace(' ', '_').lower(),
         *choices(range(5), k=3),
         uniform(18, 80),
         uniform(20000, 500000),

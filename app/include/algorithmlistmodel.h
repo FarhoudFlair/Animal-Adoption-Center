@@ -7,6 +7,7 @@
 
 #include "include/animal.h"
 #include "include/client.h"
+#include "acmalgorithmmatch.h"
 
 class AlgorithmListModel: public QAbstractListModel
 {
@@ -17,13 +18,13 @@ public:
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     Qt::ItemFlags flags(const QModelIndex &index) const;
 
-    QList<std::pair<Animal, Client>> &getList();
-    void setList(QList<std::pair<Animal, Client>> &&matches);
+    QList<ACMAlgorithmMatch<Animal, Client>> &getList();
+    void setList(QList<ACMAlgorithmMatch<Animal, Client>> &&matches);
 
-    std::pair<Animal, Client> &getElement(int index);
+    ACMAlgorithmMatch<Animal, Client> &getElement(int index);
 
 private:
-    QList<std::pair<Animal, Client>> matches;
+    QList<ACMAlgorithmMatch<Animal, Client>> matches;
 };
 
 #endif // ALGORITHMLISTMODEL_H
