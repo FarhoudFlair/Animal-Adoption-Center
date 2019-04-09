@@ -90,6 +90,8 @@ public:
 
     bool operator==(const Animal &) const;
 
+    QString summaryString() const;
+
 private:
     int id;
     QString name;

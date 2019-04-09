@@ -24,6 +24,7 @@ public:
     void setWoman(W);
 
     void setDetails(QString details);
+    const QString &getDetails() const;
 
 private:
     M man;
@@ -73,6 +74,11 @@ void ACMAlgorithmMatch<M, W>::setWoman(W woman) {
 template<typename M, typename W>
 void ACMAlgorithmMatch<M, W>::setDetails(QString details) {
     this->details = details;
+}
+
+template<typename M, typename W>
+const QString &ACMAlgorithmMatch<M, W>::getDetails() const {
+    return details;
 }
 
 #endif // ACMALGORITHMMATCH_H

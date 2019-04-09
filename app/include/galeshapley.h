@@ -5,6 +5,8 @@
 #include <QString>
 #include <QDebug>
 
+#include <cassert>
+
 #include "acmalgorithmmatch.h"
 
 template<typename M, typename W>
@@ -28,7 +30,7 @@ private:
     QList<QList<QString>> women_prefs_summary;
 
 private:
-
+    void generate_details();
 };
 
 template<typename M, typename W>
@@ -97,69 +99,97 @@ void GaleShapley<M, W>::launch()
 
         int next_proposal_ind = men_prefs[cur_man][next_proposal_for_cur_man];
         W &to_propose = women[next_proposal_ind];
+        QList<int> &to_propose_prefs = women_prefs[next_proposal_ind];
+        int proposed_rank = simple_indexof(to_propose_prefs, cur_man);
         int woman_pair_ind = woman_paired_index(matches, to_propose);
+
+        assert(proposed_rank != -1);
 
         if (woman_pair_ind < 0) {
             matches.push_back(ACMAlgorithmMatch<M, W>(men[cur_man], to_propose));
+            men_prefs_summary[cur_man][next_proposal_for_cur_man] = "<-";
+            women_prefs_summary[next_proposal_ind][proposed_rank] = "<-";
         } else {
-            QList<int> &to_propose_prefs = women_prefs[next_proposal_ind];
             int engaged_ind = simple_indexof(men, matches[woman_pair_ind].getMan());
             int engaged_rank = simple_indexof(to_propose_prefs, engaged_ind);
-            int proposed_rank = simple_indexof(to_propose_prefs, cur_man);
 
             assert(engaged_rank != -1);
-            assert(proposed_rank != -1);
 
             if (proposed_rank < engaged_rank) {
-                men_prefs_summary[simple_indexof(men, matches[woman_pair_ind].getMan())][simple_indexof(women, to_propose)] = "run over";
+                int prev_man_id = simple_indexof(men, matches[woman_pair_ind].getMan());
+
+                men_prefs_summary[prev_man_id][simple_indexof(men_prefs[prev_man_id], next_proposal_ind)] = "";
                 men_prefs_summary[cur_man][next_proposal_for_cur_man] = "<-";
 
+                women_prefs_summary[next_proposal_ind][engaged_rank] = "";
+                women_prefs_summary[next_proposal_ind][proposed_rank] = "<-";
+
                 matches[woman_pair_ind].setMan(men[cur_man]);
-
-//                women_prefs_summary[next_proposal_ind][engaged_rank] = "something";
-//                women_prefs_summary[next_proposal_ind][proposed_rank] = "<-";
-
             }
         }
 
         next_proposals[cur_man] += 1;
+    }
+
+    this->generate_details();
+}
+
+template<typename M, typename W>
+void GaleShapley<M, W>::generate_details()
+{
+    for (auto &el: matches) {
+        int man_ind = simple_indexof(men, el.getMan());
+        int woman_ind = simple_indexof(women, el.getWoman());
+        QString details;
+
+        details += QString("Client: %1 (%2)\n").arg(el.getWoman().getName()).arg(el.getWoman().getEmail());
+        details += QString("Animal: %1 (%2)\n").arg(el.getMan().getName()).arg(el.getMan().getTypeString());
+        details += "\n";
+
+        details += "Client Information:\n";
+        details += el.getWoman().summaryString();
+        details += "\n";
+        details += "\n";
+
+        details += "Client's Animal Preferences:\n";
+        details += el.getWoman().getPreferredAnimal().summaryString();
+        details += "\n";
+        details += "\n";
+
+        details += "Animal Information:\n";
+        details += el.getMan().summaryString();
+        details += "\n";
+        details += "\n";
+
+        details += "Animal's Computed Preferences for Clients:\n";
+        for (int i = 0; i < men_prefs_summary[man_ind].size(); ++i) {
+            if (i > 0 && men_prefs_summary[man_ind][i-1] == "<-") break;
+
+            details += QString("%1. %2 %3\n")
+                    .arg(i+1)
+                    .arg(women[men_prefs[man_ind][i]].getName())
+                    .arg(men_prefs_summary[man_ind][i]);
+        }
+        details += "\n";
+
+        details += "Client's Computed Preferences for Animals:\n";
+        for (int i = 0; i < women_prefs_summary[woman_ind].size(); ++i) {
+            if (i > 0 && women_prefs_summary[woman_ind][i-1] == "<-") break;
+
+            details += QString("%1. %2 (%3) %4\n")
+                    .arg(i+1)
+                    .arg(men[women_prefs[woman_ind][i]].getName())
+                    .arg(men[women_prefs[woman_ind][i]].getTypeString())
+                    .arg(women_prefs_summary[woman_ind][i]);
+        }
+
+        el.setDetails(details);
     }
 }
 
 template<typename M, typename W>
 QList<ACMAlgorithmMatch<M, W>> GaleShapley<M, W>::fetch_matches()
 {
-//    for (int i = 0; i < women.size(); ++i) {
-//        qDebug() << women[i].getName();
-//        for (int j = 0; j < women_prefs[i].size(); ++j) {
-//            qDebug() << j+1 << ". " << men[women_prefs[i][j]].getName() << " " << women_prefs_summary[i][j];
-//        }
-//        qDebug() << "---------";
-//    }
-//    for (int i = 0; i < men.size(); ++i) {
-//        qDebug() << men[i].getName();
-//        for (int j = 0; j < men_prefs[i].size(); ++j) {
-//            qDebug() << j+1 << ". " << women[men_prefs[i][j]].getName() << " " << men_prefs_summary[i][j];
-//        }
-//        qDebug() << "---------";
-//    }
-    for (auto &el: matches) {
-        int man_ind = simple_indexof(men, el.getMan());
-        int woman_ind = simple_indexof(women, el.getWoman());
-        QString details;
-
-        details += QString("Client %1 (%2)\n").arg(el.getWoman().getName()).arg(el.getWoman().getEmail());
-        details += QString("Animal %1 (%2)\n").arg(el.getMan().getName()).arg(el.getMan().getTypeString());
-
-        for (int i = 0; i < men_prefs_summary[man_ind].size(); ++i)
-            details += QString("%1. %2 %3\n").arg(i+1).arg(men[men_prefs[man_ind][i]].getName()).arg(men_prefs_summary[man_ind][i]);
-
-        for (int i = 0; i < women_prefs_summary[woman_ind].size(); ++i)
-            details += QString("%1. %2 %3\n").arg(i+1).arg(women[women_prefs[woman_ind][i]].getName()).arg(women_prefs_summary[woman_ind][i]);
-
-        el.setDetails(details);
-    }
-
     return matches;
 }
 
