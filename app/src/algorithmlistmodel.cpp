@@ -17,8 +17,8 @@ QVariant AlgorithmListModel::data(const QModelIndex &index, int role) const {
         return QVariant();
 
     if (role == Qt::DisplayRole) {
-        const std::pair<Animal, Client> &p = this->matches[index.row()];
-        return QString("%1 -> %2 (%3)").arg(p.second.getName()).arg(p.first.getName()).arg(p.first.getTypeString());
+        const ACMAlgorithmMatch<Animal, Client> &p = this->matches[index.row()];
+        return QString("%1 -> %2 (%3)").arg(p.getWoman().getName()).arg(p.getMan().getName()).arg(p.getMan().getTypeString());
     }
 
     return QVariant();
@@ -28,16 +28,16 @@ Qt::ItemFlags AlgorithmListModel::flags(const QModelIndex &index) const {
     return QAbstractListModel::flags(index) | Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsEditable;
 }
 
-QList<std::pair<Animal, Client>> &AlgorithmListModel::getList() {
+QList<ACMAlgorithmMatch<Animal, Client>> &AlgorithmListModel::getList() {
     return this->matches;
 }
 
-void AlgorithmListModel::setList(QList<std::pair<Animal, Client>> &&matches) {
+void AlgorithmListModel::setList(QList<ACMAlgorithmMatch<Animal, Client>> &&matches) {
     this->matches = matches;
 
     emit dataChanged(createIndex(0, 0), createIndex(matches.size() - 1, 0));
 }
 
-std::pair<Animal, Client> &AlgorithmListModel::getElement(int index) {
+ACMAlgorithmMatch<Animal, Client> &AlgorithmListModel::getElement(int index) {
     return this->matches[index];
 }

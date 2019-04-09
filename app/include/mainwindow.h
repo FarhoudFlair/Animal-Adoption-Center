@@ -65,6 +65,9 @@ private slots:
     void on_homeViewAlgorithmButton_clicked();
 
     void on_algorithmLaunchAlgorithmButton_clicked();
+    void on_algorithmDetailedButton_clicked();
+
+    void on_algorithmSummaryListView_doubleClicked(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;
