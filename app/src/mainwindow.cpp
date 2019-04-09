@@ -329,21 +329,21 @@ void MainWindow::on_clientLoginClientListView_doubleClicked(const QModelIndex &i
     if (!index.isValid()) return;
 
     appCtrl.clientLogin(this->ui, index.row(), loggedInUser);
-    qDebug() << this->client_model.getList().size() << " space" << index.row();
-    this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
+//    qDebug() << this->client_model.getList().size() << " space" << index.row();
+//    this->loggedInUser = new Client(this->client_model.getList()[index.row()]);
 
-    this->ui->addAnimalButton->setVisible(false);
-    this->ui->animalFormSaveButton->setVisible(false);
-    this->ui->animalFormCancelButton->setText("OK");
-    this->ui->clientFormCancelButton->setVisible(false);
-    this->ui->homeViewClientsButton->setText("View Your Profile");
-    this->ui->homeViewAlgorithmButton->setVisible(false);
-    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+//    this->ui->addAnimalButton->setVisible(false);
+//    this->ui->animalFormSaveButton->setVisible(false);
+//    this->ui->animalFormCancelButton->setText("OK");
+//    this->ui->clientFormCancelButton->setVisible(false);
+//    this->ui->homeViewClientsButton->setText("View Your Profile");
+//    this->ui->homeViewAlgorithmButton->setVisible(false);
+//    this->ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
 
-    Client *c = dynamic_cast<Client *>(this->loggedInUser);
-    this->setClientForm(*c, true);
+//    Client *c = dynamic_cast<Client *>(this->loggedInUser);
+//    this->setClientForm(*c, true);
 
-    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+//    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
 }
 
 void MainWindow::on_loginAsStaffButton_clicked()
@@ -531,7 +531,11 @@ void MainWindow::on_homeViewAnimalsButton_clicked()
 
 void MainWindow::on_homeViewClientsButton_clicked()
 {
-    appCtrl.manageClients(this->ui, 1, -1);
+    if (ui->homeViewClientsButton->text() == "View Your Profile") {
+        appCtrl.viewOwnProfile(this->ui);
+    } else {
+        appCtrl.manageClients(this->ui, 1, -1);
+    }
    // this->ui->mainStackedWidget->setCurrentWidget(this->ui->clientsPage);
 }
 

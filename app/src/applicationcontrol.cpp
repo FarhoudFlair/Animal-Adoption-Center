@@ -8,20 +8,21 @@ ApplicationControl::ApplicationControl():loggedInUser(nullptr)
 
 void ApplicationControl::clientLogin(Ui::MainWindow *ui, int indexRow, User *loggedInUser)
 {
-//    loggedInUser = new Client(this->client_model.getList()[indexRow]);
+    ClientListModel *client_model = new ClientListModel(ui->clientListView);
+    ui->clientListView->setModel(client_model);
+    client_model->setList(SQLSerializer::readClients());
 
-//    ui->addAnimalButton->setVisible(false);
-//    ui->animalFormSaveButton->setVisible(false);
-//    ui->animalFormCancelButton->setText("OK");
-//    ui->clientFormCancelButton->setVisible(false);
-//    ui->homeViewClientsButton->setText("View Your Profile");
-//    ui->homeViewAlgorithmButton->setVisible(false);
-//    ui->clientsStackedWidget->setCurrentWidget(this->ui->clientFormPage);
+    this->loggedInUser = new Client(client_model->getList()[indexRow]);
 
-//    Client *c = dynamic_cast<Client *>(this->loggedInUser);
-//    this->setClientForm(*c, true);
+    ui->addAnimalButton->setVisible(false);
+    ui->animalFormSaveButton->setVisible(false);
+    ui->animalFormCancelButton->setText("OK");
+    ui->clientFormCancelButton->setVisible(false);
+    ui->homeViewClientsButton->setText("View Your Profile");
+    ui->homeViewAlgorithmButton->setVisible(false);
+    ui->clientsStackedWidget->setCurrentWidget(ui->clientFormPage);
 
-//    this->ui->mainStackedWidget->setCurrentWidget(this->ui->homePage);
+    ui->mainStackedWidget->setCurrentWidget(ui->homePage);
 }
 
 void ApplicationControl::staffLogin(Ui::MainWindow *ui)
@@ -36,14 +37,14 @@ void ApplicationControl::viewAnimalList(Ui::MainWindow *ui)
     vALControl.launch(ui);
 }
 
-void ApplicationControl::viewClientList(Ui::MainWindow *ui)
-{
-    ViewClientListControl vCLControl;
-  //  vCLControl.launch(ui);
-}
-
 void ApplicationControl::manageClients(Ui::MainWindow *ui, int choice, int index)
 {
     ManageClientsControl mCControl;
     mCControl.launch(ui, choice, index, this->loggedInUser);
+}
+
+void ApplicationControl::viewOwnProfile(Ui::MainWindow *ui)
+{
+    ViewOwnProfileControl vOPControl;
+    vOPControl.launch(ui, this->loggedInUser);
 }
