@@ -48,9 +48,11 @@ SOURCES += \
     src/viewmatchdetailscontrol.cpp \
     src/acmalgorithm.cpp \
     src/algorithmlistmodel.cpp \
+    src/saveclientcontrol.cpp \
+    src/viewanimalprofilecontrol.cpp \
+    src/saveanimalcontrol.cpp
     src/acmalgorithmmatch.cpp \
     src/galeshapley.cpp \
-    src/saveclientcontrol.cpp
 
 HEADERS += \
     include/animal.h \
@@ -86,9 +88,11 @@ HEADERS += \
     include/viewownprofilecontrol.h \
     include/acmalgorithm.h \
     include/algorithmlistmodel.h \
+    include/saveclientcontrol.h \
+    include/viewanimalprofilecontrol.h \
+    include/saveanimalcontrol.h
     include/acmalgorithmmatch.h \
     include/galeshapley.h \
-    include/saveclientcontrol.h
 
 FORMS += \
     mainwindow.ui

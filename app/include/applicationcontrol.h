@@ -5,6 +5,7 @@
 #include "viewclientlistcontrol.h"
 #include "ui_mainwindow.h"
 #include "manageclientscontrol.h"
+#include "manageanimalscontrol.h"
 #include "staff.h"
 #include "viewownprofilecontrol.h"
 
@@ -15,9 +16,8 @@ public:
     void launch();
     void clientLogin(Ui::MainWindow *, int, User *);
     void staffLogin(Ui::MainWindow *);
-    void viewAnimalList(Ui::MainWindow *);
-    void viewClientList(Ui::MainWindow *);
     void manageClients(Ui::MainWindow *, int, int);
+    void manageAnimals(Ui::MainWindow *, int, int);
     void viewOwnProfile(Ui::MainWindow *);
 private:
     User *loggedInUser;

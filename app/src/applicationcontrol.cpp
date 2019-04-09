@@ -31,10 +31,10 @@ void ApplicationControl::staffLogin(Ui::MainWindow *ui)
     ui->mainStackedWidget->setCurrentWidget(ui->homePage);
 }
 
-void ApplicationControl::viewAnimalList(Ui::MainWindow *ui)
+void ApplicationControl::manageAnimals(Ui::MainWindow *ui, int choice, int index)
 {
-    ViewAnimalListControl vALControl;
-    vALControl.launch(ui);
+    ManageAnimalsControl mAControl;
+    mAControl.launch(ui, choice, index, this->loggedInUser);
 }
 
 void ApplicationControl::manageClients(Ui::MainWindow *ui, int choice, int index)

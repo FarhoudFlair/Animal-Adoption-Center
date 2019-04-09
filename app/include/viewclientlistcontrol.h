@@ -9,7 +9,7 @@ class ViewClientListControl
 public:
     ViewClientListControl();
     void launchLogin(Ui::MainWindow *, ClientListModel *);
-    void launch(Ui::MainWindow *, ClientListModel *);
+    void launch(Ui::MainWindow *);
 };
 
 #endif // VIEWCLIENTLISTCONTROL_H

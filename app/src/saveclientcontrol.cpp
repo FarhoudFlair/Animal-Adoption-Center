@@ -40,8 +40,9 @@ void SaveClientControl::launch(Ui::MainWindow *ui,  User *loggedInUser, ClientLi
         client.setId(existing_client->getId());
         client.getPreferredAnimal().setId(existing_client->getPreferredAnimal().getId());
         SQLSerializer::saveClient(client);
-        ui->mainStackedWidget->setCurrentWidget(ui->homePage);
+        loggedInUser = &client;
         client_model->setList(SQLSerializer::readClients());
+        ui->mainStackedWidget->setCurrentWidget(ui->homePage);
     }
 
 
